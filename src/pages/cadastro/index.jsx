@@ -1,6 +1,6 @@
 import './index.scss';
 
-function App() {
+export default function Cadastro() {
   return (
     <div className="App">
 
@@ -30,4 +30,4 @@ function App() {
   );
 }
 
-export default App;
+
