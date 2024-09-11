@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.scss';
 import Inicio from './pages/inicio';
 import Cadastro from './pages/cadastro';
@@ -9,6 +8,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 export default function Navegacao() {
+
+  return (
+
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Inicio />} />
@@ -16,5 +18,9 @@ export default function Navegacao() {
 
         <Route path='*' element={<NaoEncontrado />} />
       </Routes>
+      
     </BrowserRouter>
+
+  )
+
 }

@@ -7,23 +7,26 @@ export default function Cabecalho() {
         <div className='parte-cabecalho'>
              <img src='/images/logo.webp' />
 
+
+             <div className='conexoes'>
              <h3>
-                <link to='/home'>Home</link>
+                <Link to='/home'>Home</Link>
+              </h3>
+
+              <h3>
+                <Link to='/s.o.e'>S.O.E</Link>
+              </h3>
+
+
+              <h3>
+                <Link to='/festas'>Festas</Link>
              </h3>
 
-             <h3>
-                <link to='/s.o.e'>S.O.E</link>
-             </h3>
+              <h3>
+                <Link to='/agendamento'>Agendamento</Link>
+              </h3>
 
-
-             <h3>
-                <link to='/festas'>Festas</link>
-             </h3>
-
-             <h3>
-                <link to='/agendamento'>Agendamento</link>
-             </h3>
-
+             </div>
 
 
         </div>
