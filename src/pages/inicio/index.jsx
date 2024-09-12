@@ -6,10 +6,11 @@ export default function Inicio() {
 
     <div className="pagina-incio">
 
+        
     </div>
 
   );
-  
+
 }
 
 
