@@ -1,14 +1,18 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Inicio from './pages/inicio'
+import Home from './pages/home'
 
 
 export default function Navegacao() {
 
-    <BrowserRouter>
-        <Routes>
-            <Route path='/' element={<Inicio />} />
-        </Routes>
-    </BrowserRouter>
+    return (
+
+        <BrowserRouter>
+            <Routes>
+                <Route path='/' element={<Home />} />
+            </Routes>
+        </BrowserRouter>
+
+    );
 
 }
