@@ -10,13 +10,15 @@ export default function Cabecalho(){
             <img src="/assets/images/logo-soe.png" alt="" />
 
             <div className='nav'>
+                
                 <Link className='links' to='/'>Home</Link>
 
-                <Link className='links' to=''>S.O.E</Link>
+                <Link className='links' to='/soe'>S.O.E</Link>
 
-                <Link className='links' to=''>Festas</Link>
+                <Link className='links' to='/festas'>Festas</Link>
 
-                <Link className='links' to='/'>Intenção</Link>
+                <Link className='links' to='/intencao'>Intenção</Link>
+
             </div>
 
         </div>
