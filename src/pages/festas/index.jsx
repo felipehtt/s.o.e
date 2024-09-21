@@ -1,14 +1,20 @@
 import './index.scss';
 
-export default function Festas(){
+import Cabecalho from '../../components/cabecalho';
+import Footer from '../../components/footer';
 
-    return(
+export default function Festas() {
+
+    return (
 
         <div className='pagina-festas'>
 
+            <Cabecalho />
+
+            <Footer />
 
         </div>
 
     );
-    
+
 }
