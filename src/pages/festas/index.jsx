@@ -7,7 +7,7 @@ export default function Festas() {
 
     return (
 
-        <div className='pagina-festas'>
+        <div className='pagina-festas pagina'>
 
             <Cabecalho />
 

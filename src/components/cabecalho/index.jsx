@@ -7,11 +7,12 @@ export default function Cabecalho(){
 
         <div className='comp-cabecalho'>
 
+
             <img src="/assets/images/logo-soe.png" alt="" />
 
             <div className='nav'>
                 
-                <Link className='links' to='/'>Home</Link>
+                <Link className='links' to='/' color='#db4545'>Home</Link>
 
                 <Link className='links' to='/soe'>S.O.E</Link>
 

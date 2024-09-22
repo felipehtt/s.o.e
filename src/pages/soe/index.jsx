@@ -7,9 +7,9 @@ export default function Soe(){
 
     return(
 
-        <div className='pagina-soe'>
+        <div className='pagina-soe pagina'>
 
-            <Cabecalho cor="##db4545"/>
+            <Cabecalho/>
 
             <Footer />
 

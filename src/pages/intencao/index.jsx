@@ -7,7 +7,7 @@ export default function Intencao() {
 
     return (
 
-        <div className='pagina-intencao'>
+        <div className='pagina-intencao pagina'>
 
             <Cabecalho />
 

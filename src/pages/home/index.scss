@@ -1,5 +1,79 @@
-.pagina-inicio{
+.pagina-home{
 
-    background-color: #000;
+    main{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .img1{
     
+            border-radius: 12px;
+    
+        }
+
+        p{
+            
+            font: 500 22px "Poppins";
+    
+        }
+
+        .container{
+    
+            max-width: 75vw;
+
+            .carousel{
+
+                display: flex;
+                overflow-x: auto;
+                scroll-behavior: smooth;
+
+                .item{
+
+                    margin: 10px;
+                    padding: 10px;
+                    width: 280px;
+
+                    .image img{
+
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 10px;
+
+                    }
+
+                    .info{
+
+                        height: 140px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        span{
+
+                            display: block;
+                            text-align: center;
+                            
+                        }
+
+                        .name{
+
+                            font-size: 1.2rem;
+                            font: 20px "Poppins";
+                            margin: 10px;
+                        }
+
+                    }
+
+                }
+
+            }
+    
+        }
+        
+    }
+
+
 }

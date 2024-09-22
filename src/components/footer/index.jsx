@@ -19,11 +19,11 @@ export default function Footer() {
 
                 </section>
 
-                <p> Special  <FontAwesomeIcon className='c' icon={faCircle} />   Organization <FontAwesomeIcon className='c' icon={faCircle} />  Events </p>
+                <p> Special  <FontAwesomeIcon className='c' icon={faCircle}/>   Organization <FontAwesomeIcon className='c' icon={faCircle} />  Events </p>
 
                 <p className='m'>Terms of Use  -  Privacy  Police</p>
 
-                <p className='n'> <FontAwesomeIcon icon={faCopyright} /> 2024 Clarity Money </p>
+                <p className='n'> <FontAwesomeIcon icon={faCopyright} /> 2024 Clarity Money Legacy</p>
             </div>
 
         </div>
