@@ -28,12 +28,13 @@
                 display: flex;
                 overflow-x: auto;
                 scroll-behavior: smooth;
+                gap: 30%;
 
                 .item {
 
-                    margin: 10px;
+                    margin: 0px;
                     padding: 10px;
-                    width: 280px;
+                    width: 70%;
                     flex: none;
 
                     .image img {
