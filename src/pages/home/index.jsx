@@ -1,9 +1,40 @@
 import './index.scss';
+import { useState, useEffect, useRef } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAnglesRight, faAnglesLeft } from '@fortawesome/free-solid-svg-icons';
 
 import Cabecalho from '../../components/cabecalho';
 import Footer from '../../components/footer';
 
 export default function Home() {
+
+  const [data, setData] = useState([]);
+  const carousel = useRef(null);
+
+  useEffect(() => {
+
+    fetch('http://localhost:3000/static/temas.json')
+      .then((response) => response.json())
+      .then(setData);
+
+  }, []);
+
+  if (!data || data.lenght == 0)
+  return null;
+
+  const handleLeftClick = (e) => {
+
+    e.preventDefault();
+    carousel.current.scrollLeft -= carousel.current.offsetWidth;
+
+  }
+
+  const handleRightClick = (e) => {
+
+    e.preventDefault();
+    carousel.current.scrollLeft += carousel.current.offsetWidth;
+
+  }
 
   return (
 
@@ -19,23 +50,40 @@ export default function Home() {
 
           <p>Há 15 anos no mercado de festas e eventos !</p>
 
-          <div className='carousel'>
+          <div className='carousel' ref={carousel}>
 
-            <div className='item'>
+            {data.map((item) => {
 
-              <div className='image'>
+              const { idTema, img, tema } = item;
 
-                <img src="/assets/images/soe2.webp" alt="" />
+              return (
 
-              </div>
+                <div className='item' key={idTema}>
 
-              <div className='info'>
+                  <div className='image'>
 
-                <span className='name'>Festas Infantis</span>
+                    <img src={img} alt="" />
 
-              </div>
+                  </div>
 
-            </div>
+                  <div className='info'>
+
+                    <span className='name'>{tema}</span>
+
+                  </div>
+
+                </div>
+
+              );
+
+            })}
+
+          </div>
+
+          <div className='buttons'>
+
+            <button onClick={handleLeftClick}><FontAwesomeIcon icon={faAnglesLeft} color='#fff' size='3x'/></button>
+            <button onClick={handleRightClick}><FontAwesomeIcon icon={faAnglesRight} color='#fff' size='3x'/></button>
 
           </div>
 
