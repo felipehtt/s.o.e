@@ -20,7 +20,7 @@ export default function Home() {
   }, []);
 
   if (!data || data.lenght == 0)
-  return null;
+    return null;
 
   const handleLeftClick = (e) => {
 
@@ -46,9 +46,13 @@ export default function Home() {
 
         <div className='container'>
 
-          <img className='img1' src="/assets/images/soe1.png" alt="" />
+          <div className='top'>
 
-          <p>Há 15 anos no mercado de festas e eventos !</p>
+            <img className='img1' src="/assets/images/soe1.png" alt="" />
+
+            <p>Há 15 anos no mercado de festas e eventos !</p>
+
+          </div>
 
           <div className='carousel' ref={carousel}>
 
@@ -82,8 +86,8 @@ export default function Home() {
 
           <div className='buttons'>
 
-            <button onClick={handleLeftClick}><FontAwesomeIcon icon={faAnglesLeft} color='#fff' size='3x'/></button>
-            <button onClick={handleRightClick}><FontAwesomeIcon icon={faAnglesRight} color='#fff' size='3x'/></button>
+            <button onClick={handleLeftClick}><FontAwesomeIcon icon={faAnglesLeft} color='#fff' size='3x' /></button>
+            <button onClick={handleRightClick}><FontAwesomeIcon icon={faAnglesRight} color='#fff' size='3x' /></button>
 
           </div>
 

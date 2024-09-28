@@ -4,36 +4,7 @@
         "idTema": 1,
         "img": "https://th.bing.com/th/id/OIP.e2L4oAqaiCuGoo-1AvkSdQHaE8?rs=1&pid=ImgDetMain",
         "tema": "Festas Infantis"
-    },
-    {
-        "idTema": 2,
-        "img": "https://salaobrasilimperial.com.br/wp-content/uploads/2020/06/01-53.jpg",
-        "tema": "Casamentos"
-    },
-    {
-        "idTema": 3,
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLkB1DGlnzE7zE-3PcIlX89h6poj-TffRkuQ&s",
-        "tema": "Aniversários"
-    },
-    {
-        "idTema": 4,
-        "img": "https://th.bing.com/th/id/OIP.e2L4oAqaiCuGoo-1AvkSdQHaE8?rs=1&pid=ImgDetMain",
-        "tema": "Festas de 15 anos"
-    },
-    {
-        "idTema": 5,
-        "img": "https://th.bing.com/th/id/OIP.e2L4oAqaiCuGoo-1AvkSdQHaE8?rs=1&pid=ImgDetMain",
-        "tema": "Festas Country"
-    },
-    {
-        "idTema": 6,
-        "img": "https://th.bing.com/th/id/OIP.e2L4oAqaiCuGoo-1AvkSdQHaE8?rs=1&pid=ImgDetMain",
-        "tema": "Festas Clássicas"
-    },
-    {
-        "idTema": 7,
-        "img": "https://th.bing.com/th/id/OIP.e2L4oAqaiCuGoo-1AvkSdQHaE8?rs=1&pid=ImgDetMain",
-        "tema": "Halloween"
     }
+    
 
 ]
