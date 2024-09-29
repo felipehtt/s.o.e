@@ -4,7 +4,16 @@
         "idTema": 1,
         "img": "https://th.bing.com/th/id/OIP.e2L4oAqaiCuGoo-1AvkSdQHaE8?rs=1&pid=ImgDetMain",
         "tema": "Festas Infantis"
+    },
+    {
+        "idTema": 2,
+        "img": "https://casarpontocom-inspiracoes.s3.sa-east-1.amazonaws.com/wp-content/uploads/2023/02/festa-de-casamento-Foto-Freepik-6.jpg",
+        "tema": "Casamentos"
+    },
+    {
+        "idTema": 3,
+        "img": "https://lh7-us.googleusercontent.com/7mf8WmPAFQsRVxxVOXwU4t86HaT-Xk3iucLBXn8K3vcB1-3cVd_M1F--WJZsTQMSHWMSipZNqAz4LRM8gGpavDDTLSpi1ukI0RbNijv0pq1lhuE9xB_NJmPG9WjHmvxxZpebrgFOQJlkl2lx_ZeZFVU",
+        "tema": "Tradicionais"
     }
-    
 
 ]
