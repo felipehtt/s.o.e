@@ -20,6 +20,8 @@ export default function Cabecalho(){
 
                 <Link className='links' to='/intencao'>Intenção</Link>
 
+                <Link className='links' to='/cadastro'>CADASTRO</Link>
+
             </div>
 
         </div>
