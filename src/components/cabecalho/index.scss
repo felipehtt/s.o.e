@@ -15,7 +15,7 @@
 
         display: flex;
         gap: 20%;
-        margin-left: 41%;
+        margin-left: 30%;
 
         .links {
             
@@ -32,6 +32,44 @@
             
         }
 
+        a{
+            text-decoration: none;
+            color: #ffffff;
+
+        }
+
+    }
+
+    .buts{
+
+        display: flex;
+        padding-left: 20%;
+
+        .butCadastro{
+
+            text-decoration: none;
+            color: #000;
+            text-align: right;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 15px;
+
+        }
+
+        .butCadastro:hover{
+
+            background: linear-gradient(0deg,#db4545,#db4545);
+            box-shadow: inset 0px 1px 0px 0px #d34a4a,
+            inset 0px -4px 0px 0px #db4545,
+            0px 0px 0px 4px #070303,
+            0px 0px 180px 0px #c26363;
+            transform: translateY(-2px);
+        
+            
+
+        }
+
+        
     }
 
 }
