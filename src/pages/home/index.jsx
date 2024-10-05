@@ -5,6 +5,7 @@ import { faAnglesRight, faAnglesLeft } from '@fortawesome/free-solid-svg-icons';
 
 import Cabecalho from '../../components/cabecalho';
 import Footer from '../../components/footer';
+import Slider from '../../components/Slider';
 
 export default function Home() {
 
@@ -48,7 +49,7 @@ export default function Home() {
 
           <div className='top'>
 
-            <img className='img1' src="/assets/images/soe1.png" alt="" />
+            <Slider />
 
             <p>Há 15 anos no mercado de festas e eventos !</p>
 

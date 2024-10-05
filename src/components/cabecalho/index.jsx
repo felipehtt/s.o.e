@@ -1,9 +1,9 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
 
-export default function Cabecalho(){
+export default function Cabecalho() {
 
-    return(
+    return (
 
         <div className='comp-cabecalho'>
 
@@ -11,8 +11,8 @@ export default function Cabecalho(){
             <img src="/assets/images/logo-soe.png" alt="" />
 
             <div className='nav'>
-                
-                <Link className='links' to='/' color='#db4545'>Home</Link>
+
+                <Link className='links' to='/' >Home</Link>
 
                 <Link className='links' to='/soe'>S.O.E</Link>
 
@@ -23,11 +23,7 @@ export default function Cabecalho(){
 
             </div>
 
-            <div className='buts'>
-
-                <Link className='butCadastro' to='/cadastro'>Login Adm</Link>
-
-            </div>
+            <button><Link className='but' to='/cadastro'>Login Adm</Link></button>
 
         </div>
 
