@@ -1,0 +1,143 @@
+$cor-fundo: #000000;
+$cor-fundo2: #020202;
+$cor-texto: #ED544C;
+$cor-bordas: #ED544C;
+
+.pagina-senha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background-color: $cor-fundo2;
+
+  .seta {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    color: #ED544C;
+  }
+
+  .seta:hover {
+    transition: 0.3s;
+    font-size: 26px;
+    color: #e46f69;
+  }
+
+  .meio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;   
+    background: $cor-fundo;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(105, 105, 105, 0.1);
+    padding: 20px;
+
+    img {
+      width: 100%;
+      max-width: 200px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.2rem;
+      color: $cor-texto;
+      margin-bottom: 10px;
+    }
+
+    .inputs {
+      width: 90%;
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin: 8px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+
+      input:focus {
+        border-color: $cor-texto;
+        outline: none;
+      }
+
+      .alterar {
+        text-decoration: none;
+        color: $cor-texto;
+        margin-left: 80px;
+      }
+
+      .alterar:hover {
+        transition: 0.3s;
+        font-weight: 600;
+        color: #e46f69;
+      }
+
+      button {
+        margin-top: 15px;
+        margin-left: 64px;
+        width: 60%;
+        padding: 8px;
+        background-color: #fff;
+        color: #000;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+
+      }
+
+      button:hover {
+        transition: background-color 0.3s;
+        background-color: $cor-texto;
+      }
+
+
+      p {
+        margin-top: 12px;
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// Responsividade
+@media (max-width: 768px) {
+  .pagina-senha {
+    padding: 10px;
+
+    .seta {
+      font-size: 1.2rem; // tamanho do ícone
+    }
+
+    .meio {
+      padding: 15px;
+
+      h1 {
+        font-size: 1.3rem; // tamanho da fonte
+      }
+
+      .inputs {
+
+        input,
+        button {
+          padding: 10px; // padding para telas menores
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .pagina-senha {
+      .meio {
+        h1 {
+          font-size: 1.1rem; // telas muito pequenas
+        }
+      }
+    }
+  }
+}

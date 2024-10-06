@@ -4,7 +4,8 @@ import Home from './pages/home';
 import Soe from './pages/soe';
 import Festas from './pages/festas';
 import Intencao from './pages/intencao';
-import Cadastro from './pages/cadastro';
+import Login from './pages/login';
+import Senha from './pages/senha';
 
 
 export default function Navegacao() {
@@ -17,7 +18,8 @@ export default function Navegacao() {
                 <Route path='/soe' element={<Soe />} />
                 <Route path='/festas' element={<Festas />} />
                 <Route path='/intencao' element={<Intencao />} />
-                <Route path='/cadastro' element={<Cadastro />} />
+                <Route path='/login' element={<Login />} />
+                <Route path='/senha' element={<Senha />} />
             </Routes>
         </BrowserRouter>
 

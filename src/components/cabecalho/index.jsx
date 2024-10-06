@@ -23,7 +23,7 @@ export default function Cabecalho() {
 
             </div>
 
-            <button><Link className='but' to='/cadastro'>Login Adm</Link></button>
+            <button><Link className='but' to='/login'>Login Adm</Link></button>
 
         </div>
 
