@@ -1,0 +1,91 @@
+.comp-carousel {
+
+    max-width: 75vw;
+
+    .carousel {
+
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        margin-left: 0.1%;
+        width: 100%;
+        position: relative;
+
+        .item {
+
+            margin: 10px;
+            padding: 0px;
+            width: 480px;
+            flex: none;
+            border-radius: 10px;
+
+            .image img {
+
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 8px;
+
+            }
+
+            .info {
+
+                height: 140px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                span {
+
+                    display: block;
+                    text-align: center;
+                    padding: 5px;
+
+                }
+
+                .name {
+
+                    font-size: 1.2rem;
+                    font: 20px "Poppins";
+                    margin: 10px;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .buttons {
+
+        width: 100%;
+        text-align: center;
+
+        button {
+
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            margin: 2%;
+
+        }
+
+        .red:hover{
+
+            color: #db4545;
+            transition: all 1s;
+        }
+
+    }
+}
+
+.comp-carousel {
+
+    .carousel::-webkit-scrollbar {
+
+        display: none;
+
+    }
+
+}
