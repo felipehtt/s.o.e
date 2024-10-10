@@ -6,6 +6,10 @@ import Festas from './pages/festas';
 import Intencao from './pages/intencao';
 import Login from './pages/login';
 import Senha from './pages/senha';
+import Casamento from './pages/casamento';
+import Adole from './pages/adolescente/indes';
+import Infantil from './pages/infantil';
+import NaoEncontrado from './pages/naoencontrado';
 
 
 export default function Navegacao() {
@@ -20,6 +24,11 @@ export default function Navegacao() {
                 <Route path='/intencao' element={<Intencao />} />
                 <Route path='/login' element={<Login />} />
                 <Route path='/senha' element={<Senha />} />
+                <Route path='/casamento' element={<Casamento />} />
+                <Route path='/adolescente' element={<Adole />} />
+                <Route path='/infantil' element={<Infantil />} />
+
+                <Route path='/*' element={<NaoEncontrado />} />
             </Routes>
         </BrowserRouter>
 
