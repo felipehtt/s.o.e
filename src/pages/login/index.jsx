@@ -22,7 +22,6 @@ export default function Login() {
 
                     <input type="password" placeholder='Senha:' />
 
-                    <Link className='alterar' to='/senha'>Esqueceu a senha?</Link>
 
                     <button>
                         Enviar

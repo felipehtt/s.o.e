@@ -2,6 +2,7 @@ import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle, faCopyright } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faTiktok, faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
 
@@ -12,10 +13,10 @@ export default function Footer() {
             <div className='nav'>
 
                 <section>
+                <Link> <FontAwesomeIcon icon={faInstagram} size='2x'/> </Link>
+                <Link> <FontAwesomeIcon icon={faFacebookF} size='2x'/> </Link>
+                <Link> <FontAwesomeIcon icon={faTiktok} size='2x'/> </Link>
 
-                    <FontAwesomeIcon icon={faInstagram} size='2x'/>
-                    <FontAwesomeIcon icon={faTiktok} size='2x'/>
-                    <FontAwesomeIcon icon={faFacebookF} size='2x'/>
 
                 </section>
 
@@ -31,4 +32,6 @@ export default function Footer() {
     );
 
 }
+
+
 
