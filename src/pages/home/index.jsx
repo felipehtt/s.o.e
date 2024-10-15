@@ -15,8 +15,6 @@ export default function Home() {
 
       <main>
 
-        <div className='container'>
-
           <div className='top'>
 
             <Slider />
@@ -24,10 +22,14 @@ export default function Home() {
             <p>Há 15 anos no mercado de festas e eventos !</p>
 
           </div>
+          
+          <div className='images'> 
 
-          <Carrossel/>
+              <img src="https://th.bing.com/th/id/OIP.e2L4oAqaiCuGoo-1AvkSdQHaE8?rs=1&pid=ImgDetMain" alt="" />
+              <img src="https://th.bing.com/th/id/OIP.e2L4oAqaiCuGoo-1AvkSdQHaE8?rs=1&pid=ImgDetMain" alt="" />
+              <img src="https://th.bing.com/th/id/OIP.e2L4oAqaiCuGoo-1AvkSdQHaE8?rs=1&pid=ImgDetMain" alt="" />
 
-        </div>
+          </div>
 
       </main>
 
