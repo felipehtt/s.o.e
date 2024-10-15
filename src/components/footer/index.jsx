@@ -13,10 +13,10 @@ export default function Footer() {
             <div className='nav'>
 
                 <section>
-                <Link> <FontAwesomeIcon icon={faInstagram} size='2x'/> </Link>
-                <Link> <FontAwesomeIcon icon={faFacebookF} size='2x'/> </Link>
-                <Link> <FontAwesomeIcon icon={faTiktok} size='2x'/> </Link>
 
+                    <Link> <FontAwesomeIcon icon={faInstagram} size='2x'/> </Link>
+                    <Link> <FontAwesomeIcon icon={faFacebookF} size='2x'/> </Link>
+                    <Link> <FontAwesomeIcon icon={faTiktok} size='2x'/> </Link>
 
                 </section>
 
