@@ -11,6 +11,10 @@ export default function Soe(){
 
             <Cabecalho/>
 
+                <div className=''>
+            
+                </div>
+
             <Footer />
 
         </div>

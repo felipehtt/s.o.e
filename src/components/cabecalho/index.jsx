@@ -7,7 +7,6 @@ export default function Cabecalho() {
 
         <div className='comp-cabecalho'>
 
-
             <img src="/assets/images/logo-soe.png" alt="" />
 
             <div className='nav'>
@@ -22,8 +21,6 @@ export default function Cabecalho() {
 
 
             </div>
-
-            <button><Link className='but' to='/login'>Login Adm</Link></button>
 
         </div>
 
