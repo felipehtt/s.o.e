@@ -24,7 +24,7 @@
 
         }
 
-        .images{
+        .images {
 
             display: flex;
             flex-direction: row;
@@ -32,18 +32,18 @@
             gap: 50px;
             overflow-x: auto;
 
-            .conj{
+            .conj {
 
                 display: flex;
                 flex-direction: column;
                 text-align: center;
 
-                p{
+                p {
                     padding: 5%;
                 }
             }
 
-            img{
+            img {
 
                 border-radius: 12px;
                 width: 370px;
@@ -51,11 +51,11 @@
 
         }
 
-        .bottom{
+        .bottom {
 
             margin-bottom: 10%;
 
-            p{
+            p {
                 text-align: center;
                 padding-top: 4%;
             }
@@ -63,4 +63,10 @@
 
     }
 
+}
+
+
+@media(max-width: 1024px) {
+
+    .pagina-home {}
 }
