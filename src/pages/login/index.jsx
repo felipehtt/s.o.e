@@ -18,7 +18,7 @@ export default function Login() {
 
                 <div className='inputs'>
 
-                    <input type="text" placeholder='E-mail:' />
+                    <input type="text" placeholder='Nome:' />
 
                     <input type="password" placeholder='Senha:' />
 

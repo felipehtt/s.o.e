@@ -13,6 +13,10 @@ export default function Dashboard() {
 
             <h1>Dashboard</h1>
 
+            <a href="">Cadastrar Evento</a>
+
+            <a href="">Consultar</a>
+
             <Footer />
 
         </div>
