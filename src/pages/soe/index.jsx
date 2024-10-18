@@ -12,20 +12,30 @@ export default function Soe() {
             <Cabecalho />
 
             <h1>S.O.E</h1>
-            
-            <div className='bloco1'>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi saepe eum corporis id laboriosam at enim omnis dignissimos, atque velit eligendi deleniti nulla illo vitae delectus harum labore. Praesentium, velit.</p>
+            <div className='blocos'>
+                <div className='bloco1'>
 
-                <img src="" alt="" />
-            </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi saepe eum corporis id laboriosam at enim omnis dignissimos, atque velit eligendi deleniti nulla illo vitae delectus harum labore. Praesentium, velit.</p>
 
-            <div className='bloco1'>
+                    <img src="/public/assets/images/equipe1.jpg" alt="Equipe" />
+                </div>
 
-                <img src="" alt="" />
+                <div className='bloco2'>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi saepe eum corporis id laboriosam at enim omnis dignissimos, atque velit eligendi deleniti nulla illo vitae delectus harum labore. Praesentium, velit.</p>
-                
+                    <img src="/public/assets/images/equipe1.jpg" alt="Equipe" />
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi saepe eum corporis id laboriosam at enim omnis dignissimos, atque velit eligendi deleniti nulla illo vitae delectus harum labore. Praesentium, velit.</p>
+
+                </div>
+
+                <div className='bloco3'>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi saepe eum corporis id laboriosam at enim omnis dignissimos, atque velit eligendi deleniti nulla illo vitae delectus harum labore. Praesentium, velit.</p>
+
+                    <img src="/public/assets/images/equipe1.jpg" alt="Equipe" />
+
+                </div>
             </div>
 
             <Footer />

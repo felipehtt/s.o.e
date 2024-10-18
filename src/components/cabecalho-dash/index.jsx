@@ -1,7 +1,7 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
 
-export default function Cabecalho() {
+export default function CabecalhoDash() {
 
     return (
 
@@ -19,7 +19,7 @@ export default function Cabecalho() {
 
                 <Link className='links' to='/intencao'>Intenção</Link>
 
-                
+                <Link className='links' to='/dashboard'>Dashboard</Link>
 
             </div>
 

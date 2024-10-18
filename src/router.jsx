@@ -9,6 +9,7 @@ import Casamento from './pages/casamento';
 import Adole from './pages/adolescente/indes';
 import Infantil from './pages/infantil';
 import NaoEncontrado from './pages/naoencontrado';
+import Dashboard from './pages/dashboard';
 
 
 export default function Navegacao() {
@@ -21,6 +22,7 @@ export default function Navegacao() {
                 <Route path='/soe' element={<Soe />} />
                 <Route path='/festas' element={<Festas />} />
                 <Route path='/intencao' element={<Intencao />} />
+                <Route path='/dashboard' element={<Dashboard />} />
                 <Route path='/login' element={<Login />} />
                 <Route path='/casamento' element={<Casamento />} />
                 <Route path='/adolescente' element={<Adole />} />
