@@ -1,9 +1,9 @@
 import './index.scss';
 
-import Cabecalho from '../../components/cabecalho';
-import Footer from '../../components/footer';
+import Cabecalho from '../../../components/cabecalho';
+import Footer from '../../../components/footer';
 
-export default function Adole() {
+export default function Adolescente() {
 
     return (
 

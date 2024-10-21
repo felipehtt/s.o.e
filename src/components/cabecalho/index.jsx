@@ -11,15 +11,13 @@ export default function Cabecalho() {
 
             <div className='nav'>
 
-                <Link className='links' to='/' >Home</Link>
+                <Link className='links' to='/'>Home</Link>
 
                 <Link className='links' to='/soe'>S.O.E</Link>
 
                 <Link className='links' to='/festas'>Festas</Link>
 
                 <Link className='links' to='/intencao'>Intenção</Link>
-
-                
 
             </div>
 
