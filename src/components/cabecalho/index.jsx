@@ -16,7 +16,7 @@ export default function Cabecalho() {
                 <Link className='links' to='/soe'>S.O.E</Link>
 
                 <Link className='links' to='/festas'>Festas</Link>
-
+                
                 <Link className='links' to='/intencao'>Intenção</Link>
 
             </div>

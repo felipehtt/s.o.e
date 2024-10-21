@@ -11,7 +11,7 @@ export default function CabecalhoDash() {
 
             <div className='nav'>
 
-                <Link className='links' to='/' >Home</Link>
+                <Link className='links' to='/'>Home</Link>
 
                 <Link className='links' to='/soe'>S.O.E</Link>
 
