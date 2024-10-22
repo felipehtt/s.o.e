@@ -1,76 +1,157 @@
-.pagina-intencao{
+.pagina-intencao {
 
-    .top{
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 5%;
-
-        h1{
-            font: 600 18px "Poppins";
-        }
-
+    .title {
+        font: 600 18px "Poppins";
+        margin-top: 3%;
+        margin-bottom: 4%;
+        margin-left: 35%;
     }
 
-    .form{
+    .conteudo {
 
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        margin-top: 4%;
+        gap: 70px;
+        padding: 60px;
+        background-color: #161515;
+        border-radius: 20px;
+        margin: 70px;
 
-        >div{
+        .top {
 
-            input{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 76vh;
+            max-width: 400px;
+            background-color: #161515;
+            border-radius: 10px;
+            margin-top: 12.7%;
+            margin-left: 9%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.219), 0 6px 20px rgba(0, 0, 0, 0.219);
 
-                width: 500px;
+            h1 {
+                font: 600 18px "Poppins";
+                padding-left: 15px;
+            }
+
+            p {
+                font: 400 14px "Poppins";
+                padding-left: 30px;
+                margin-top: 8%;
+                padding-right: 30px;
+                line-height: 26px;
+            }
+
+            .but {
+                margin-top: 10%;
+    
+                button {
+    
+                    background-color: #fff;
+                    color: #000000;
+                    border-style: none;
+                    border-radius: 8px;
+                    padding: 7px;
+                    width: 110px;
+                    font: 500 13px 'Poppins';
+    
+                }
+    
+                button:hover {
+    
+                    background-color: #ED544C;
+                    transition: all 0.5s;
+    
+                }
+    
+            }
+
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            padding-left: 7.5%;
+            padding-right: 7.5%;
+            padding-top: 2.3%;
+            padding-bottom: 2.3%;
+            background-color: #ffffff;
+            border-radius: 16px;
+            max-width: 450px;
+            margin: auto;
+
+            >div {
+                display: flex;
+                flex-direction: column;
+                width: 150%;
+
+                label {
+                    font-size: 0.9rem;
+                    font-family: "Poppins", sans-serif;
+                    color: #2c3e50;
+                    margin-bottom: 8px;
+                }
+
+                input {
+                    width: 100%;
+                    border: 2px solid #2c3e50;
+                    border-radius: 8px;
+                    padding: 8px;
+                    font-size: 1rem;
+                    font-family: "Poppins";
+                    color: #2c3e50;
+                    background-color: #f7f9fc;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.151);
+                    transition: all 0.3s ease-in-out;
+
+                    &:focus {
+                        border-color: #ED544C;
+                        outline: none;
+                        box-shadow: 0 6px 18px rgba(231, 77, 60, 0.267);
+                    }
+
+                    &::placeholder {
+                        font: 400 0.7rem #7f8c8d;
+                    }
+                }
+            }
+        }
+
+        .but {
+
+            display: flex;
+            align-items: center;
+            margin-top: 3%;
+            
+
+            button {
+
+                background-color: #161515;
+                color: #fff;
                 border-style: none;
-                outline: 0;
                 border-radius: 8px;
                 padding: 7px;
-                
+                width: 130px;
+                font: 500 15px 'Poppins';
+
             }
 
-            input::placeholder{
+            button:hover {
 
-                color: #000000;
-                font: 600 15px "Poppins";
+                background-color: #ED544C;
+                transition: all 0.5s;
+
             }
 
         }
-
     }
 
-    .but{
 
-        display: flex;
-        align-items: center;
-        margin-top: 3%;
-        margin-left: 45%;
-
-        button{
-    
-            border-style: none;
-            border-radius: 8px;
-            padding: 7px;
-            width: 130px;
-            font: 500 15px 'Poppins';      
-    
-        }
-
-        button:hover{
-
-            background-color: #db4545;
-            transition: all 0.5s;
-            
-        }
-
-    }
-
-    .cardW{
+    .cardW {
 
         display: flex;
         align-items: center;
@@ -84,17 +165,17 @@
         margin-top: 6%;
         margin-left: 33%;
 
-        p{
+        p {
             text-align: center;
             margin-bottom: 4%;
         }
 
-        a{
+        a {
             margin-right: 3%;
         }
 
         margin-bottom: 10%;
-    
+
     }
 
 }

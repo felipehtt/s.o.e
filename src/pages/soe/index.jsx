@@ -18,12 +18,12 @@ export default function Soe() {
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi saepe eum corporis id laboriosam at enim omnis dignissimos, atque velit eligendi deleniti nulla illo vitae delectus harum labore. Praesentium, velit.</p>
 
-                    <img src="/public/assets/images/equipe1.jpg" alt="Equipe" />
+                    <img src="./public/assets/images/equipe1.jpg" alt="Equipe" />
                 </div>
 
                 <div className='bloco2'>
 
-                    <img src="/public/assets/images/equipe1.jpg" alt="Equipe" />
+                    <img src="./public/assets/images/equipe1.jpg" alt="Equipe" />
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi saepe eum corporis id laboriosam at enim omnis dignissimos, atque velit eligendi deleniti nulla illo vitae delectus harum labore. Praesentium, velit.</p>
 
@@ -33,7 +33,7 @@ export default function Soe() {
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi saepe eum corporis id laboriosam at enim omnis dignissimos, atque velit eligendi deleniti nulla illo vitae delectus harum labore. Praesentium, velit.</p>
 
-                    <img src="/public/assets/images/equipe1.jpg" alt="Equipe" />
+                    <img src="./public/assets/images/equipe1.jpg" alt="Equipe" />
 
                 </div>
             </div>

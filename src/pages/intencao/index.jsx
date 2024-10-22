@@ -46,45 +46,73 @@ export default function Intencao() {
 
             <Cabecalho />
 
-            <div className='top'>
-                <h1>Preencha esse formulário para sua intenção.</h1>
+            <h1 className='title'>Preencha esse formulário para sua intenção.</h1>
+
+            <div className='conteudo'>
+
+                <div className='top'>
+
+                    <h1>Intenção?</h1>
+
+                    <p>Este formulário funciona como um interessse em contratar o serviço, sem compromisso nenhum você pode enviá-lo. Após enviar, em breve entraremos em contato com você por Whatsapp para formalizar seu interesse; verificar a disponibilidade do serviço interessado, verificar a localidade e seu espaço, acertar preços, entre outras burocracias.</p>
+                    <p>
+                        Se estiver em dúvida sobre as opções de festas que oferecemos, Clique Abaixo
+                    </p>
+
+                    <div className='but'>
+
+                        <button> Ver Festas </button>
+
+                    </div>
+                </div>
+
+                <div className='form'>
+                    <div>
+                        <label htmlFor="nome">Nome Completo</label>
+                        <input type='text' placeholder='Felipe Soares' value={nome} onChange={e => setNome(e.target.value)} />
+                    </div>
+                    <div>
+                        <label htmlFor="telefone">Telefone</label>
+                        <input type='text' placeholder='(xx)xxxxx-xxxx' value={telefone} onChange={e => setTelefone(e.target.value)} />
+                    </div>
+                    <div>
+                        <label htmlFor="cep">CEP</label>
+                        <input type='text' placeholder='xxxxx-xxx' value={cep} onChange={e => setCep(e.target.value)} />
+                    </div>
+                    <div>
+                        <label htmlFor="data festa">Data da Festa</label>
+                        <input type='date' value={dataFesta} onChange={e => setDataFesta(e.target.value)} />
+                    </div>
+                    <div>
+                        <label htmlFor="tipo">Tipo da Festa</label>
+                        <input type='text' placeholder='Infantil' value={tipoFesta} onChange={e => setTipoFesta(e.target.value)} />
+                    </div>
+                    <div>
+                        <label htmlFor="tema">Tema da Festa</label>
+                        <input type='text' placeholder='Heróis' value={temaFesta} onChange={e => setTemaFesta(e.target.value)} />
+                    </div>
+                    <div>
+                        <label htmlFor="data intenção">Data da Intenção</label>
+                        <input type='date' value={dataIntencao} onChange={e => setDataIntencao(e.target.value)} />
+                    </div>
+
+                    <div className='but'>
+
+                        <button onClick={salvarIntencao}> ENVIAR </button>
+
+                    </div>
+                </div>
+
+
+
             </div>
 
-            <div className='form'>
-                <div>
-                    <input type='text' placeholder='Nome Completo:' value={nome} onChange={e => setNome(e.target.value)} />
-                </div>
-                <div>
-                    <input type='text' placeholder='Telefone:' value={telefone} onChange={e => setTelefone(e.target.value)} />
-                </div>
-                <div>
-                    <input type='text' placeholder='Cep:' value={cep} onChange={e => setCep(e.target.value)} />
-                </div>
-                <div>
-                    <input type='date' placeholder='Data da Festa:' value={dataFesta} onChange={e => setDataFesta(e.target.value)} />
-                </div>
-                <div>
-                    <input type='text' placeholder='Tipo da Festa:' value={tipoFesta} onChange={e => setTipoFesta(e.target.value)} />
-                </div>
-                <div>
-                    <input type='text' placeholder='Tema da Festa:' value={temaFesta} onChange={e => setTemaFesta(e.target.value)} />
-                </div>
-                <div>
-                    <input type='date' placeholder='Data da Intenção:' value={dataIntencao} onChange={e => setDataIntencao(e.target.value)} />
-                </div>
 
-            </div>
-
-            <div className='but'>
-
-                <button onClick={salvarIntencao}> ENVIAR </button>
-
-            </div>
 
             <div className='cardW'>
 
                 <p> Após enviar, em breve entraremos em contato com você por Whatsapp:</p>
-                <a href=""><FontAwesomeIcon icon={faWhatsapp} size='3x'color='green'/></a>
+                <a href=""><FontAwesomeIcon icon={faWhatsapp} size='3x' color='green' /></a>
 
             </div>
 
