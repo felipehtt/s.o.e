@@ -19,7 +19,7 @@ export default function Home() {
 
             <Slider />
 
-            <p>Há 15 anos no mercado de festas e eventos !</p>
+            <p>O melhor da festa é esperar por ela. Há 15 anos no mercado de festas e eventos !</p>
 
           </div>
           
@@ -35,14 +35,14 @@ export default function Home() {
             <div className='conj'>
 
               <img src="https://casarpontocom-inspiracoes.s3.sa-east-1.amazonaws.com/wp-content/uploads/2023/02/festa-de-casamento-Foto-Freepik-6.jpg" alt="" />
-              <p>Casamentos</p>
+              <p>Festas Jovens</p>
 
             </div>
 
             <div className='conj'>
 
               <img src="https://lh7-us.googleusercontent.com/7mf8WmPAFQsRVxxVOXwU4t86HaT-Xk3iucLBXn8K3vcB1-3cVd_M1F--WJZsTQMSHWMSipZNqAz4LRM8gGpavDDTLSpi1ukI0RbNijv0pq1lhuE9xB_NJmPG9WjHmvxxZpebrgFOQJlkl2lx_ZeZFVU" alt="" />
-              <p>Tradicionais</p>
+              <p>Festas Adultos</p>
 
             </div>
 
