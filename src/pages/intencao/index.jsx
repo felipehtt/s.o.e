@@ -3,10 +3,10 @@ import './index.scss';
 import Cabecalho from '../../components/cabecalho';
 import Footer from '../../components/footer';
 import axios from 'axios';
-import moment from 'moment';
+// import moment from 'moment';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import Swal from 'sweetalert2';
+// import Swal from 'sweetalert2';
 
 import { useState } from 'react';
 
@@ -21,21 +21,21 @@ export default function Intencao() {
     const [temaFesta, setTemaFesta] = useState('');
     const [dataIntencao, setDataIntencao] = useState('');
 
-    const handleAlert = () => {
-        Swal.fire({
-            title: 'Intenção feita!',
-            color: "#db4545",
-            iconColor: "#db4545",
-            background: "#000",
-            text: 'Sua intenção foi enviada!',
-            icon: 'success',
-            confirmButtonText: 'Ok',
-            confirmButtonColor: "#db4545",
-            customClass:{
-                confirmButton: 'custom-confirm-button',
-            },
-        });
-    };
+    // const handleAlert = () => {
+    //     Swal.fire({
+    //         title: 'Intenção feita!',
+    //         color: "#db4545",
+    //         iconColor: "#db4545",
+    //         background: "#000",
+    //         text: 'Sua intenção foi enviada!',
+    //         icon: 'success',
+    //         confirmButtonText: 'Ok',
+    //         confirmButtonColor: "#db4545",
+    //         customClass:{
+    //             confirmButton: 'custom-confirm-button',
+    //         },
+    //     });
+    // };
 
     async function salvarIntencao() {
 
@@ -54,7 +54,7 @@ export default function Intencao() {
 
         let dados = resp.data;
 
-        handleAlert();
+        // handleAlert();
 
     }
 
