@@ -2,15 +2,20 @@
 
     background: linear-gradient(to bottom, #000000 10%, #331211 50%, #000000 70%);
 
-    h1 {
+    .tit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-top: 2%;
-        
+
+        color: #fff;
+        font: 600 11px "Poppins";
     }
 
     .dash-container {
         display: flex;
         background-color: #161515;
-        margin: 5% 13px;
+        margin: 3% 13px;
         border-radius: 10px;
 
         .sidebar {
@@ -19,16 +24,12 @@
             color: #fff;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             padding: 25px;
             box-shadow: 3px 0 5px rgba(0, 0, 0, 0.2);
+
             border-radius: 10px;
             border-top-right-radius: 0px;
             border-bottom-right-radius: 0px;
-
-            .logo {
-                margin-bottom: 30px;
-            }
 
             .user-profile {
                 display: flex;
@@ -79,7 +80,7 @@
             .but {
                 display: flex;
                 align-items: center;
-                margin-top: 30%;
+                margin: 30% 30% 30% 0%;
 
                 button {
 
@@ -111,6 +112,7 @@
             color: #fff;
             padding: 30px;
             border-radius: 10px;
+            
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -118,21 +120,21 @@
             text-align: center;
 
             h1 {
-                font-size: 36px;
-                margin-bottom: 20px;
+                font-size: 30px;
+                margin-bottom: 1%;
                 position: relative;
 
-                &::after {
-                    content: '';
-                    position: absolute;
-                    bottom: -10px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    width: 60px;
-                    height: 4px;
-                    background-color: #db4545;
-                    border-radius: 2px;
-                }
+                // &::after {
+                //     content: '';
+                //     position: absolute;
+                //     bottom: -10px;
+                //     left: 50%;
+                //     transform: translateX(-50%);
+                //     width: 60px;
+                //     height: 4px;
+                //     background-color: #db4545;
+                //     border-radius: 2px;
+                // }
             }
 
             p {

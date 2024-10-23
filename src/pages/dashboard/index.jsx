@@ -15,11 +15,13 @@ export default function Dashboard() {
 
             <CabecalhoDash />
 
-            <h1>Seja bem-vindo ao Dashboard do Administrador!</h1>
-            
-            <div className="dash-container">
+            <div className='tit'>
 
+                <h1>Seja bem-vindo(a) ao Dashboard do Administrador!</h1>
                 
+            </div>
+
+            <div className="dash-container">
 
                 <div className="sidebar">
 
