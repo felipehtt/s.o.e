@@ -130,8 +130,8 @@ export default function Intencao() {
 
             <div className='cardW'>
 
-                <p> Após enviar, em breve entraremos em contato com você por Whatsapp:</p>
-                <a href=""><FontAwesomeIcon icon={faWhatsapp} size='3x' color='green' /></a>
+                <p> Em breve entraremos em contato com você por Whatsapp. Se tiver dúvidas pergunte:</p>
+                <a href="https://api.whatsapp.com/send/?phone=5511962652061&type=phone_number&app_absent=0" target="_blank"><FontAwesomeIcon icon={faWhatsapp} size='3x' color='green' /></a>
 
             </div>
 

@@ -54,14 +54,15 @@
                     padding: 7px;
                     width: 110px;
                     font: 500 13px 'Poppins';
-                    border: 1px solid #ED544C;
                     cursor: pointer;
+                    transition: all 0.5s;
     
                 }
     
                 button:hover {
-    
-                    background-color: #ED544C;
+                    
+                    transform: scale(1.07);
+                    background-color: #db4545;
                     transition: all 0.5s;
     
                 }
@@ -102,7 +103,7 @@
                     width: 100%;
                     border: 1px solid #252b30;
                     border-radius: 8px;
-                    padding: 6px;
+                    padding: 8px;
                     font-size: 1rem;
                     font-family: "Poppins";
                     background-color: #f7f9fc;
@@ -110,7 +111,7 @@
                     transition: all 0.3s;
 
                     &:focus {
-                        border-color: #ED544C;
+                        border-color: #db4545;
                         outline: none;
                         box-shadow: 0 6px 14px rgba(231, 77, 60, 0.205);
                     }
@@ -138,14 +139,15 @@
                 padding: 7px;
                 width: 130px;
                 font: 500 15px 'Poppins';
-                border: 1px solid #ED544C;
                 cursor: pointer;
+                transition: all 0.5s;
 
             }
 
             button:hover {
 
-                background-color: #ED544C;
+                background-color: #db4545;
+                transform: scale(1.07);
                 transition: all 0.5s;
 
             }
