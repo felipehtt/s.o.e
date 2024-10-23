@@ -1,7 +1,9 @@
 import './index.scss';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Cabecalho() {
+
+    const location = useLocation();
 
     return (
 
@@ -11,13 +13,13 @@ export default function Cabecalho() {
 
             <div className='nav'>
 
-                <Link className='links' to='/'>Home</Link>
+                <Link to='/' className={location.pathname === '/' ? 'active' : 'links'}>Home</Link>
 
-                <Link className='links' to='/soe'>S.O.E</Link>
+                <Link to='/soe' className={location.pathname === '/soe' ? 'active' : 'links'}>S.O.E</Link>
 
-                <Link className='links' to='/festas'>Festas</Link>
+                <Link to='/festas' className={location.pathname === '/festas' ? 'active' : 'links'}>Festas</Link>
                 
-                <Link className='links' to='/intencao'>Intenção</Link>
+                <Link to='/intencao' className={location.pathname === '/intencao' ? 'active' : 'links'}>Intenção</Link>
 
             </div>
 

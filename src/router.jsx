@@ -5,8 +5,8 @@ import Soe from './pages/soe';
 import Festas from './pages/festas';
 import Intencao from './pages/intencao';
 import Login from './pages/login';
-import Adolescente from './pages/festas/adolescente';
-import Casamento from './pages/festas/casamento';
+import Adulto from './pages/festas/adulto';
+import Jovens from './pages/festas/jovens';
 import Infantil from './pages/festas/infantil';
 import NaoEncontrado from './pages/naoencontrado';
 import Dashboard from './pages/dashboard';
@@ -24,8 +24,8 @@ export default function Navegacao() {
                 <Route path='/intencao' element={<Intencao />} />
                 <Route path='/dashboard' element={<Dashboard />} />
                 <Route path='/login' element={<Login />} />
-                <Route path='/festas/adolescente' element={<Adolescente />} />
-                <Route path='/festas/casamento' element={<Casamento />} />
+                <Route path='/festas/jovens' element={<Jovens />} />
+                <Route path='/festas/adulto' element={<Adulto />} />
                 <Route path='/festas/infantil' element={<Infantil />} />
 
                 <Route path='/*' element={<NaoEncontrado />} />

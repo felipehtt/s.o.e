@@ -51,7 +51,7 @@ export default function Home() {
           <div className='bottom'>
 
             <Sld2 />
-            <p>Aproveite com seus amigos e familiares...</p>
+            <p className='bt'>Aproveite com seus amigos e familiares...</p>
 
           </div>
 

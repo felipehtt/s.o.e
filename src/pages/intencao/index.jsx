@@ -1,4 +1,5 @@
 import './index.scss';
+import { Link } from 'react-router-dom';
 
 import Cabecalho from '../../components/cabecalho';
 import Footer from '../../components/footer';
@@ -79,7 +80,7 @@ export default function Intencao() {
 
                     <div className='but'>
 
-                        <button> Ver Festas </button>
+                       <Link to='/festas'> <button> Ver Festas </button> </Link> 
 
                     </div>
                 </div>
