@@ -1,7 +1,145 @@
 .pagina-dashboard {
 
-    a {
-        text-decoration: none;
-        color: #fff;
+    background: linear-gradient(to bottom, #000000 10%, #331211 50%, #000000 70%);
+
+    h1 {
+        margin-top: 2%;
+        
     }
+
+    .dash-container {
+        display: flex;
+        background-color: #161515;
+        margin: 5% 13px;
+        border-radius: 10px;
+
+        .sidebar {
+            width: 19.5%;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 25px;
+            box-shadow: 3px 0 5px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+
+            .logo {
+                margin-bottom: 30px;
+            }
+
+            .user-profile {
+                display: flex;
+                align-items: center;
+                margin: 10% 0;
+
+                img {
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+
+                .username {
+                    font-weight: bold;
+                    margin: 0;
+                }
+
+                .user-role {
+                    font-size: 12px;
+                    color: #db4545;
+                }
+            }
+
+            .nav-list {
+                list-style-type: none;
+                padding: 0px;
+                width: 100%;
+
+                .nav-item {
+                    width: 100%;
+                    padding: 15px 20px;
+                    text-align: left;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    margin: 10px 0px;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        background-color: #db4545;
+                        transform: translateX(5px);
+                    }
+
+                    &.active {
+                        background-color: #db4545;
+                    }
+                }
+            }
+
+            .but {
+                display: flex;
+                align-items: center;
+                margin-top: 30%;
+
+                button {
+
+                    background-color: transparent;
+                    color: #fff;
+                    border-style: none;
+                    border-radius: 8px;
+                    padding: 7px;
+                    width: 110px;
+                    font: 500 13px 'Poppins';
+                    cursor: pointer;
+
+                }
+
+                button:hover {
+
+                    background-color: #ED544C;
+                    transition: all 0.5s;
+
+                }
+
+            }
+
+        }
+
+        .dashboard-content {
+            flex-grow: 1;
+            background-color: #161515;
+            color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            h1 {
+                font-size: 36px;
+                margin-bottom: 20px;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 60px;
+                    height: 4px;
+                    background-color: #db4545;
+                    border-radius: 2px;
+                }
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.5;
+            }
+        }
+    }
+
 }
