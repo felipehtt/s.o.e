@@ -10,6 +10,7 @@ export default function Infantil() {
         <div className='pagina-infantil pagina'>
 
             <Cabecalho />
+            
 
             <Footer />
 
