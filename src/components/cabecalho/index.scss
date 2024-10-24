@@ -18,23 +18,23 @@
         gap: 20%;
         margin-left: 45%;
 
-        .links{
-            
+        .links {
+
             text-decoration: none;
             color: #fff;
             font: 500 16px 'Poppins';
 
         }
 
-        
-        .links:hover{
+
+        .links:hover {
 
             color: #db4545;
             transition: 701ms;
-            
+
         }
 
-        .active{
+        .active {
 
             color: #db4545;
             font: 500 15px 'Poppins';
@@ -44,7 +44,36 @@
 
     }
 
+    .light {
+
+        background: linear-gradient(to bottom, #ffffff 5%, #c94c48e3 50%, #ffffff 95%);
+        color: #000000;
+
+        button {
+
+            display: flex;
+            border-style: none;
+            border-radius: 10%;
+
+        }
+
+
+    }
+
+    &.dark {
+
+        background: linear-gradient(to bottom, #000000 5%, #642725 50%, #000000 85%);
+        color: #ffffff;
+
+        button {
+
+            display: flex;
+            border-style: none;
+            border-radius: 10%;
+
+        }
+
+
+    }
+
 }
-
-
-
