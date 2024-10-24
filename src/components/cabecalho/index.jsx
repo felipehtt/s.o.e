@@ -30,15 +30,6 @@ export default function Cabecalho() {
 
                 <Link to='/intencao' className={location.pathname === '/intencao' ? 'active' : 'links'}>Intenção</Link>
 
-                <div className={darkMode ? 'comp-cabecalho dark' : 'comp-cabecalho light'}>
-
-                    <button onClick={theme}>
-
-                        {darkMode ? 'Mudar para Claro' : 'Mudar para Escuro'}
-
-                    </button>
-
-                </div>
             </div>
 
         </div>
