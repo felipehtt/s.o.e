@@ -10,10 +10,10 @@ export default function Soe() {
         <div className='pagina-soe pagina'>
 
             <Cabecalho />
-
-            <h1>S.O.E</h1>
-
             <div className='blocos'>
+
+                <h2>S.O.E</h2>
+
                 <div className='bloco1'>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi saepe eum corporis id laboriosam at enim omnis dignissimos, atque velit eligendi deleniti nulla illo vitae delectus harum labore. Praesentium, velit.</p>
@@ -36,6 +36,15 @@ export default function Soe() {
                     <img src="assets/images/equipe1.jpg" alt="Equipe" />
 
                 </div>
+
+                <div className='but'>
+
+                    <h2>Veja nossos trabalhos</h2>
+
+                    <button>Ver Festas</button>
+
+                </div>
+
             </div>
 
             <Footer />

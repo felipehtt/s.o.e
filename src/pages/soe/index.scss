@@ -1,5 +1,114 @@
-.pagina-soe{
+.pagina-soe {
 
-    
+    .blocos {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font: 600 26px 'Poppins';
+            margin-top: 2%;
+        }
+
+        .bloco1 {
+
+            display: flex;
+            align-items: center;
+            gap: 15%;
+            text-align: left;
+            max-width: 70%;
+            margin-top: 3%;
+
+            p {
+                font: 400 15px 'Poppins';
+                line-height: 170%;
+            }
+
+            img {
+
+                width: 46%;
+                border-radius: 5%;
+
+            }
+        }
+
+        .bloco2 {
+
+            display: flex;
+            align-items: center;
+            gap: 15%;
+            text-align: left;
+            max-width: 70%;
+            margin-top: 3%;
+
+            p {
+                font: 400 15px 'Poppins';
+                line-height: 170%;
+            }
+
+            img {
+
+                width: 46%;
+                border-radius: 5%;
+
+            }
+        }
+
+        .bloco3 {
+
+            display: flex;
+            align-items: center;
+            gap: 15%;
+            text-align: left;
+            max-width: 70%;
+            margin-top: 3%;
+            margin-bottom: 8%;
+
+            p {
+                font: 400 15px 'Poppins';
+                line-height: 170%;
+            }
+
+            img {
+
+                width: 46%;
+                border-radius: 5%;
+
+            }
+        }
+
+        .but {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            button {
+
+                margin-top: 8%;
+                background-color: #fff;
+                color: #000000;
+                border-style: none;
+                border-radius: 8px;
+                padding: 7px;
+                width: 110px;
+                font: 500 13px 'Poppins';
+                cursor: pointer;
+                transition: all 0.5s;
+
+            }
+
+            button:hover {
+
+                transform: scale(1.07);
+                background-color: #db4545;
+                transition: all 0.5s;
+
+            }
+
+        }
+
+    }
 
 }
