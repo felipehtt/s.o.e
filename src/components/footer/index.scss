@@ -25,20 +25,28 @@
                 margin: 5px 0;
             }
 
-            .social-link {
-                color: #fff;
-                font-size: 1.5rem;
-                transition: transform 0.3s;
+            .social-links {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 2%;
 
-                &:hover {
+                .social-link {
+                    color: #fff;
+                    font-size: 1.5rem;
+                    transition: transform 0.3s;
+
+
+                }
+
+                .social-link:hover {
                     transform: scale(1.2);
                     color: #db4545;
                 }
             }
         }
-        
+
         .social {
-            max-width: 300px;
 
             h2 {
                 font-size: 1.5rem;
@@ -53,22 +61,10 @@
                 margin: 5px 0;
             }
 
-            .social-link {
-                color: #fff;
-                font-size: 1.5rem;
-                transition: transform 0.3s;
-
-                &:hover {
-                    transform: scale(1.2);
-                    color: #db4545;
-                }
-            }
-        }
-
-        .social {
             .social-links {
                 display: flex;
                 justify-content: center;
+                margin-top: 2%;
                 gap: 20px;
 
                 .social-link {

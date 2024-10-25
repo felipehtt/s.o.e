@@ -40,9 +40,7 @@ export default function Login() {
                     <input type="password" placeholder='Senha:' />
 
 
-                    <button>
-                        Enviar
-                    </button>
+                    <button><a href="">Entrar</a></button>
 
                 </div>
 

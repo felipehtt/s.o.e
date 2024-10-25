@@ -5,7 +5,7 @@
         margin-top: 2.5%;
         margin-left: 35%;
     }
-
+    
     .conteudo {
 
         display: flex;
@@ -14,9 +14,9 @@
         background-color: #161515;
         border-radius: 20px;
         margin: 70px;
-
+        
         .top {
-
+            
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -33,7 +33,7 @@
                 font: 600 18px "Poppins";
                 padding-left: 15px;
             }
-
+            
             p {
                 font: 400 14px "Poppins";
                 padding-left: 30px;
@@ -41,10 +41,10 @@
                 padding-right: 30px;
                 line-height: 26px;
             }
-
+            
             .but {
                 margin-top: 10%;
-    
+                
                 button {
     
                     background-color: #fff;
@@ -68,9 +68,9 @@
                 }
     
             }
-
+            
         }
-
+        
         .form {
             display: flex;
             flex-direction: column;
@@ -86,12 +86,12 @@
             max-width: 450px;
             margin: auto;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.116), 0 6px 20px rgba(0, 0, 0, 0.274);
-
+            
             >div {
                 display: flex;
                 flex-direction: column;
                 width: 150%;
-
+                
                 label {
                     font-size: 0.9rem;
                     font-family: "Poppins", sans-serif;
@@ -122,16 +122,16 @@
                 }
             }
         }
-
+        
         .but {
-
+            
             display: flex;
             align-items: center;
             margin-top: 3%;
             
-
+            
             button {
-
+                
                 background-color: #fff;
                 color: #000;
                 border-style: none;
@@ -141,11 +141,11 @@
                 font: 500 15px 'Poppins';
                 cursor: pointer;
                 transition: all 0.5s;
-
+                
             }
-
+            
             button:hover {
-
+                
                 background-color: #db4545;
                 transform: scale(1.07);
                 transition: all 0.5s;
@@ -169,12 +169,12 @@
         padding: 20px;
         margin-top: 6%;
         margin-left: 33%;
-
+        
         p {
             text-align: center;
             margin-bottom: 4%;
         }
-
+        
         a {
             margin-right: 3%;
         }
@@ -182,5 +182,11 @@
         margin-bottom: 10%;
 
     }
+    
+}
+
+.custom-confirm-button{
+
+    color: #000 !important;
 
 }
