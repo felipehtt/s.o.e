@@ -12,7 +12,7 @@ export default function Home() {
 
       <Cabecalho />
 
-      <Slider img1="'https://wallpapercave.com/wp/wp2848100.jpg'"/>
+      <Slider />
 
       <main>
 
