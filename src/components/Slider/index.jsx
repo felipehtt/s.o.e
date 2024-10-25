@@ -5,10 +5,10 @@ import { useEffect } from 'react';
 
 const Slider = (props) => {
     const slides = [
-        { id: 1, img: 'https://wallpapercave.com/wp/wp2848100.jpg', alt: 'Festa 1' },
-        { id: 2, img: 'https://andreaguimaraes.com.br/qds1/wp-content/uploads/2022/07/casamento-jo-e-edu-400x267.jpg', alt: 'Festa 2' },
-        { id: 3, img: 'https://andreaguimaraes.com.br/qds1/wp-content/uploads/2024/08/parada_da_disney_1-3-400x266.jpg', alt: 'Festa 3' },
-        { id: 4, img: 'https://andreaguimaraes.com.br/qds1/wp-content/uploads/2024/08/15_anos_3-3-400x267.jpg', alt: 'Festa 1' },
+        { id: props.id, img: 'https://wallpapercave.com/wp/wp2848100.jpg', alt: 'Festa 1' },
+        { id: props.id, img: 'https://andreaguimaraes.com.br/qds1/wp-content/uploads/2022/07/casamento-jo-e-edu-400x267.jpg', alt: 'Festa 2' },
+        { id: props.id, img: 'https://andreaguimaraes.com.br/qds1/wp-content/uploads/2024/08/parada_da_disney_1-3-400x266.jpg', alt: 'Festa 3' },
+        { id: props.id, img: 'https://andreaguimaraes.com.br/qds1/wp-content/uploads/2024/08/15_anos_3-3-400x267.jpg', alt: 'Festa 1' },    
         
     ];
     
@@ -45,7 +45,7 @@ const Slider = (props) => {
         <div className="slider">
             <div className="slides" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
                 {slides.map((slide) => (
-                    <div className="slide" key={slide.id}>
+                    <div className="slide" key={slide}>
                         <img src={slide.img} alt={slide.alt} />
                     </div>
                 ))}

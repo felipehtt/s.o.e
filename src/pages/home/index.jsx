@@ -12,6 +12,9 @@ export default function Home() {
 
       <Cabecalho />
 
+
+
+
       <main>
 
         <Slider img1="'https://wallpapercave.com/wp/wp2848100.jpg'" />
