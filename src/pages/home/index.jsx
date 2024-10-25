@@ -2,7 +2,6 @@ import './index.scss';
 
 import Cabecalho from '../../components/cabecalho';
 import Slider from '../../components/Slider';
-import Sld2 from '../../components/Sld2';
 import Footer from '../../components/footer';
 
 export default function Home() {
@@ -13,11 +12,12 @@ export default function Home() {
 
       <Cabecalho />
 
+      <Slider img1="'https://wallpapercave.com/wp/wp2848100.jpg'"/>
+
       <main>
 
-          <div className='top'>
 
-            <Slider />
+          <div className='top'>
 
             <p>O melhor da festa é esperar por ela. Há 15 anos no mercado de festas e eventos !</p>
 
@@ -50,7 +50,6 @@ export default function Home() {
 
           <div className='bottom'>
 
-            <Sld2 />
             <p className='bt'>Aproveite com seus amigos e familiares...</p>
 
           </div>

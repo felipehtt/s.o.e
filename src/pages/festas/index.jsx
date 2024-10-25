@@ -3,15 +3,12 @@ import { Link } from 'react-router-dom';
 
 import Cabecalho from "../../components/cabecalho";
 import Footer from "../../components/footer";
-import Sli from "../../components/sli";
 
 export default function Festas() {
   return (
     <div className="pagina-festas pagina">
       <Cabecalho />
-
-      <Sli />
-
+      
       <main>
         <div className="top">
           <p>Alguns dos nossos tipos de Festas</p>
