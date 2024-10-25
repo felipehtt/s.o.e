@@ -40,7 +40,6 @@ export default function Infantil() {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sed aut quis, adipisci expedita autem unde reiciendis voluptas molestiae voluptatibus? Fuga iste similique repudiandae, vero ducimus ex laudantium voluptates sit.</p>
                     </div>
 
-
                 </div>
 
                 <div className='bloco3'>
