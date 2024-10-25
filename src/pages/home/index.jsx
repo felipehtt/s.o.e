@@ -2,7 +2,7 @@ import './index.scss';
 
 import Cabecalho from '../../components/cabecalho';
 import Slider from '../../components/Slider';
-import Footer from '../../components/f2';
+import Footer from '../../components/footer';
 
 export default function Home() {
 
@@ -13,7 +13,6 @@ export default function Home() {
       <Cabecalho />
 
 
-      <Slider />
 
 
       <main>
