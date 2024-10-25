@@ -1,18 +1,9 @@
 import './index.scss';
 import { Link, useLocation } from 'react-router-dom';
-import { useState } from 'react';
 
 export default function Cabecalho() {
 
     const location = useLocation();
-
-    const [darkMode, setDarkMode] = useState(false);
-
-  function theme() {
-
-    setDarkMode(!darkMode);
-
-  };
 
     return (
 
@@ -28,8 +19,11 @@ export default function Cabecalho() {
 
                 <Link to='/festas' className={location.pathname === '/festas' ? 'active' : 'links'}>Festas</Link>
 
-                <Link to='/intencao' className={location.pathname === '/intencao' ? 'active' : 'links'}>Intenção</Link>
+                <Link to='/intencao' className={location.pathname === '' ? 'active' : 'links'}>Intenção</Link>
 
+                <Link to='/intencao' className={location.pathname === '' ? 'active' : 'links'}>Comunidade</Link>
+
+                <Link to='/intencao' className={location.pathname === '' ? 'active' : 'links'}>Contato</Link>
             </div>
 
         </div>
