@@ -7,7 +7,8 @@
 
     .slides {
         display: flex;
-        transition: transform 1.5s ease-out;
+        transition: transform 1.3s ease-in-out;
+        will-change: transform;
 
         .slide {
             min-width: 100%;
