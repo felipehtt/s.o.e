@@ -7,15 +7,16 @@
         display: flex;
         overflow-x: auto;
         scroll-behavior: smooth;
-        margin-left: 0.1%;
+        margin-left: 10%;
         width: 100%;
         position: relative;
+        gap: 10px;
 
         .item {
 
             margin: 10px;
             padding: 0px;
-            width: 480px;
+            width: 380px;
             flex: none;
             border-radius: 10px;
 
@@ -61,6 +62,7 @@
 
         width: 100%;
         text-align: center;
+        margin-left: 15%;
 
         button {
 
@@ -68,6 +70,7 @@
             border: none;
             cursor: pointer;
             margin: 2%;
+            margin-top: 0;
 
         }
 
