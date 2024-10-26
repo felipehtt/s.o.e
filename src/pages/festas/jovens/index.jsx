@@ -30,7 +30,7 @@ export default function Jovens() {
             <div className='textos'>
 
                 <h2> festas de 15 anos   </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit incidunt et illum dolores blanditiis sit illo quas fuga aut, optio quae. Consectetur incidunt in, neque quia sapiente quam.</p>
+                <p>Essa é uma festa em que cada detalhe exala encanto e sofisticação, ideal para comemorar os 15 anos da sua filha de forma inesquecível. Torne este aniversário ainda mais especial com nossas decorações exclusivas, pensadas para criar momentos mágicos e memórias que durarão para sempre.</p>
                 </div> 
                 </div>
 
@@ -39,7 +39,8 @@ export default function Jovens() {
         <div className='textos'>
 
         <h2>Halloween   </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor earum ipsum voluptatibus magni eum, reprehenderit mollitia explicabo! Molestias doloribus perferendis dolorem ipsam enim quis cumque odit blanditiis, velit commodi excepturi?</p>
+        <p>
+        "Essa é uma festa que denota elementos de terror e diversão, perfeita para comemorar o Halloween de uma forma inesquecível. Transforme sua festa em uma noite cheia de magia e suspense com nossas decorações, pensadas para criar momentos encantadores e lembranças arrepiantes."</p>
         </div>
 
         <img src="https://cdn.shopify.com/s/files/1/0533/3906/2441/files/3_77066389-f07c-4175-85b4-28b26024fdc9.jpg?v=1664437871" alt="" />
@@ -55,7 +56,7 @@ export default function Jovens() {
 
         <h2>Neon    </h2>
         
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque praesentium, molestiae quasi tenetur dolor, dolorum quidem impedit accusantium exercitationem non rem distinctio consectetur iure autem tempora quaerat commodi itaque temporibus.</p>
+        <p>Essa é uma festa brilhante cheia energia e estilo, perfeita para comemorar com o tema Neon de forma iluminada. Marque seu evento com um espaço vibrante e lotado de cores com nossas decorações especiais, feitas para criar momentos iluminados e momentos que vão brilhar para sempre na sua memória.</p>
         </div>
         </div>
            
