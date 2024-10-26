@@ -13,20 +13,21 @@ export default function Cabecalho() {
 
             <div className='nav'>
 
-                <Link to='/' className={location.pathname === '/' ? 'active' : 'links'}>Home</Link>
+                <a href="/" className={location.pathname === '/' ? 'active' : 'links'}>Home</a>
 
-                <Link to='/soe' className={location.pathname === '/soe' ? 'active' : 'links'}>S.O.E</Link>
+                <a href="/soe" className={location.pathname === '/soe' ? 'active' : 'links'}>S.O.E</a>
 
-                <Link to='/festas' className={location.pathname === '/festas' ? 'active' : 'links'}>Festas</Link>
+                <a href="/festas" className={location.pathname === '/festas' ? 'active' : 'links'}>Festas</a>
 
-                <Link to='/intencao' className={location.pathname === '' ? 'active' : 'links'}>Intenção</Link>
+                <a href="/comunidade" className={location.pathname === '/comunidade' ? 'active' : 'links'}>Comunidade</a>
 
-                <Link to='/intencao' className={location.pathname === '' ? 'active' : 'links'}>Comunidade</Link>
+                <a href="" className={location.pathname === '/' ? 'active' : 'links'}>Contato</a>
 
-                <Link to='/intencao' className={location.pathname === '' ? 'active' : 'links'}>Contato</Link>
-            
-                <Link to='/faq' className={location.pathname === '' ? 'active' : 'links'}>FAQ</Link>
-            
+                <a href="/faq" className={location.pathname === '/faq' ? 'active' : 'links'}>FAQ</a>
+
+
+                {/* <Link to='/intencao' className={location.pathname === '' ? 'active' : 'links'}>Intenção</Link> */}
+
             </div>
 
         </div>
