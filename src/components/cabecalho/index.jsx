@@ -19,7 +19,7 @@ export default function Cabecalho() {
 
                 <Link to='/festas' className={location.pathname === '/festas' ? 'active' : 'links'}>Festas</Link>
 
-                <Link to='/intencao' className={location.pathname === '' ? 'active' : 'links'}>Intenção</Link>
+                <Link to='/intencao' className={location.pathname === '/intencao' ? 'active' : 'links'}>Intenção</Link>
 
                 <Link to='/intencao' className={location.pathname === '' ? 'active' : 'links'}>Comunidade</Link>
 

@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import Cabecalho from '../../components/cabecalho';
 import Footer from '../../components/footer';
 import axios from 'axios';
-import moment from 'moment';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import Swal from 'sweetalert2';
