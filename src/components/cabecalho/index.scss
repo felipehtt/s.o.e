@@ -1,73 +1,192 @@
-
 .comp-cabecalho {
 
-    background-color: #000;
 
-    img {
+    header {
 
-        width: 90px;
-        margin-top: 0.5%;
-        margin-left: 6%;
-        
-    }
+        margin: 0 0 0 22.3%;
 
-    .nav {
+        .menu-toggle {
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        a {
-            text-decoration: none;
-        }
-
-        .links {
-
-            text-decoration: none;
+            display: none;
+            font-size: 30px;
+            background: none;
+            border: none;
             color: #fff;
-            font: 500 14px 'Poppins';
+            cursor: pointer;
 
         }
 
+        .nav {
 
-        .links:hover {
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-            color: #db4545;
-            transition: 701ms;
+            .link {
+
+                color: #fff;
+                text-decoration: none;
+                font: 400 14px 'Poppins';
+
+            }
+
+            .link:hover {
+
+                color: #db4545;
+                transition: 701ms;
+
+            }
+
+            .active {
+
+                color: #db4545;
+                font: 600 14px 'Poppins';
+                text-decoration: none;
+
+            }
+
+            .but {
+
+                margin-left: 20%;
+                white-space: nowrap;
+                padding: 12px 18px;
+                background-color: #db4545;
+                color: #ffffff;
+                font: 500 14px 'Poppins';
+                border-radius: 10px;
+                text-decoration: none;
+                transition: all 0.5s;
+
+                &:hover {
+
+                    transition: all 0.5s;
+                    transform: scale(1.07);
+                    background-color: #db4545;
+
+                }
+
+            }
+
+            .but2 {
+
+                text-decoration: none;
+                color: #fff;
+
+            }
 
         }
-
-        .active {
-
-            color: #db4545;
-            font: 600 15px 'Poppins';
-            text-decoration: none;
-
-        }
-
-        // button {
-
-        //     background-color: #db4545;
-        //     color: #fff;
-        //     border-style: none;
-        //     border-radius: 8px;
-
-        //     width: 30%;
-
-        //     font: 500 15px 'Poppins';
-        //     cursor: pointer;
-        //     transition: 0.5s;
-
-        // }
-
-        // button:hover {
-
-        //     background-color: #db4545;
-        //     transform: scale(1.07);
-        //     transition: 0.5s;
-
-        // }
 
     }
 
+
+    @media (max-width: 770px) {
+
+        header {
+
+
+            .menu-toggle {
+
+                display: block;
+                margin-left: 600%;
+
+            }
+
+            .nav {
+
+                display: none;
+                flex-direction: column;
+                width: 55%;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.822);
+                border-radius: 10px;
+                z-index: 1000;
+                padding: 20px 0;
+
+                &.open {
+
+                    display: flex;
+
+                }
+
+                .link {
+
+                    padding: 5% 0%;
+
+                }
+
+                .but {
+
+                    margin: 3% 16%;
+
+                }
+
+            }
+        }
+    }
 }
+
+
+// .comp-cabecalho {
+
+//     header {
+
+//         margin: 0 0 0 22.3%;
+
+//         .nav {
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+
+//             .link {
+//                 color: #fff;
+//                 text-decoration: none;
+//                 font: 400 14px 'Poppins';
+//             }
+
+//             .link:hover {
+
+//                 color: #db4545;
+//                 transition: 701ms;
+
+//             }
+
+//             .active {
+
+//                 color: #db4545;
+//                 font: 600 14px 'Poppins';
+//                 text-decoration: none;
+
+//             }
+
+//             .but {
+
+//                 margin-left: 20%;
+
+//                 white-space: nowrap;
+//                 padding: 12px 18px;
+//                 background-color: #db4545;
+//                 color: #ffffff;
+//                 font: 500 14px 'Poppins';
+//                 border-radius: 10px;
+//                 text-decoration: none;
+//                 transition: all 0.5s;
+
+//                 &:hover {
+//                     transition: all 0.5s;
+//                     transform: scale(1.07);
+//                     background-color: #db4545;
+//                   }
+
+//             }
+
+//             .but2 {
+//                 text-decoration: none;
+//                 color: #fff;
+//             }
+
+//         }
+
+//     }
+// }

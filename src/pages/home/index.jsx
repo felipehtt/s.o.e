@@ -3,6 +3,9 @@ import './index.scss';
 import Cabecalho from '../../components/cabecalho';
 import Slider from '../../components/Slider';
 import Footer from '../../components/footer';
+import Fly from '../../components/flying';
+import { FaPlus } from "react-icons/fa";
+
 
 export default function Home() {
 
@@ -12,8 +15,7 @@ export default function Home() {
 
       <Cabecalho />
 
-
-
+      <Fly />
 
       <main>
 

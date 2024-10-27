@@ -1,6 +1,6 @@
 import './index.scss';
-
-
+import { Link } from 'react-router-dom';
+import Fly from '../../../components/flying'
 import Cabecalho from '../../../components/cabecalho';
 import Footer from '../../../components/footer';
 
@@ -11,6 +11,8 @@ export default function Infantil() {
         <div className='pagina-infantil pagina'>
 
             <Cabecalho />
+
+            <Fly />
 
             <div className='static'>
 
@@ -30,6 +32,12 @@ export default function Infantil() {
 
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sed aut quis, adipisci expedita autem unde reiciendis voluptas molestiae voluptatibus? Fuga iste similique repudiandae, vero ducimus ex laudantium voluptates sit.</p>
 
+                        <a href="/intencao" className='but'>
+
+                            <Link to='/intencao' className='but2'>Gostou? Faça sua Intenção</Link>
+
+                        </a>
+
                     </div>
 
                     <img src='https://www.artealegria.com.br/wp-content/uploads/2019/06/DSC_0524-1.jpg' alt='Festa de Heróis' />
@@ -46,6 +54,12 @@ export default function Infantil() {
 
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sed aut quis, adipisci expedita autem unde reiciendis voluptas molestiae voluptatibus? Fuga iste similique repudiandae, vero ducimus ex laudantium voluptates sit.</p>
 
+                        <a href="/intencao" className='but'>
+
+                            <Link to='/intencao' className='but2'>Gostou? Faça sua Intenção</Link>
+
+                        </a>
+
                     </div>
 
                 </div>
@@ -57,6 +71,12 @@ export default function Infantil() {
                         <h3>Safari</h3>
 
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sed aut quis, adipisci expedita autem unde reiciendis voluptas molestiae voluptatibus? Fuga iste similique repudiandae, vero ducimus ex laudantium voluptates sit.</p>
+
+                        <a href="/intencao" className='but'>
+
+                            <Link to='/intencao' className='but2'>Gostou? Faça sua Intenção</Link>
+
+                        </a>
 
                     </div>
 

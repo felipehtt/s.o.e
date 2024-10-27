@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Cabecalho from '../../components/cabecalho';
 import Footer from '../../components/footer';
+import Fly from '../../components/flying'
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
@@ -63,6 +64,8 @@ export default function Intencao() {
         <div className='pagina-intencao pagina'>
 
             <Cabecalho />
+
+            <Fly />
 
             <h1 className='title'>Preencha esse formulário para sua intenção.</h1>
 

@@ -11,7 +11,7 @@ export default function Dashboard() {
 
     return (
 
-        <div className='pagina-dashboard'>
+        <div className='pagina-dashboard pagina'>
 
             <CabecalhoDash />
 

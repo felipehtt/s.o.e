@@ -1,7 +1,8 @@
 import './index.scss';
-
+import { Link } from 'react-router-dom';
 import Cabecalho from '../../../components/cabecalho';
 import Footer from '../../../components/footer';
+import Fly from '../../../components/flying'
 
 export default function Adulto() {
 
@@ -9,62 +10,82 @@ export default function Adulto() {
 
         <div className='pagina-adulto pagina'>
 
-<Cabecalho />
+            <Cabecalho />
 
-<div className='static'>
+            <Fly />
 
-    <img src='https://i.pinimg.com/originals/6a/d8/5b/6ad85bf9a8d499a9c21a9432888d256c.jpg' alt='' />
+            <div className='static'>
 
-</div>
+                <img src='https://i.pinimg.com/originals/6a/d8/5b/6ad85bf9a8d499a9c21a9432888d256c.jpg' alt='' />
 
-<div className='blocos'>
+            </div>
 
-    <h2>Algumas de nossas Festas para Adultos</h2>
+            <div className='blocos'>
 
-    <div className='bloco1'>
+                <h2>Algumas de nossas Festas para Adultos</h2>
 
-        <div className='textos'>
+                <div className='bloco1'>
 
-            <h3>Casamento</h3>
+                    <div className='textos'>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sed aut quis, adipisci expedita autem unde reiciendis voluptas molestiae voluptatibus? Fuga iste similique repudiandae, vero ducimus ex laudantium voluptates sit.</p>
+                        <h3>Casamento</h3>
 
-        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sed aut quis, adipisci expedita autem unde reiciendis voluptas molestiae voluptatibus? Fuga iste similique repudiandae, vero ducimus ex laudantium voluptates sit.</p>
 
-        <img src='https://lejour.com.br/wp-content/uploads/2021/11/capa-home-wedding.jpg' alt='Festa de Casamento' />
+                        <a href="/intencao" className='but'>
 
-    </div>
+                            <Link to='/intencao' className='but2'>Gostou? Faça sua Intenção</Link>
 
-    <div className='bloco2'>
+                        </a>
 
-        <img src='https://www.tuacasa.com.br/wp-content/uploads/2019/05/festa-country-capa.jpg' alt='Festa Country' />
+                    </div>
 
-        <div className='textos'>
+                    <img src='https://lejour.com.br/wp-content/uploads/2021/11/capa-home-wedding.jpg' alt='Festa de Casamento' />
 
-            <h3>Country</h3>
+                </div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sed aut quis, adipisci expedita autem unde reiciendis voluptas molestiae voluptatibus? Fuga iste similique repudiandae, vero ducimus ex laudantium voluptates sit.</p>
+                <div className='bloco2'>
 
-        </div>
+                    <img src='https://www.tuacasa.com.br/wp-content/uploads/2019/05/festa-country-capa.jpg' alt='Festa Country' />
 
-    </div>
+                    <div className='textos'>
 
-    <div className='bloco3'>
+                        <h3>Country</h3>
 
-        <div className='textos'>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sed aut quis, adipisci expedita autem unde reiciendis voluptas molestiae voluptatibus? Fuga iste similique repudiandae, vero ducimus ex laudantium voluptates sit.</p>
 
-            <h3>Anos 50</h3>
+                        <a href="/intencao" className='but'>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sed aut quis, adipisci expedita autem unde reiciendis voluptas molestiae voluptatibus? Fuga iste similique repudiandae, vero ducimus ex laudantium voluptates sit.</p>
+                            <Link to='/intencao' className='but2'>Gostou? Faça sua Intenção</Link>
 
-        </div>
+                        </a>
 
-        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJEFemScXUlUUNJWPRd1nOG3fs7Uwcd1c6Wg&s' alt='Festa de Anos 50' />
-    </div>
+                    </div>
 
-</div>
+                </div>
 
-<Footer />
+                <div className='bloco3'>
+
+                    <div className='textos'>
+
+                        <h3>Anos 50</h3>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sed aut quis, adipisci expedita autem unde reiciendis voluptas molestiae voluptatibus? Fuga iste similique repudiandae, vero ducimus ex laudantium voluptates sit.</p>
+
+                        <a href="/intencao" className='but'>
+
+                            <Link to='/intencao' className='but2'>Gostou? Faça sua Intenção</Link>
+
+                        </a>
+
+                    </div>
+
+                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJEFemScXUlUUNJWPRd1nOG3fs7Uwcd1c6Wg&s' alt='Festa de Anos 50' />
+                </div>
+
+            </div>
+
+            <Footer />
 
         </div>
 
