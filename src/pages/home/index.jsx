@@ -15,7 +15,8 @@ export default function Home() {
 
       <Cabecalho />
 
-      <Fly />
+
+
 
       <main>
 
