@@ -16,7 +16,7 @@ export default function Infantil() {
 
             <div className='static'>
 
-                <img src='https://9d7c09287c4288e19f59-b859ebfd8a2b6bdc3dc0b015f1ecd2e3.ssl.cf1.rackcdn.com/PostImagem/38949/festa-dupla-com-tema-disney-festa-infantil-curitiba_o1errdsg59i4jc0l9e9fus1hub18.jpg' alt='' />
+                <img src='https://media.discordapp.net/attachments/1253785078484434957/1299804810517811221/FB_IMG_1729968000593.jpg?ex=671e8910&is=671d3790&hm=bbe3cb941ebe690526103a43a97bde9ee26c78c6a24cccc8e65c9196c19beb29&=&format=webp&width=717&height=498' alt='' />
 
             </div>
 
@@ -30,7 +30,7 @@ export default function Infantil() {
 
                         <h3>Heróis</h3>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sed aut quis, adipisci expedita autem unde reiciendis voluptas molestiae voluptatibus? Fuga iste similique repudiandae, vero ducimus ex laudantium voluptates sit.</p>
+                        <p>Essa festa é uma celebração cheia de ação e diversão! Com decorações inspiradas em heróis e suas histórias incríveis, cada detalhe vai deixar todos animados. É a oportunidade perfeita para criar um ambiente divertido e acolhedor, onde cada convidado pode se sentir como um verdadeiro herói e aproveitar momentos inesquecíveis.</p>
 
                         <a href="/intencao" className='but'>
 
@@ -52,7 +52,7 @@ export default function Infantil() {
 
                         <h3>Esportes</h3>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sed aut quis, adipisci expedita autem unde reiciendis voluptas molestiae voluptatibus? Fuga iste similique repudiandae, vero ducimus ex laudantium voluptates sit.</p>
+                        <p>Essa festa vai levar a emoção dos esportes para outro nível! Com decorações que capturam a essência de diferentes modalidades, o ambiente será repleto de energia e animação. É uma chance de juntar amigos e celebrar o amor pelo esporte de uma forma divertida e memorável, onde todos podem se divertir e competir em um clima descontraído.</p>
 
                         <a href="/intencao" className='but'>
 
@@ -70,7 +70,7 @@ export default function Infantil() {
 
                         <h3>Safari</h3>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sed aut quis, adipisci expedita autem unde reiciendis voluptas molestiae voluptatibus? Fuga iste similique repudiandae, vero ducimus ex laudantium voluptates sit.</p>
+                        <p>Essa festa vai transportar todos para uma emocionante aventura na selva! Com decorações inspiradas em um safári, o ambiente será cheio de cores vibrantes e elementos da natureza. É uma ótima oportunidade para explorar e celebrar a beleza da vida selvagem, onde cada convidado pode se sentir parte de uma expedição inesquecível!</p>
 
                         <a href="/intencao" className='but'>
 
@@ -80,7 +80,7 @@ export default function Infantil() {
 
                     </div>
 
-                    <img src='https://www.tuacasa.com.br/wp-content/uploads/2018/11/festa-safari.jpg' alt='Festa de Safari' />
+                    <img src='https://media.discordapp.net/attachments/1253785078484434957/1299804392085782628/FB_IMG_1729877585945.jpg?ex=671e88ac&is=671d372c&hm=1ade0103c29faf33ac3c9cfac421709dccf86e67570187fab5d547af64df188c&=&format=webp&width=498&height=498' alt='Festa de Safari' />
                 </div>
 
             </div>
