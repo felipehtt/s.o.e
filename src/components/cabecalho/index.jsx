@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './index.scss';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -5,11 +6,25 @@ export default function Cabecalho() {
 
     const location = useLocation();
 
+    const [loggedIn, setLoggedIn] = useState(false);
+
+    const loginActive = () => {
+
+        setLoggedIn(true);
+
+    }
+
+    const logOut = () => {
+
+        setLoggedIn(false);
+
+    }
+
     return (
 
         <div className='comp-cabecalho'>
 
-            <img src="/assets/images/logo-soe.png" alt="" />
+            <Link to={'/login'} className='img'><img src="/assets/images/logo-soe.png" alt="" /></Link>
 
             <div className='nav'>
 
@@ -21,12 +36,14 @@ export default function Cabecalho() {
 
                 <a href="/comunidade" className={location.pathname === '/comunidade' ? 'active' : 'links'}>Comunidade</a>
 
-                <a href="" className={location.pathname === '/' ? 'active' : 'links'}>Contato</a>
+                <a href="/contato" className={location.pathname === '/contato' ? 'active' : 'links'}>Contato</a>
 
                 <a href="/faq" className={location.pathname === '/faq' ? 'active' : 'links'}>FAQ</a>
 
+                {loggedIn == true && (
+                    <a href="/dashboard" className={location.pathname === '/dashboard' ? 'active' : 'links'}>Dashboard</a>
+                )}
 
-                {/* <Link to='/intencao' className={location.pathname === '' ? 'active' : 'links'}>Intenção</Link> */}
 
             </div>
 

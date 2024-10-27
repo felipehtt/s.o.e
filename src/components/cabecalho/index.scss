@@ -2,20 +2,32 @@
 .comp-cabecalho {
 
     background-color: #000;
+    display: flex;
+    align-items: center;
+    gap: 390px;
+
+    .img{
+        padding-left: 4%;
+    }
 
     img {
 
         width: 90px;
         margin-top: 0.5%;
         margin-left: 6%;
-        
+
     }
+    img:hover{
+        transform: translateX(2px);
+    }
+
 
     .nav {
 
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 60px;
 
         a {
             text-decoration: none;
@@ -44,29 +56,6 @@
             text-decoration: none;
 
         }
-
-        // button {
-
-        //     background-color: #db4545;
-        //     color: #fff;
-        //     border-style: none;
-        //     border-radius: 8px;
-
-        //     width: 30%;
-
-        //     font: 500 15px 'Poppins';
-        //     cursor: pointer;
-        //     transition: 0.5s;
-
-        // }
-
-        // button:hover {
-
-        //     background-color: #db4545;
-        //     transform: scale(1.07);
-        //     transition: 0.5s;
-
-        // }
 
     }
 
