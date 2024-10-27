@@ -1,6 +1,7 @@
 import './index.scss';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useAuth } from '../../screens/AuthContext';
 
 export default function Cabecalho() {
 
@@ -8,25 +9,13 @@ export default function Cabecalho() {
 
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const { isAutentic } = useAuth();
+
     function Menu() {
 
         setMenuOpen(!menuOpen);
 
     };
-
-    // const [loggedIn, setLoggedIn] = useState(false);
-
-    // const loginActive = () => {
-
-    //     setLoggedIn(true);
-
-    // }
-
-    // const logOut = () => {
-
-    //     setLoggedIn(false);
-
-    // }
 
 
     return (
@@ -43,6 +32,8 @@ export default function Cabecalho() {
 
                 <div className={`nav ${menuOpen ? 'open' : ''}`}>
 
+                    {isAutentic && <a href="/dashboard" className={location.pathname === '/dashboard' ? 'active' : 'link'}>Dashboard</a>}
+                    
                     <a href="" className={location.pathname === '/' ? 'active' : 'link'}>
 
                         <Link to='/' className={location.pathname === '/' ? 'active' : 'link'}>Home</Link>
@@ -84,11 +75,6 @@ export default function Cabecalho() {
                         <Link to='/intencao' className='but2'>Faça sua Intenção</Link>
 
                     </a>
-
-
-                    {/* {loggedIn == true && (
-                        <a href="/dashboard" className={location.pathname === '/dashboard' ? 'active' : 'links'}>Dashboard</a>
-                    )} */}
 
                 </div>
 

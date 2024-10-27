@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { AuthProvider } from './screens/AuthContext';
+
 
 import Home from './pages/home';
 import Soe from './pages/soe';
@@ -12,27 +14,36 @@ import NaoEncontrado from './pages/naoencontrado';
 import Dashboard from './pages/dashboard';
 import Faq from './pages/faq'
 import Comunidade from './pages/comunidade';
+import PrivateRoute from './screens/privateRoute';
 
 export default function Navegacao() {
 
     return (
 
         <BrowserRouter>
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/soe' element={<Soe />} />
-                <Route path='/festas' element={<Festas />} />
-                <Route path='/intencao' element={<Intencao />} />
-                <Route path='/dashboard' element={<Dashboard />} />
-                <Route path='/login' element={<Login />} />
-                <Route path='/festas/jovens' element={<Jovens />} />
-                <Route path='/festas/adulto' element={<Adulto />} />
-                <Route path='/festas/infantil' element={<Infantil />} />
-                <Route path='/faq' element={<Faq/>} />
-                <Route path='/comunidade' element={<Comunidade/>} />
+            <AuthProvider>
 
-                <Route path='/*' element={<NaoEncontrado />} />
-            </Routes>
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/soe' element={<Soe />} />
+                    <Route path='/festas' element={<Festas />} />
+                    <Route path='/intencao' element={<Intencao />} />
+                    <Route path='/dashboard' element={
+                        <PrivateRoute>
+                            <Dashboard/>
+                        </PrivateRoute> }/>
+                    <Route path='/login' element={<Login />} />
+                    <Route path='/festas/jovens' element={<Jovens />} />
+                    <Route path='/festas/adulto' element={<Adulto />} />
+                    <Route path='/festas/infantil' element={<Infantil />} />
+                    <Route path='/faq' element={<Faq />} />
+                    <Route path='/comunidade' element={<Comunidade />} />
+
+                    <Route path='/*' element={<NaoEncontrado />} />
+                </Routes>
+
+            </AuthProvider>
+
         </BrowserRouter>
 
     );

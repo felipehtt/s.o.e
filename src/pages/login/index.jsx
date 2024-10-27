@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { useAuth } from '../../screens/AuthContext';
 
 export default function Login() {
     
@@ -12,8 +13,9 @@ export default function Login() {
     const [senha, setSenha] = useState('');
     
     const navigate = useNavigate();
+    const { login } = useAuth();
 
-    const handleAlert = () => {
+    const handleAlertErr = () => {
         Swal.fire({
             title: 'Erro no login',
             color: "#db4545",
@@ -29,7 +31,7 @@ export default function Login() {
         });
     };
 
-    async function login() {
+    async function handleLogin() {
 
         const adm = {
             "nome": nome,
@@ -39,16 +41,26 @@ export default function Login() {
         const url = 'http://localhost:7000/login';
         let resp = await axios.post(url, adm);
     
-        if(resp.data.error != undefined){
 
-            handleAlert();
+        try {
+            
+            if(resp.data.error != undefined){
+    
+                handleAlertErr();
+            }
+            else{
+                login(resp.data.token);
+                navigate('/dashboard');
+    
+            }
+
         }
-        else{
-
-            localStorage.setItem('ADM', resp.data.token);
-            navigate('/dashboard');
+        catch(err){
+            
+            handleAlertErr();
 
         }
+
 
     }
 
@@ -69,7 +81,7 @@ export default function Login() {
 
                     <input type="password" value={senha} placeholder='Senha:' onChange={e => setSenha(e.target.value)}/>
 
-                    <button onClick={login}>Entrar</button>
+                    <button onClick={handleLogin}>Entrar</button>
 
                 </div>
 
