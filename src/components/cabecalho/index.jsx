@@ -9,10 +9,25 @@ export default function Cabecalho() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     function Menu() {
-        
+
         setMenuOpen(!menuOpen);
-        
+
     };
+
+    // const [loggedIn, setLoggedIn] = useState(false);
+
+    // const loginActive = () => {
+
+    //     setLoggedIn(true);
+
+    // }
+
+    // const logOut = () => {
+
+    //     setLoggedIn(false);
+
+    // }
+
 
     return (
 
@@ -69,6 +84,11 @@ export default function Cabecalho() {
                         <Link to='/intencao' className='but2'>Faça sua Intenção</Link>
 
                     </a>
+
+
+                    {/* {loggedIn == true && (
+                        <a href="/dashboard" className={location.pathname === '/dashboard' ? 'active' : 'links'}>Dashboard</a>
+                    )} */}
 
                 </div>
 

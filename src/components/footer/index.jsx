@@ -1,9 +1,27 @@
 import React from 'react';
 import './index.scss';
 import { FaFacebookF, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
-
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
+
+
+    const [loggedIn, setLoggedIn] = useState(false);
+
+    const loginActive = () => {
+
+        setLoggedIn(true);
+
+    }
+
+    const logOut = () => {
+
+        setLoggedIn(false);
+
+    }
+
+
     return (
 
         <footer className="footer">
@@ -56,14 +74,14 @@ export default function Footer() {
 
                     <p>&copy; 2024 Site Soe.</p>
 
-                    <img src="/assets/images/logo-soe.png" alt="" />
+                    <Link to={'/login'} className='img'><img src="/assets/images/logo-soe.png" alt="" /></Link>
 
                     <p>Direitos reservados.</p>
 
                 </div>
 
             </div>
-            
+
         </footer>
     );
 };
