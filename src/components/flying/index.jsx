@@ -2,7 +2,6 @@ import './index.scss';
 import { useState } from 'react';
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
-
 export default function Fly() {
 
     const [menuAbriu, setMenuAbriu] = useState(false);

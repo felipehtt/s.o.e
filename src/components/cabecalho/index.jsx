@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './index.scss';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
@@ -7,11 +6,19 @@ export default function Cabecalho() {
 
     const location = useLocation();
 
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    function Menu() {
+        
+        setMenuOpen(!menuOpen);
+        
+    };
+
     return (
 
         <div className='comp-cabecalho'>
 
-            <Link to={'/login'} className='img'><img src="/assets/images/logo-soe.png" alt="" /></Link>
+            <img src="/assets/images/logo-soe.png" alt="" />
 
             <header className='head'>
 
@@ -45,12 +52,23 @@ export default function Cabecalho() {
 
                     </a>
 
-                <a href="" className={location.pathname === '/' ? 'active' : 'links'}>Contato</a>
+                    <a href="" className={location.pathname === '/fly' ? 'active' : 'link'}>
 
-                <a href="/faq" className={location.pathname === '/faq' ? 'active' : 'links'}>FAQ</a>
+                        <Link to='/fly' className={location.pathname === '/fly' ? 'active' : 'link'}>Contato</Link>
 
+                    </a>
 
-                {/* <Link to='/intencao' className={location.pathname === '' ? 'active' : 'links'}>Intenção</Link> */}
+                    <a href="" className={location.pathname === '/faq' ? 'active' : 'link'}>
+
+                        <Link to='/faq' className={location.pathname === '/faq' ? 'active' : 'link'}>FAQ</Link>
+
+                    </a>
+
+                    <a href="/intencao" className='but'>
+
+                        <Link to='/intencao' className='but2'>Faça sua Intenção</Link>
+
+                    </a>
 
                 </div>
 
