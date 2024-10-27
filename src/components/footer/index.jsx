@@ -3,24 +3,11 @@ import './index.scss';
 import { SocialIcon } from 'react-social-icons'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../../screens/AuthContext';
 
 export default function Footer() {
 
-
-    const [loggedIn, setLoggedIn] = useState(false);
-
-    const loginActive = () => {
-
-        setLoggedIn(true);
-
-    }
-
-    const logOut = () => {
-
-        setLoggedIn(false);
-
-    }
-
+    const { isAuthenticated } = useAuth();
 
     return (
 
@@ -76,7 +63,7 @@ export default function Footer() {
 
                     <p>&copy; 2024 Site Soe.</p>
 
-                    <Link to={'/login'} className='img'><img src="/assets/images/logo-soe.png" alt="" /></Link>
+                    <Link to={isAuthenticated ? '/dashboard' : '/login'} className='img'><img src="/assets/images/logo-soe.png" alt="" /></Link>
 
                     <p>Direitos reservados.</p>
 

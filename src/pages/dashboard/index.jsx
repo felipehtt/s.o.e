@@ -1,13 +1,36 @@
 import './index.scss';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Cabecalho from '../../components/cabecalho';
 import Footer from '../../components/footer';
 
 export default function Dashboard() {
 
+    const [token, setToken] = useState(null);
+
     const [active, setActive] = useState('Festas');
 
     const navItems = ["Festas", "Usuários", "Intenções", "Financeiro"];
+
+    const navigate = useNavigate();
+
+    function sair(){
+
+        localStorage.setItem('ADM', null);
+        navigate('/');
+
+    }
+
+    useEffect(() => {
+
+        let token = localStorage.getItem('ADM')
+        setToken(token);
+
+        if(token == 'null'){
+            navigate('/login')
+        }
+
+    }, [])
 
     return (
 
@@ -51,7 +74,7 @@ export default function Dashboard() {
 
                     <div className='but'>
 
-                        <button>Log Out</button>
+                        <button onClick={sair}>Log Out</button>
 
                     </div>
 
