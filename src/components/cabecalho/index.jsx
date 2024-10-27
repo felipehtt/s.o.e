@@ -32,8 +32,6 @@ export default function Cabecalho() {
 
                 <div className={`nav ${menuOpen ? 'open' : ''}`}>
 
-                    {isAutentic && <a href="/dashboard" className={location.pathname === '/dashboard' ? 'active' : 'link'}>Dashboard</a>}
-                    
                     <a href="" className={location.pathname === '/' ? 'active' : 'link'}>
 
                         <Link to='/' className={location.pathname === '/' ? 'active' : 'link'}>Home</Link>
