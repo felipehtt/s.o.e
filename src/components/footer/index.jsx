@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss';
-import { FaFacebookF, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { SocialIcon } from 'react-social-icons'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -24,35 +24,37 @@ export default function Footer() {
 
     return (
 
-        <footer className="footer">
+        <footer className='footer'>
 
-            <div className="footer-content">
+            <div className='footer-content'>
 
-                <div className="contato">
+                <div className='contato'>
 
                     <h2>Contate-nos</h2>
 
-                    <div className="social-links">
+                    <div className='social-links'>
 
-                        <a href="#" className="social-link"><FaWhatsapp fontSize='140%' /></a>
+                        <a href="" className='social-link' target='_blank'><SocialIcon fallback="whatsapp" bgColor='#db4545' href='' /> WhatsApp</a>
 
-                        <p>soefestas@gmail.com</p>
+                        <a href="" className='social-link' target='_blank'><SocialIcon fallback="email" bgColor='#db4545' href='' /> Email</a>
 
                     </div>
 
                 </div>
 
-                <div className="social">
+                <div className='social'>
 
                     <h2>Siga-nos</h2>
 
-                    <div className="social-links">
+                    <div className='social-links'>
 
-                        <a href="#" className="social-link"><FaFacebookF fontSize='140%' /></a>
+                        <a href="" className='social-link' target='_blank'><SocialIcon fallback="facebook" bgColor='#db4545' href=''  /></a>
 
-                        <a href="#" className="social-link"><FaInstagram fontSize='140%' /></a>
+                        <a href="" className='social-link' target='_blank'><SocialIcon fallback="instagram" bgColor='#db4545' href='' /></a>
 
-                        <a href="#" className="social-link"><FaLinkedin fontSize='140%' /></a>
+                        <a href="" className='social-link' target='_blank'><SocialIcon fallback="linkedin" bgColor='#db4545' href='' /></a>
+
+                        <a href="" className='social-link' target='_blank'><SocialIcon fallback="x" bgColor='#db4545' href='' /></a>
 
                     </div>
 
@@ -60,9 +62,9 @@ export default function Footer() {
 
             </div>
 
-            <div className="footer-baixo">
+            <div className='footer-baixo'>
 
-                <nav className="footer-nav">
+                <nav className='footer-nav'>
 
                     <a href="/soe">Sobre nós</a>
 

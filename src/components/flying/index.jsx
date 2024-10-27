@@ -1,6 +1,8 @@
 import './index.scss';
 import { useState } from 'react';
+import { SocialIcon } from 'react-social-icons';
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+
 
 export default function Fly() {
 
@@ -23,19 +25,19 @@ export default function Fly() {
 
                 <a href="" target="_blank" rel="" onClick={w}>
 
-                    <FaWhatsapp className="menu-icon" />
+                    <SocialIcon className='menu-icon' fallback="whatsapp" bgColor='#db4545' href='' />
 
                 </a>
 
                 <a href="" target="_blank" rel="">
 
-                    <FaFacebook className="menu-icon" />
+                    <SocialIcon className='menu-icon' fallback="facebook" bgColor='#db4545' href='' />
 
                 </a>
 
                 <a href="" target="_blank" rel="">
 
-                    <FaInstagram className="menu-icon" />
+                    <SocialIcon className='menu-icon' fallback="instagram" bgColor='#db4545' href='' />
 
                 </a>
 
