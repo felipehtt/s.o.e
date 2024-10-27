@@ -1,5 +1,7 @@
 import Cabecalho from '../../components/cabecalho'
 import Footer from '../../components/footer'
+import Fly from '../../components/flying'
+
 import './index.scss'
 import { useState } from 'react'
 
@@ -64,6 +66,8 @@ export default function Faq() {
         <div className='pagina-faq pagina'>
 
             <Cabecalho />
+
+            <Fly />
 
             <div className='titulo'>
                 <h2>FAQ</h2>

@@ -1,6 +1,6 @@
 import './index.scss';
-
-
+import { Link } from 'react-router-dom';
+import Fly from '../../../components/flying'
 import Cabecalho from '../../../components/cabecalho';
 import Footer from '../../../components/footer';
 
@@ -11,6 +11,8 @@ export default function Infantil() {
         <div className='pagina-infantil pagina'>
 
             <Cabecalho />
+
+            <Fly />
 
             <div className='static'>
 
@@ -30,6 +32,12 @@ export default function Infantil() {
 
                         <p>Essa festa é uma celebração cheia de ação e diversão! Com decorações inspiradas em heróis e suas histórias incríveis, cada detalhe vai deixar todos animados. É a oportunidade perfeita para criar um ambiente divertido e acolhedor, onde cada convidado pode se sentir como um verdadeiro herói e aproveitar momentos inesquecíveis.</p>
 
+                        <a href="/intencao" className='but'>
+
+                            <Link to='/intencao' className='but2'>Gostou? Faça sua Intenção</Link>
+
+                        </a>
+
                     </div>
 
                     <img src='https://www.artealegria.com.br/wp-content/uploads/2019/06/DSC_0524-1.jpg' alt='Festa de Heróis' />
@@ -46,6 +54,12 @@ export default function Infantil() {
 
                         <p>Essa festa vai levar a emoção dos esportes para outro nível! Com decorações que capturam a essência de diferentes modalidades, o ambiente será repleto de energia e animação. É uma chance de juntar amigos e celebrar o amor pelo esporte de uma forma divertida e memorável, onde todos podem se divertir e competir em um clima descontraído.</p>
 
+                        <a href="/intencao" className='but'>
+
+                            <Link to='/intencao' className='but2'>Gostou? Faça sua Intenção</Link>
+
+                        </a>
+
                     </div>
 
                 </div>
@@ -57,6 +71,12 @@ export default function Infantil() {
                         <h3>Safari</h3>
 
                         <p>Essa festa vai transportar todos para uma emocionante aventura na selva! Com decorações inspiradas em um safári, o ambiente será cheio de cores vibrantes e elementos da natureza. É uma ótima oportunidade para explorar e celebrar a beleza da vida selvagem, onde cada convidado pode se sentir parte de uma expedição inesquecível!</p>
+
+                        <a href="/intencao" className='but'>
+
+                            <Link to='/intencao' className='but2'>Gostou? Faça sua Intenção</Link>
+
+                        </a>
 
                     </div>
 

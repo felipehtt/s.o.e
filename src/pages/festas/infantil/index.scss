@@ -8,6 +8,7 @@
             margin: 2% 0% 0% 0%;
             width: 70%;
             height: 44vh;
+            border-radius: 8px;
         }
     }
 
@@ -38,7 +39,36 @@
             p {
                 font: 400 15px 'Poppins';
                 line-height: 170%;
+                margin-bottom: 7%;
             }
+
+            .but {
+
+                white-space: nowrap;
+                padding: 12px 18px;
+                background-color: #db4545;
+                color: #ffffff;
+                font: 500 14px 'Poppins';
+                border-radius: 10px;
+                text-decoration: none;
+                transition: all 0.5s;
+
+                &:hover {
+
+                    transition: all 0.5s;
+                    transform: scale(1.07);
+
+                }
+
+            }
+
+            .but2 {
+
+                text-decoration: none;
+                color: #fff;
+
+            }
+
 
             img {
                 width: 44%;
@@ -61,7 +91,36 @@
             p {
                 font: 400 15px 'Poppins';
                 line-height: 170%;
+                margin-bottom: 7%;
             }
+
+            .but {
+
+                white-space: nowrap;
+                padding: 12px 18px;
+                background-color: #db4545;
+                color: #ffffff;
+                font: 500 14px 'Poppins';
+                border-radius: 10px;
+                text-decoration: none;
+                transition: all 0.5s;
+
+                &:hover {
+
+                    transition: all 0.5s;
+                    transform: scale(1.07);
+
+                }
+
+            }
+
+            .but2 {
+
+                text-decoration: none;
+                color: #fff;
+
+            }
+
 
             img {
                 width: 44%;
@@ -85,11 +144,40 @@
             p {
                 font: 400 15px 'Poppins';
                 line-height: 170%;
+                margin-bottom: 7%;
             }
+
+            .but {
+
+                white-space: nowrap;
+                padding: 12px 18px;
+                background-color: #db4545;
+                color: #ffffff;
+                font: 500 14px 'Poppins';
+                border-radius: 10px;
+                text-decoration: none;
+                transition: all 0.5s;
+
+                &:hover {
+
+                    transition: all 0.5s;
+                    transform: scale(1.07);
+
+                }
+
+            }
+
+            .but2 {
+
+                text-decoration: none;
+                color: #fff;
+
+            }
+
 
             img {
 
-                width: 74%;
+                width: 44%;
                 border-radius: 5%;
             }
         }

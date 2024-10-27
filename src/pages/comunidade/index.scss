@@ -1,13 +1,39 @@
-
 .pagina-comunidade {
 
+    .titulo {
 
-    .comunidade {
         display: flex;
         justify-content: center;
         margin: 3% 0;
 
-        height: 170vh;
+    }
+
+    .comunidade {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10%;
+        
+        gap: 30%;
+
+        .bloco {
+
+            display: flex;
+            flex-direction: column;
+
+            gap: 30px;
+
+        }
+
+        img {
+
+            border-radius: 8px;
+            width: 370px;
+            height: 200px;
+
+        }
+
     }
 
 }

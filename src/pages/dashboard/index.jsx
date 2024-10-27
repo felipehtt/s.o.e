@@ -1,6 +1,6 @@
 import './index.scss';
 import { useState } from 'react';
-import CabecalhoDash from '../../components/cabecalho-dash';
+import Cabecalho from '../../components/cabecalho';
 import Footer from '../../components/footer';
 
 export default function Dashboard() {
@@ -11,9 +11,9 @@ export default function Dashboard() {
 
     return (
 
-        <div className='pagina-dashboard'>
+        <div className='pagina-dashboard pagina'>
 
-            <CabecalhoDash />
+            <Cabecalho />
 
             <div className='tit'>
 

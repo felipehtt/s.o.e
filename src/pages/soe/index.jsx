@@ -2,6 +2,7 @@ import './index.scss';
 
 import Cabecalho from '../../components/cabecalho';
 import Footer from '../../components/footer';
+import Fly from '../../components/flying';
 
 export default function Soe() {
 
@@ -10,6 +11,9 @@ export default function Soe() {
         <div className='pagina-soe pagina'>
 
             <Cabecalho />
+
+            <Fly />
+
             <div className='blocos'>
 
                 <h2>QUEM SOMOS??</h2>

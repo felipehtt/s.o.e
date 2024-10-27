@@ -1,9 +1,18 @@
 import './index.scss';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 export default function Cabecalho() {
 
     const location = useLocation();
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    function Menu() {
+        
+        setMenuOpen(!menuOpen);
+        
+    };
 
     return (
 
@@ -11,26 +20,89 @@ export default function Cabecalho() {
 
             <img src="/assets/images/logo-soe.png" alt="" />
 
-            <div className='nav'>
+            <header className='head'>
 
-                <a href="/" className={location.pathname === '/' ? 'active' : 'links'}>Home</a>
+                <button className='menu-toggle' onClick={Menu}>
+                    ☰
+                </button>
 
-                <a href="/soe" className={location.pathname === '/soe' ? 'active' : 'links'}>S.O.E</a>
+                <div className={`nav ${menuOpen ? 'open' : ''}`}>
 
-                <a href="/festas" className={location.pathname === '/festas' ? 'active' : 'links'}>Festas</a>
+                    <a href="" className={location.pathname === '/' ? 'active' : 'link'}>
 
-                <a href="/comunidade" className={location.pathname === '/comunidade' ? 'active' : 'links'}>Comunidade</a>
+                        <Link to='/' className={location.pathname === '/' ? 'active' : 'link'}>Home</Link>
 
-                <a href="" className={location.pathname === '/' ? 'active' : 'links'}>Contato</a>
+                    </a>
 
-                <a href="/faq" className={location.pathname === '/faq' ? 'active' : 'links'}>FAQ</a>
+                    <a href="" className={location.pathname === '/soe' ? 'active' : 'link'}>
 
+                        <Link to='/soe' className={location.pathname === '/soe' ? 'active' : 'link'}>S.O.E</Link>
 
-                {/* <Link to='/intencao' className={location.pathname === '' ? 'active' : 'links'}>Intenção</Link> */}
+                    </a>
 
-            </div>
+                    <a href="" className={location.pathname === '/festas' ? 'active' : 'link'}>
+
+                        <Link to='/festas' className={location.pathname === '/festas' ? 'active' : 'link'}>Festas</Link>
+
+                    </a>
+
+                    <a href="" className={location.pathname === '/comunidade' ? 'active' : 'link'}>
+
+                        <Link to='/comunidade' className={location.pathname === '/comunidade' ? 'active' : 'link'}>Comunidade</Link>
+
+                    </a>
+
+                    <a href="" className={location.pathname === '/fly' ? 'active' : 'link'}>
+
+                        <Link to='/fly' className={location.pathname === '/fly' ? 'active' : 'link'}>Contato</Link>
+
+                    </a>
+
+                    <a href="" className={location.pathname === '/faq' ? 'active' : 'link'}>
+
+                        <Link to='/faq' className={location.pathname === '/faq' ? 'active' : 'link'}>FAQ</Link>
+
+                    </a>
+
+                    <a href="/intencao" className='but'>
+
+                        <Link to='/intencao' className='but2'>Faça sua Intenção</Link>
+
+                    </a>
+
+                </div>
+
+            </header>
 
         </div>
+
+        // <div className='comp-cabecalho'>
+
+        //     <img src="/assets/images/logo-soe.png" alt="" />
+
+        //     <header className='head'>
+
+        //         <div className='nav'>
+
+        //             <a href="" className={location.pathname === '/' ? 'active' : 'link'}><Link to='/' className={location.pathname === '/' ? 'active' : 'link'}>Home</Link></a>
+
+        //             <a href="" className={location.pathname === '/soe' ? 'active' : 'link'}><Link to='/soe' className={location.pathname === '/soe' ? 'active' : 'link'}>S.O.E</Link></a>
+
+        //             <a href="" className={location.pathname === '/festas' ? 'active' : 'link'}><Link to='/festas' className={location.pathname === '/festas' ? 'active' : 'link'}>Festas</Link></a>
+
+        //             <a href="" className={location.pathname === '/comunidade' ? 'active' : 'link'}><Link to='/comunidade' className={location.pathname === '/comunidade' ? 'active' : 'link'}>Comunidade</Link></a>
+
+        //             <a href="" className={location.pathname === '/' ? 'active' : 'link'}><Link to='/' className={location.pathname === '/' ? 'active' : 'link'}>Contato</Link></a>
+
+        //             <a href="" className={location.pathname === '/faq' ? 'active' : 'link'}><Link to='/faq' className={location.pathname === '/faq' ? 'active' : 'link'}>FAQ</Link></a>
+
+        //             <a href="/intencao" className='but'><Link to='/intencao' className='but2'>Faça sua Intenção</Link></a>
+
+        //         </div>
+
+        //     </header>
+
+        // </div>
 
     );
 

@@ -1,81 +1,104 @@
+
 .footer {
+
     background-color: #0e0d0d;
     color: #fff;
     padding: 40px 20px;
     text-align: center;
 
     .footer-content {
+
         display: flex;
         justify-content: space-around;
         margin-bottom: 20px;
 
         .contato {
+
             max-width: 300px;
 
             h2 {
-                font-size: 1.5rem;
+
+                font-size: 3.5vh;
                 margin-bottom: 10px;
                 font-weight: bold;
                 border-bottom: 2px solid #db4545;
                 display: inline-block;
                 padding-bottom: 5px;
+
             }
 
             p {
+
                 margin: 5px 0;
+
             }
 
             .social-links {
+
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 justify-content: center;
                 margin-top: 2%;
 
                 .social-link {
-                    color: #fff;
-                    font-size: 1.5rem;
-                    transition: transform 0.3s;
 
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 3.5vh;
+                    transition: transform 0.3s;
 
                 }
 
                 .social-link:hover {
-                    transform: scale(1.2);
+
+                    transform: scale(1.1);
                     color: #db4545;
+
                 }
+
             }
         }
 
         .social {
 
             h2 {
-                font-size: 1.5rem;
+
+                font-size: 3.5vh;
                 margin-bottom: 10px;
                 font-weight: bold;
                 border-bottom: 2px solid #db4545;
                 display: inline-block;
                 padding-bottom: 5px;
+
             }
 
             p {
+
                 margin: 5px 0;
+
             }
 
             .social-links {
+
                 display: flex;
                 justify-content: center;
                 margin-top: 2%;
                 gap: 20px;
 
                 .social-link {
+
                     color: #fff;
-                    font-size: 1.5rem;
+                    font-size: 3.5vh;
                     transition: transform 0.3s;
 
                     &:hover {
-                        transform: scale(1.2);
+
+                        transform: scale(1.1);
                         color: #db4545;
+
                     }
+
                 }
             }
         }
@@ -87,17 +110,23 @@
         padding-top: 20px;
 
         .footer-nav {
+
             margin-bottom: 10px;
 
             a {
+
                 color: #fff;
                 margin: 0 15px;
                 text-decoration: none;
                 transition: color 0.3s;
 
+                
                 &:hover {
+
                     color: #db4545;
+
                 }
+
             }
         }
 
@@ -109,11 +138,15 @@
 
 
             p {
-                font-size: 0.9rem;
+                
+                font-size: 2.5vh;
+                
             }
 
             img {
+                
                 width: 10%;
+                
             }
 
         }

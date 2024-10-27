@@ -1,13 +1,18 @@
 import "./index.scss";
 import { Link } from 'react-router-dom';
-
+import Fly from '../../components/flying'
 import Cabecalho from "../../components/cabecalho";
+import Slider from '../../components/Slider';
 import Footer from "../../components/footer";
 
 export default function Festas() {
   return (
     <div className="pagina-festas pagina">
       <Cabecalho />
+
+      <Slider />
+
+      <Fly />
       
       <main>
         <div className="top">
