@@ -27,23 +27,23 @@ export default function Adulto() {
 
             <h3>Casamento</h3>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sed aut quis, adipisci expedita autem unde reiciendis voluptas molestiae voluptatibus? Fuga iste similique repudiandae, vero ducimus ex laudantium voluptates sit.</p>
+            <p>Essa é uma festa em que cada detalhe irradia amor e elegância, perfeita para celebrar um casamento inesquecível. Transforme o grande dia com nossas decorações exclusivas, pensadas para criar momentos e memórias que durarão para sempre na história do noivo e da noiva.</p>
 
         </div>
 
-        <img src='https://lejour.com.br/wp-content/uploads/2021/11/capa-home-wedding.jpg' alt='Festa de Casamento' />
+        <img src='https://media.discordapp.net/attachments/1253785078484434957/1299805998176927835/FB_IMG_1729968235628.jpg?ex=671e8a2b&is=671d38ab&hm=982245e9ca353c566448a02a17d50fe877090f1b9ba30d562b124d93866c5096&=&format=webp&width=587&height=498' alt='Festa de Casamento' />
 
     </div>
 
     <div className='bloco2'>
 
-        <img src='https://www.tuacasa.com.br/wp-content/uploads/2019/05/festa-country-capa.jpg' alt='Festa Country' />
+        <img src='https://media.discordapp.net/attachments/1253785078484434957/1299805997879136286/FB_IMG_1729968251952.jpg?ex=671e8a2b&is=671d38ab&hm=a4872f644fb5babfe834795b7aab47560250a1a5b635f78a4805d9657337ada4&=&format=webp&width=398&height=498' alt='Festa Country' />
 
         <div className='textos'>
 
-            <h3>Country</h3>
+            <h3>Flores</h3>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sed aut quis, adipisci expedita autem unde reiciendis voluptas molestiae voluptatibus? Fuga iste similique repudiandae, vero ducimus ex laudantium voluptates sit.</p>
+            <p>Essa é uma festa em que cada detalhe exalta a beleza das flores, perfeita para criar um evento inesquecível. Transforme a celebração com nossas decorações exclusivas, inspiradas no tema floral, pensadas para proporcionar momentos encantadores e memórias que florescerão para sempre na vida do aniversariante.</p>
 
         </div>
 
@@ -53,9 +53,9 @@ export default function Adulto() {
 
         <div className='textos'>
 
-            <h3>Anos 50</h3>
+            <h3>Mensagens</h3>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sed aut quis, adipisci expedita autem unde reiciendis voluptas molestiae voluptatibus? Fuga iste similique repudiandae, vero ducimus ex laudantium voluptates sit.</p>
+            <p>Essa festa é uma verdadeira celebração de sentimentos e conexões. Com decorações que destacam mensagens personalizadas, cada espaço do evento será uma oportunidade de refletir sobre as boas memórias. É o momento perfeito para criar uma atmosfera especial, onde todos podem se sentir inspirados e apreciados.</p>
 
         </div>
 

@@ -12,11 +12,11 @@ export default function Soe() {
             <Cabecalho />
             <div className='blocos'>
 
-                <h2>S.O.E</h2>
+                <h2>QUEM SOMOS??</h2>
 
                 <div className='bloco1'>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi saepe eum corporis id laboriosam at enim omnis dignissimos, atque velit eligendi deleniti nulla illo vitae delectus harum labore. Praesentium, velit.</p>
+                    <p>A SOE é uma empresa que oferece as melhores decorações de festas para você e sua família. Somos versáteis nos detalhes e trabalhamos com paixão e dedicação para alegrar a todos e tornar o evento ainda mais especial.</p>
 
                     <img src="assets/images/equipe1.jpg" alt="Equipe" />
                 </div>
@@ -25,13 +25,13 @@ export default function Soe() {
 
                     <img src="assets/images/equipe1.jpg" alt="Equipe" />
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi saepe eum corporis id laboriosam at enim omnis dignissimos, atque velit eligendi deleniti nulla illo vitae delectus harum labore. Praesentium, velit.</p>
+                    <p>Nós amamos criar momentos únicos. Cada decoração que fazemos é pensada com carinho, pois sabemos que cada detalhe importa. Nossa alegria vem de ver os sonhos dos clientes se tornarem realidade e tornar o evento inesquecível.</p>
 
                 </div>
 
                 <div className='bloco3'>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi saepe eum corporis id laboriosam at enim omnis dignissimos, atque velit eligendi deleniti nulla illo vitae delectus harum labore. Praesentium, velit.</p>
+                    <p>Nós, da SOE, iniciamos nossa jornada movidos pela paixão por criar momentos especiais. Com o tempo, nossa dedicação e criatividade nos ajudaram a conquistar a confiança de nossos clientes. Cada festa que decoramos é uma nova história, tornando cada celebração única e memorável. Não perca tempo! Venha transformar seus sonhos em realidade.</p>
 
                     <img src="assets/images/equipe1.jpg" alt="Equipe" />
 
