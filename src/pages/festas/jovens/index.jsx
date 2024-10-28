@@ -27,7 +27,7 @@ export default function Jovens() {
 
                 <div className='bloco1'>
 
-                    <img src="https://curitifestas.com.br/wp-content/uploads/2023/11/Decoracao-15-anos-Beatriz.jpeg?v=1705844675" alt="" />
+                    <img src="https://media.discordapp.net/attachments/1216553829559177268/1300559508392906763/Picsart_24-10-28_17-38-56-480.jpg?ex=672147ee&is=671ff66e&hm=a56a89c106f67633d9194dadff56ec1302a304a6e795551e29a878297562df74&=&format=webp&width=640&height=640" alt="" />
 
                     <div className='textos'>
 
@@ -68,7 +68,7 @@ export default function Jovens() {
 
                 <div className='bloco3'>
 
-                    <img src="https://i.pinimg.com/564x/18/be/65/18be651e5492fe478810d6a0ed08fbb0.jpg" alt="" />
+                    <img src="https://media.discordapp.net/attachments/1216553829559177268/1300556848142876732/Picsart_24-10-28_17-28-23-073.jpg?ex=67214573&is=671ff3f3&hm=cd49fea2bf94e28554d5101fcb43e2346253d889ee052581a96b48ea34849957&=&format=webp&width=640&height=640" alt="" />
 
                     <div className='textos'>
 
