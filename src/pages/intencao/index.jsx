@@ -54,23 +54,7 @@ export default function Intencao() {
             color: "#db4545",
             iconColor: "#db4545",
             background: "#000",
-            text: 'Preencha todos os campos',
-            icon: 'error',
-            confirmButtonText: 'Ok',
-            confirmButtonColor: "#db4545",
-            customClass:{
-                confirmButton: 'custom-confirm-button',
-            },
-        });
-    };
-
-    const handleAlertErr2 = () => {
-        Swal.fire({
-            title: 'Falha na intenção',
-            color: "#db4545",
-            iconColor: "#db4545",
-            background: "#000",
-            text: 'As datas não são compátiveis',
+            text: 'Preencha todos os campos, ou verifique as datas',
             icon: 'error',
             confirmButtonText: 'Ok',
             confirmButtonColor: "#db4545",
