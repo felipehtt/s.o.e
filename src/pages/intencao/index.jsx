@@ -9,10 +9,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import Swal from 'sweetalert2';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 export default function Intencao() {
+
+    const [token, setToken] = useState(null);
+
+    useEffect(() => {
+
+        let token = localStorage.getItem('ADM');
+
+        setToken(token);
+        
+    })
 
     const [nome, setNome] = useState('');
     const [telefone, setTelefone] = useState('');

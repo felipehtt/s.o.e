@@ -84,6 +84,10 @@ export default function Dashboard() {
 
                 <div className="dashboard-content">
 
+                    <button className='getIntentions'>
+                        {active == 'Festas' ? "Buscar Festas" : `Buscar ${active}`}
+                    </button>
+
                     <h1>{active}</h1>
 
                     <p>
