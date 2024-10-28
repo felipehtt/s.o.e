@@ -49,6 +49,8 @@ export default function Login() {
                 handleAlertErr();
             }
             else{
+                localStorage.setItem('ADM', resp.data.token);
+                localStorage.setItem('USERNAME', nome);
                 login(resp.data.token);
                 navigate('/dashboard');
     

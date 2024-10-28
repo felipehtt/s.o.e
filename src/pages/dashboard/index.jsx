@@ -14,6 +14,8 @@ export default function Dashboard() {
 
     const navigate = useNavigate();
 
+    const userName = localStorage.getItem('USERNAME');
+
     function sair(){
 
         localStorage.setItem('ADM', null);
@@ -53,7 +55,7 @@ export default function Dashboard() {
                         <img width='60px' src="assets/images/logo-soe.png" alt="Logo" />
 
                         <div>
-                            <p className="username">Zuleica</p>
+                            <p className="username">{userName}</p>
 
                             <p className="user-role">Admin</p>
                         </div>
