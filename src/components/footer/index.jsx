@@ -35,7 +35,7 @@ export default function Footer() {
 
                     <div className='social-links'>
 
-                        <a href="" className='social-link' target='_blank'><SocialIcon fallback="facebook" bgColor='#db4545' href=''  /></a>
+                        <a href="" className='social-link' target='_blank'><SocialIcon fallback="facebook" bgColor='#db4545' href='' /></a>
 
                         <a href="" className='social-link' target='_blank'><SocialIcon fallback="instagram" bgColor='#db4545' href='' /></a>
 
@@ -57,13 +57,17 @@ export default function Footer() {
 
                     <a href="/festas">Festas</a>
 
+                    <a href="">
+                        <Link to={isAuthenticated ? '/dashboard' : '/login'} className='img'>Adm Access</Link>
+                    </a>
+
                 </nav>
 
                 <div className='end'>
 
                     <p>&copy; 2024 Site Soe.</p>
 
-                    <Link to={isAuthenticated ? '/dashboard' : '/login'} className='img'><img src="/assets/images/logo-soe.png" alt="" /></Link>
+                    <img src="/assets/images/logo-soe.png" alt="" />
 
                     <p>Direitos reservados.</p>
 
