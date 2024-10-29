@@ -17,7 +17,7 @@ export default function Jovens() {
             <Fly />
 
             <div className='static'>
-                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGBCW5GIAhi92wQLVtSTzG6HD99c30FEsXDw&s' alt=''
+                <img src='' alt=''
                 />
             </div>
 

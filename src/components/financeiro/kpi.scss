@@ -3,11 +3,12 @@
 
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 8px;
     margin: 50% 0;
     border: 2px solid;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
     transition: transform 0.2s ease;
 
     &:hover {
@@ -21,16 +22,16 @@
         h4 {
 
             margin: 0;
-            font: 600 20px 'Verdana';
-            color: #333;
+            font: 600 20px 'Poppins';
+            color: #161515;
 
         }
 
         p {
 
             margin: 5px 0 0;
-            font: 600 20px 'Verdana';
-            color: #333;
+            font: 600 20px 'Poppins';
+            color: #161515;
 
         }
 

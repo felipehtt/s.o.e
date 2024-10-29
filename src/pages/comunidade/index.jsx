@@ -28,7 +28,9 @@ export default function Comunidade() {
 
                         <h2>O que é a Comunidade</h2>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eveniet, facilis nobis non aliquam, pariatur labore incidunt ratione earum totam voluptas qui magni id soluta alias, impedit laborum. Dolorem, saepe?</p>
+                        <p>A comunidade é um local onde a SOE pode interagir com o
+                            usuário pela comunidade do WhatsApp, lá postaremos
+                            atualizações sobre novas festas e novidades da empresa.</p>
 
                     </div>
 
