@@ -120,10 +120,23 @@ export default function Intencao() {
         }
         else{
 
-            const url = `http://localhost:7000/intencao/${id}`;
-            await axios.put(url, paramIntention);
+            try {
+            
+                const url = `http://localhost:7000/intencao/${id}`;
+                let resp = await axios.put(url, paramIntention);
+    
+                if(resp.data.erro != undefined){
+                    handleAlertErr();
+                }
+                else{
+                    handleAlertPut();
+                }
+    
 
-            handleAlertPut();
+            }
+            catch(err){
+                handleAlertErr();
+            }
 
         }
 
