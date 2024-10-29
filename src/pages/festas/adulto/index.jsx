@@ -38,13 +38,13 @@ export default function Adulto(){
         
         </div>
 
-        <img src='https://media.discordapp.net/attachments/1253785078484434957/1299805998176927835/FB_IMG_1729968235628.jpg?ex=671e8a2b&is=671d38ab&hm=982245e9ca353c566448a02a17d50fe877090f1b9ba30d562b124d93866c5096&=&format=webp&width=587&height=498' alt='Festa de Casamento' />
+        <img src='https://media.discordapp.net/attachments/1216553829559177268/1300549167168491613/Picsart_24-10-28_07-49-58-474.jpg?ex=67213e4c&is=671feccc&hm=194767ac19dba9f888ed081e868beb3ac00514286147fd03eedccd4a149bb2b0&=&format=webp&width=640&height=640' alt='Festa de Casamento' />
 
     </div>
 
     <div className='bloco2'>
 
-        <img src='https://www.tuacasa.com.br/wp-content/uploads/2019/05/festa-country-capa.jpg' alt='Festa Country' />
+        <img src='https://media.discordapp.net/attachments/1216553829559177268/1300549166887604264/Picsart_24-10-28_07-49-12-275.jpg?ex=67213e4c&is=671feccc&hm=44b89f716ed670371903fe046476d4bdc88932c1b4f4c3ec5a5c81fddab1216a&=&format=webp&width=640&height=640' alt='Festa Country' />
 
         <div className='textos'>
 
@@ -75,7 +75,7 @@ export default function Adulto(){
         </a>
         </div>
 
-        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJEFemScXUlUUNJWPRd1nOG3fs7Uwcd1c6Wg&s' alt='Festa de Anos 50' />
+        <img src='https://media.discordapp.net/attachments/1216553829559177268/1300551738222448661/Picsart_24-10-28_17-08-05-103.jpg?ex=672140b1&is=671fef31&hm=d8635b649e4561c8b0acdd9d56b5776687f12032d8789b97180fafdcda4d3dee&=&format=webp&width=640&height=640' alt='Festa de Anos 50' />
     </div>
 
 </div>

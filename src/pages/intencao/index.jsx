@@ -24,7 +24,7 @@ export default function Intencao() {
         
     })
 
-    const [nome, setNome] = useState('');
+    const [nomeCliente, setNomeCliente] = useState('');
     const [telefone, setTelefone] = useState('');
     const [cep, setCep] = useState('');
     const [dataFesta, setDataFesta] = useState('');
@@ -48,10 +48,26 @@ export default function Intencao() {
         });
     };
 
+    const handleAlertErr = () => {
+        Swal.fire({
+            title: 'Falha na intenção',
+            color: "#db4545",
+            iconColor: "#db4545",
+            background: "#000",
+            text: 'Preencha todos os campos, ou verifique as datas',
+            icon: 'error',
+            confirmButtonText: 'Ok',
+            confirmButtonColor: "#db4545",
+            customClass:{
+                confirmButton: 'custom-confirm-button',
+            },
+        });
+    };
+
     async function salvarIntencao() {
 
         const paramCorpo = {
-            "nome": nome,
+            "nomeCliente": nomeCliente,
             "telefone": telefone,
             "cep": cep,
             "dataFesta": dataFesta,
@@ -60,12 +76,23 @@ export default function Intencao() {
             "dataIntencao": dataIntencao
         }
 
-        const url = 'http://localhost:7000/intencao';
-        let resp = await axios.post(url, paramCorpo);
+        
+        try {
 
-        let dados = resp.data;
+            const url = 'http://localhost:7000/intencao';
+            let resp = await axios.post(url, paramCorpo);
+         
+            if(resp.data.erro != undefined){
+                handleAlertErr();
+            }
+            else{
+                handleAlert();
+            }
 
-        handleAlert();
+        }
+        catch(err){
+            handleAlertErr();
+        }
 
     }
 
@@ -100,7 +127,7 @@ export default function Intencao() {
                 <div className='form'>
                     <div>
                         <label htmlFor="nome">Nome Completo</label>
-                        <input type='text' placeholder='Felipe Soares' value={nome} onChange={e => setNome(e.target.value)} />
+                        <input type='text' placeholder='Felipe Soares' value={nomeCliente} onChange={e => setNomeCliente(e.target.value)} />
                     </div>
                     <div>
                         <label htmlFor="telefone">Telefone</label>

@@ -16,7 +16,7 @@ export default function Infantil() {
 
             <div className='static'>
 
-                <img src='https://media.discordapp.net/attachments/1253785078484434957/1299804810517811221/FB_IMG_1729968000593.jpg?ex=671e8910&is=671d3790&hm=bbe3cb941ebe690526103a43a97bde9ee26c78c6a24cccc8e65c9196c19beb29&=&format=webp&width=717&height=498' alt='' />
+                <img src='assets/images/pietro 1.png' alt='' />
 
             </div>
 
@@ -40,17 +40,17 @@ export default function Infantil() {
 
                     </div>
 
-                    <img src='https://www.artealegria.com.br/wp-content/uploads/2019/06/DSC_0524-1.jpg' alt='Festa de Heróis' />
+                    <img src='https://media.discordapp.net/attachments/1216553829559177268/1300558219642536057/Picsart_24-10-28_17-33-51-896.jpg?ex=672146ba&is=671ff53a&hm=221e3b1599467a30b69f0c041f9636ce5e32b8beaf52c9c55c0f187cbffb1f90&=&format=webp&width=640&height=640' alt='Festa de Heróis' />
 
                 </div>
 
                 <div className='bloco2'>
 
-                    <img src='https://festacleanchic.com/wp-content/uploads/2017/12/24991272_10156091209725921_6740559705137476078_n.jpg' alt='Festa de Esporte' />
+                    <img src='https://media.discordapp.net/attachments/1216553829559177268/1300558220376539166/Picsart_24-10-28_17-31-28-839.jpg?ex=672146ba&is=671ff53a&hm=69fdde475c149e4a49cf6993f7871350a15d65213234f2cca04595151d2a6062&=&format=webp&width=640&height=640' alt='Festa de desenhos' />
 
                     <div className='textos'>
 
-                        <h3>Esportes</h3>
+                        <h3>Desenhos</h3>
 
                         <p>Essa festa vai levar a emoção dos esportes para outro nível! Com decorações que capturam a essência de diferentes modalidades, o ambiente será repleto de energia e animação. É uma chance de juntar amigos e celebrar o amor pelo esporte de uma forma divertida e memorável, onde todos podem se divertir e competir em um clima descontraído.</p>
 
@@ -80,7 +80,7 @@ export default function Infantil() {
 
                     </div>
 
-                    <img src='https://media.discordapp.net/attachments/1253785078484434957/1299804392085782628/FB_IMG_1729877585945.jpg?ex=671e88ac&is=671d372c&hm=1ade0103c29faf33ac3c9cfac421709dccf86e67570187fab5d547af64df188c&=&format=webp&width=498&height=498' alt='Festa de Safari' />
+                    <img src='https://media.discordapp.net/attachments/1216553829559177268/1300558219931811865/Picsart_24-10-28_17-32-34-309.jpg?ex=672146ba&is=671ff53a&hm=502951bc750b55ddfde98af87cc5a2b2328c26cf425b429d83e55135ae81fc49&=&format=webp&width=640&height=640' alt='Festa de Safari' />
                 </div>
 
             </div>

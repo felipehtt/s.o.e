@@ -68,11 +68,8 @@ export default function Cabecalho() {
 
                     </a>
 
-                    <a href="/intencao" className='but'>
 
-                        <Link to='/intencao' className='but2'>Faça sua Intenção</Link>
-
-                    </a>
+                        <Link to='/intencao' className='but'>Faça sua Intenção</Link>
 
                 </div>
 
