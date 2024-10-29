@@ -1,6 +1,6 @@
 import './index.scss';
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import Cabecalho from '../../components/cabecalho';
 import Footer from '../../components/footer';
 import axios from 'axios';
@@ -47,12 +47,7 @@ export default function Dashboard() {
             const url = `http://localhost:7000/intencao`;
             let resp = await axios.get(url);
 
-            if (resp.data.erro != undefined) {
-                handleAlertErr();
-            }
-            else {
-                setListaIntencoes(resp.data);
-            }
+            setListaIntencoes(resp.data);
 
         }
         catch (err) {
@@ -172,8 +167,8 @@ export default function Dashboard() {
                                             <td>{item.temaFesta}</td>
                                             <td>{new Date(item.dataIntencao).toLocaleDateString()}</td>
                                             <td className='action'>
-                                                <FontAwesomeIcon icon={faUserPen} color='#db4545' />
-                                                <FontAwesomeIcon onClick={() => excluir(item.idIntencao)} icon={faCalendarXmark} color='#db4545' />
+                                                <Link to={`/intencao/${item.idIntencao}`}><FontAwesomeIcon icon={faUserPen} color='#db4545' /></Link>
+                                                <Link onClick={() => excluir(item.idIntencao)}><FontAwesomeIcon icon={faCalendarXmark} color='#db4545' /></Link>
                                             </td>
                                         </tr>
 
@@ -189,9 +184,9 @@ export default function Dashboard() {
                     }
 
                     {active == 'Financeiro' &&
-                    
-                    <Financeiro/>
-                    
+
+                        <Financeiro />
+
                     }
 
                 </div>

@@ -5,6 +5,8 @@ import Cabecalho from '../../components/cabecalho';
 import Footer from '../../components/footer';
 import Fly from '../../components/flying'
 import axios from 'axios';
+import moment from 'moment/moment';
+import { useNavigate, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import Swal from 'sweetalert2';
@@ -32,6 +34,10 @@ export default function Intencao() {
     const [temaFesta, setTemaFesta] = useState('');
     const [dataIntencao, setDataIntencao] = useState('');
 
+    const navigate = useNavigate();
+
+    const { id } = useParams();
+
     const handleAlert = () => {
         Swal.fire({
             title: 'Intenção feita!',
@@ -39,6 +45,22 @@ export default function Intencao() {
             iconColor: "#db4545",
             background: "#000",
             text: 'Sua intenção foi enviada!',
+            icon: 'success',
+            confirmButtonText: 'Ok',
+            confirmButtonColor: "#db4545",
+            customClass:{
+                confirmButton: 'custom-confirm-button',
+            },
+        });
+    };
+
+    const handleAlertPut = () => {
+        Swal.fire({
+            title: 'Intenção alterada!',
+            color: "#db4545",
+            iconColor: "#db4545",
+            background: "#000",
+            text: 'Sua intenção foi alterada com sucesso!',
             icon: 'success',
             confirmButtonText: 'Ok',
             confirmButtonColor: "#db4545",
@@ -66,7 +88,7 @@ export default function Intencao() {
 
     async function salvarIntencao() {
 
-        const paramCorpo = {
+        const paramIntention = {
             "nomeCliente": nomeCliente,
             "telefone": telefone,
             "cep": cep,
@@ -76,25 +98,76 @@ export default function Intencao() {
             "dataIntencao": dataIntencao
         }
 
-        
-        try {
-
-            const url = 'http://localhost:7000/intencao';
-            let resp = await axios.post(url, paramCorpo);
-         
-            if(resp.data.erro != undefined){
-                handleAlertErr();
+        if(id == undefined){
+            
+            try {
+    
+                const url = 'http://localhost:7000/intencao';
+                let resp = await axios.post(url, paramIntention);
+             
+                if(resp.data.erro != undefined){
+                    handleAlertErr();
+                }
+                else{
+                    handleAlert();
+                }
+    
             }
-            else{
-                handleAlert();
+            catch(err){
+                handleAlertErr();
             }
 
         }
-        catch(err){
-            handleAlertErr();
+        else{
+
+            const url = `http://localhost:7000/intencao/${id}`;
+            await axios.put(url, paramIntention);
+
+            handleAlertPut();
+
         }
 
     }
+
+    async function buscarInfo(){
+
+        if(id != undefined){
+
+            const url = `http://localhost:7000/intencao/${id}`;
+            let resp = await axios.get(url);
+
+            let dados = resp.data;
+
+            let dateOne = moment(dados.dataFesta).format('YYYY-MM-DD');
+
+            let dateTwo = moment(dados.dataIntencao).format('YYYY-MM-DD');
+
+            setNomeCliente(dados.nomeCliente);
+            setTelefone(dados.telefone);
+            setCep(dados.cep);
+            setDataFesta(dateOne);
+            setTipoFesta(dados.tipoFesta);
+            setTemaFesta(dados.temaFesta);
+            setDataIntencao(dateTwo);
+
+        }
+
+    }
+
+    useEffect(() => {
+
+        let token = localStorage.getItem('ADM')
+        setToken(token);
+
+        if(token == 'null'){
+            navigate('/login');
+        }
+
+        buscarInfo();
+
+    })
+
+
 
     return (
 
@@ -104,7 +177,7 @@ export default function Intencao() {
 
             <Fly />
 
-            <h1 className='title'>Preencha esse formulário para sua intenção.</h1>
+            <h1 className='title'>{id ? "Edite a sua intenção" : "Preencha esse formulário para sua intenção."}</h1>
 
             <div className='conteudo'>
 

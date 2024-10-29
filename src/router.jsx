@@ -28,6 +28,7 @@ export default function Navegacao() {
                     <Route path='/soe' element={<Soe />} />
                     <Route path='/festas' element={<Festas />} />
                     <Route path='/intencao' element={<Intencao />} />
+                    <Route path='/intencao/:id' element={<Intencao />} />
                     <Route path='/dashboard' element={
                         <PrivateRoute>
                             <Dashboard/>
