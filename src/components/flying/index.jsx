@@ -8,7 +8,7 @@ export default function Fly() {
 
     const [menuAbriu, setMenuAbriu] = useState(false);
 
-    let w = 'WhatsApp'
+    // let w = 'WhatsApp'
 
     function Menu() {
 
@@ -19,23 +19,23 @@ export default function Fly() {
 
     return (
 
-        <div className="fly-menu">
+        <div className='fly-menu'>
 
-            <div className={`menu ${menuAbriu ? "open" : ""}`}>
+            <div className={`menu ${menuAbriu ? 'open' : ''}`}>
 
-                <a href="" target="_blank" rel="" onClick={w}>
+                <a href="" target='_blank' rel="">
 
                     <SocialIcon className='menu-icon' fallback="whatsapp" bgColor='#db4545' href='' />
 
                 </a>
 
-                <a href="" target="_blank" rel="">
+                <a href="" target='_blank' rel="">
 
                     <SocialIcon className='menu-icon' fallback="facebook" bgColor='#db4545' href='' />
 
                 </a>
 
-                <a href="" target="_blank" rel="">
+                <a href="" target='_blank' rel="">
 
                     <SocialIcon className='menu-icon' fallback="instagram" bgColor='#db4545' href='' />
 
@@ -43,11 +43,11 @@ export default function Fly() {
 
             </div>
 
-            <div className="fly-button" onClick={Menu}>
+            <div className='fly-button' onClick={Menu}>
 
-                <FaWhatsapp className="plus-icon" />
-                <FaFacebook className="plus-icon" />
-                <FaInstagram className="plus-icon" />
+                <FaWhatsapp className='plus-icon' />
+                <FaFacebook className='plus-icon' />
+                <FaInstagram className='plus-icon' />
 
             </div>
 

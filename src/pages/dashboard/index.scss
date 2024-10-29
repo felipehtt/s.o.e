@@ -1,12 +1,14 @@
 .pagina-dashboard {
 
-    background: linear-gradient(to bottom, #000000 10%, #331211 50%, #000000 70%);
+    // background: linear-gradient(to bottom, #000000 10%, #331211 50%, #000000 70%);
+
+    height: 200vh;
 
     .tit {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 2%;
+        margin-top: 4%;
 
         color: #fff;
         font: 600 11px "Poppins";
@@ -15,7 +17,7 @@
     .dash-container {
         display: flex;
         background-color: #161515;
-        margin: 3% 13px;
+        margin: 5% 13px;
         border-radius: 10px;
 
         .sidebar {
@@ -63,7 +65,7 @@
                     text-align: left;
                     cursor: pointer;
                     border-radius: 4px;
-                    margin: 10px 0px;
+                    margin: 7% 0px;
                     transition: all 0.3s;
 
                     &:hover {
@@ -80,11 +82,11 @@
             .but {
                 display: flex;
                 align-items: center;
-                margin: 30% 30% 30% 0%;
+                margin: 70% 26% 30% 0%;
 
                 button {
 
-                    background-color: transparent;
+                    background-color: #db4545;
                     color: #fff;
                     border-style: none;
                     border-radius: 8px;
@@ -92,13 +94,15 @@
                     width: 110px;
                     font: 500 13px 'Poppins';
                     cursor: pointer;
+                    transition: all 0.5s;
 
                 }
 
                 button:hover {
 
-                    background-color: #db4545;
+                    background-color: #77302e;
                     transition: all 0.5s;
+                    transform: scale(1.12);
 
                 }
 

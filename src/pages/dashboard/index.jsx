@@ -46,27 +46,26 @@ export default function Dashboard() {
                 
             </div>
 
-            <div className="dash-container">
+            <div className='dash-container'>
 
-                <div className="sidebar">
+                <div className='sidebar'>
 
-                    <div className="user-profile">
+                    <div className='user-profile'>
 
                         <img width='60px' src="assets/images/logo-soe.png" alt="Logo" />
 
                         <div>
-                            <p className="username">{userName}</p>
+                            <p className='username'>{userName}</p>
 
-                            <p className="user-role">Admin</p>
-                        </div>
-
+                            <p className='user-role'>Admin</p>
+                        </div>'
                     </div>
 
-                    <ul className="nav-list">
+                    <ul className='nav-list'>
                         {navItems.map((item) => (
                             <li
                                 key={item}
-                                className={`nav-item ${active === item ? "active" : ""}`}
+                                className={`nav-item ${active === item ? 'active' : ''}`}
                                 onClick={() => setActive(item)}
                             >
                                 {item}
@@ -82,7 +81,7 @@ export default function Dashboard() {
 
                 </div>
 
-                <div className="dashboard-content">
+                <div className='dashboard-content'>
 
                     <button className='getIntentions'>
                         {active == 'Festas' ? "Buscar Festas" : `Buscar ${active}`}
@@ -91,8 +90,8 @@ export default function Dashboard() {
                     <h1>{active}</h1>
 
                     <p>
-                        {active === "Festas"
-                            ? "Cadastre e consulte as festas que fará neste mês."
+                        {active === 'Festas'
+                            ? 'Cadastre e consulte as festas que fará neste mês.'
                             : `Veja aqui a seção: ${active}.`}
                     </p>
 
@@ -100,7 +99,7 @@ export default function Dashboard() {
 
             </div>
 
-            <Footer />
+            {/* <Footer /> */}
 
         </div>
 
