@@ -141,7 +141,6 @@ export default function Dashboard() {
 
                         <div className='nav-intention'>
 
-<<<<<<< HEAD
                             <button onClick={buscarIntencoes} className='get-intention'>Buscar intenções</button>
 
                             <table>
@@ -187,13 +186,6 @@ export default function Dashboard() {
                         </div>
 
                     }
-=======
-                    <p>
-                        {active === 'Festas'
-                            ? 'Cadastre e consulte as festas que fará neste mês.'
-                            : `Veja aqui a seção: ${active}.`}
-                    </p>
->>>>>>> 07f729029b31968f7a5a4be18120d4353757284b
 
                 </div>
 
