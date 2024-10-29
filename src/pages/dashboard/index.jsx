@@ -3,10 +3,33 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Cabecalho from '../../components/cabecalho';
 import Footer from '../../components/footer';
+import axios from 'axios';
+import Swal from 'sweetalert2';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarXmark, faUserPen } from '@fortawesome/free-solid-svg-icons';
+
 
 export default function Dashboard() {
 
+    const handleAlertErr = () => {
+        Swal.fire({
+            title: 'Não encontramos!',
+            color: "#db4545",
+            iconColor: "#db4545",
+            background: "#000",
+            text: 'Nenhuma intenção salva',
+            icon: 'warning',
+            confirmButtonText: 'Ok',
+            confirmButtonColor: "#db4545",
+            customClass: {
+                confirmButton: 'custom-confirm-button',
+            },
+        });
+    };
+
     const [token, setToken] = useState(null);
+
+    const [listaIntencoes, setListaIntencoes] = useState([])
 
     const [active, setActive] = useState('Festas');
 
@@ -16,7 +39,38 @@ export default function Dashboard() {
 
     const userName = localStorage.getItem('USERNAME');
 
-    function sair(){
+    async function buscarIntencoes() {
+
+        try {
+
+            const url = `http://localhost:7000/intencao`;
+            let resp = await axios.get(url);
+
+            if (resp.data.erro != undefined) {
+                handleAlertErr();
+            }
+            else {
+                setListaIntencoes(resp.data);
+            }
+
+        }
+        catch (err) {
+            handleAlertErr();
+        }
+
+
+    }
+
+    async function excluir(id) {
+
+        const url = `http://localhost:7000/intencao/${id}`;
+        await axios.delete(url)
+
+        await buscarIntencoes();
+
+    }
+
+    function sair() {
 
         localStorage.setItem('ADM', null);
         navigate('/');
@@ -28,7 +82,7 @@ export default function Dashboard() {
         let token = localStorage.getItem('ADM')
         setToken(token);
 
-        if(token == 'null'){
+        if (token == 'null') {
             navigate('/login')
         }
 
@@ -43,7 +97,7 @@ export default function Dashboard() {
             <div className='tit'>
 
                 <h1>Seja bem-vindo(a) ao Dashboard do Administrador!</h1>
-                
+
             </div>
 
             <div className="dash-container">
@@ -84,17 +138,55 @@ export default function Dashboard() {
 
                 <div className="dashboard-content">
 
-                    <button className='getIntentions'>
-                        {active == 'Festas' ? "Buscar Festas" : `Buscar ${active}`}
-                    </button>
+                    {active == 'Intenções' &&
 
-                    <h1>{active}</h1>
+                        <div className='nav-intention'>
 
-                    <p>
-                        {active === "Festas"
-                            ? "Cadastre e consulte as festas que fará neste mês."
-                            : `Veja aqui a seção: ${active}.`}
-                    </p>
+                            <button onClick={buscarIntencoes} className='get-intention'>Buscar intenções</button>
+
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Nome</th>
+                                        <th>Telefone</th>
+                                        <th>CEP</th>
+                                        <th>Data da Festa</th>
+                                        <th>Tipo da Festa</th>
+                                        <th>Tema da Festa</th>
+                                        <th>Data da Intenção</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    {listaIntencoes.map(item =>
+
+                                        <tr>
+                                            <td>{item.idIntencao}</td>
+                                            <td>{item.nomeCliente}</td>
+                                            <td>{item.telefone}</td>
+                                            <td>{item.cep}</td>
+                                            <td>{new Date(item.dataFesta).toLocaleDateString()}</td>
+                                            <td>{item.tipoFesta}</td>
+                                            <td>{item.temaFesta}</td>
+                                            <td>{new Date(item.dataIntencao).toLocaleDateString()}</td>
+                                            <td className='action'>
+                                                <FontAwesomeIcon icon={faUserPen} color='#db4545' />
+                                                <FontAwesomeIcon onClick={() => excluir(item.idIntencao)} icon={faCalendarXmark} color='#db4545' />
+                                            </td>
+                                        </tr>
+
+                                    )}
+                                </tbody>
+
+
+                            </table>
+
+
+                        </div>
+
+                    }
 
                 </div>
 
