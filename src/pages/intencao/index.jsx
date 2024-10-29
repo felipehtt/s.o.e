@@ -87,7 +87,10 @@ export default function Intencao() {
     };
 
     async function salvarIntencao() {
-
+        
+        // let token = localStorage.getItem('ADM');
+        // setToken(token)
+        
         const paramIntention = {
             "nomeCliente": nomeCliente,
             "telefone": telefone,
@@ -97,21 +100,25 @@ export default function Intencao() {
             "temaFesta": temaFesta,
             "dataIntencao": dataIntencao
         }
-
+        
         if(id == undefined){
             
             try {
-    
+                
                 const url = 'http://localhost:7000/intencao';
                 let resp = await axios.post(url, paramIntention);
-             
+                
                 if(resp.data.erro != undefined){
                     handleAlertErr();
                 }
                 else{
                     handleAlert();
+                    
+                    // if(token != null){
+                    //     navigate('/dashboard')
+                    // }
                 }
-    
+                
             }
             catch(err){
                 handleAlertErr();
