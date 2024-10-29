@@ -116,37 +116,53 @@
             color: #fff;
             padding: 20px;
             border-radius: 10px;
-            
+
             display: flex;
             flex-direction: column;
 
-            .nav-intention{
-                
-                .get-intention{
-                    margin-top: 0px;
+            .nav-intention {
+
+                .get-intention {
+                    margin-top: 3px;
                     width: 200px;
                     border-style: none;
-                    padding: 5px;
+                    padding: 8px;
                     border-radius: 10px;
                     background-color: #db4545;
-                    color: #000;
+                    color: #fff;
+                    cursor: pointer;
+                    font-weight: 600;
+                    transition: all 0.5s;
+
+                    &:hover {
+
+                        transition: all 0.5s;
+                        transform: scale(1.07);
+
+                    }
                 }
 
-                table{
-                    width: 900px;
-                    padding-top: 5%;
+                table {
+
+                    background-color: #3e3e3e;
+                    padding: 8px;
+                    border-radius: 10px;
+                    width: 1200px;
+                    margin-top: 1.5%;
+                    
 
                     th {
                         text-align: center;
                         padding: 5px;
                     }
-            
+
                     td {
                         padding: 2px;
                         border-top: 1px solid #000;
+                        text-align: center;
                     }
 
-                    .action{
+                    .action {
                         display: flex;
                         flex-direction: row;
                         gap: 15px;

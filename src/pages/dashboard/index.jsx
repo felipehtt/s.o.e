@@ -5,6 +5,7 @@ import Cabecalho from '../../components/cabecalho';
 import Footer from '../../components/footer';
 import axios from 'axios';
 import Swal from 'sweetalert2';
+import Financeiro from '../../components/financeiro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarXmark, faUserPen } from '@fortawesome/free-solid-svg-icons';
 
@@ -112,7 +113,7 @@ export default function Dashboard() {
                             <p className='username'>{userName}</p>
 
                             <p className='user-role'>Admin</p>
-                        </div>'
+                        </div>
                     </div>
 
                     <ul className='nav-list'>
@@ -185,6 +186,12 @@ export default function Dashboard() {
 
                         </div>
 
+                    }
+
+                    {active == 'Financeiro' &&
+                    
+                    <Financeiro/>
+                    
                     }
 
                 </div>
