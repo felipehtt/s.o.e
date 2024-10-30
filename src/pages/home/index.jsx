@@ -2,7 +2,7 @@ import './index.scss';
 
 import { Link } from 'react-router-dom';
 import Cabecalho from '../../components/cabecalho';
-import Slider from '../../components/Slider';
+import { Slider } from '../../components/Slider';
 import Footer from '../../components/footer';
 import Fly from '../../components/flying';
 
@@ -18,7 +18,7 @@ export default function Home() {
 
       <main>
 
-        <Slider img1="'https://wallpapercave.com/wp/wp2848100.jpg'" />
+        <Slider />
 
         <h1>O melhor da festa é viver ela!</h1>
 

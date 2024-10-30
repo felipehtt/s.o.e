@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Cabecalho from '../../../components/cabecalho';
 import Footer from '../../../components/footer';
 import Fly from '../../../components/flying'
-import { SmallSlider } from '../../../components/smallSlider';
+import { SmallSlider, SmallSliderTwo, SmallSliderTriple } from '../../../components/smallSlider';
 
 
 export default function Jovens() {
@@ -28,7 +28,12 @@ export default function Jovens() {
 
                 <div className='bloco1'>
 
-                    <img src="https://media.discordapp.net/attachments/1216553829559177268/1300559508392906763/Picsart_24-10-28_17-38-56-480.jpg?ex=672147ee&is=671ff66e&hm=a56a89c106f67633d9194dadff56ec1302a304a6e795551e29a878297562df74&=&format=webp&width=640&height=640" alt="" />
+                    <div className='img'>
+
+                        <SmallSliderTwo />
+
+                    </div>
+
 
                     <div className='textos'>
 
@@ -64,13 +69,13 @@ export default function Jovens() {
                     </div>
 
                     <SmallSlider />
-                    
+
                 </div>
 
 
                 <div className='bloco3'>
 
-                    <img src="https://media.discordapp.net/attachments/1216553829559177268/1300556848142876732/Picsart_24-10-28_17-28-23-073.jpg?ex=67214573&is=671ff3f3&hm=cd49fea2bf94e28554d5101fcb43e2346253d889ee052581a96b48ea34849957&=&format=webp&width=640&height=640" alt="" />
+                    <SmallSliderTriple />
 
                     <div className='textos'>
 
