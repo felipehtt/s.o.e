@@ -7,8 +7,8 @@ const SmallSlider = () => {
 
     const slides = [        
 
-        { id: 1, img: 'https://wallpapercave.com/wp/wp2848100.jpg', alt: 'Festa 1' },
-        { id: 2, img: "https://media.discordapp.net/attachments/1216553829559177268/1300556848142876732/Picsart_24-10-28_17-28-23-073.jpg?ex=67214573&is=671ff3f3&hm=cd49fea2bf94e28554d5101fcb43e2346253d889ee052581a96b48ea34849957&=&format=webp&width=640&height=640", alt: 'Festa 2' }
+        { id: 1, img: 'https://th.bing.com/th/id/OIP.Q2CqPoe5asEKV67YJv8nsQHaFj?rs=1&pid=ImgDetMain', alt: 'Festa 1' },
+        { id: 2, img: 'https://th.bing.com/th/id/OIP.FB3VloQAqtm3sQQzEEyoagHaGl?rs=1&pid=ImgDetMain', alt: 'Festa 2' }
 
     ]                           
 
