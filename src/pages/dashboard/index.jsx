@@ -35,7 +35,7 @@ export default function Dashboard() {
 
     const [active, setActive] = useState('Festas');
 
-    const navItems = ["Perfil", "Festas", "Intenções", "Financeiro"];
+    const navItems = ["Perfil", "Festas", "Intenções", "Financeiro", "Endereços"];
 
     const navigate = useNavigate();
 
@@ -136,21 +136,6 @@ export default function Dashboard() {
 
                 <div className='dashboard-content'>
 
-                    {active == 'Festas' && 
-                    
-                        <div className='nav-party'>
-
-                            <section className='post'>
-
-
-                            </section>
-
-                            <section></section>
-
-                        </div>
-                    
-                    }
-
 
                     {active == 'Perfil' &&
 
@@ -176,6 +161,69 @@ export default function Dashboard() {
                         </div>
 
                     }
+
+
+                    {active == 'Festas' &&
+
+                        <div className='nav-party'>
+
+                            <section className='post'>
+
+                                <h2>Cadastro de Festas</h2>
+
+                                <div>
+                                    <label htmlFor="">Nome</label>
+                                    <input type="text" />
+                                </div>
+                                <div>
+                                    <label htmlFor="">Telefone</label>
+                                    <input type="text" />
+                                </div>
+                                <div>
+                                    <label htmlFor="">Data da Festa</label>
+                                    <input type="date" />
+                                </div>
+                                <div>
+                                    <label htmlFor="">Endereço</label>
+                                    <input type="text" />
+                                </div>
+                                <div>
+                                    <label htmlFor="">Distância média</label>
+                                    <input type="text" />
+                                </div>
+                                <div>
+                                    <label htmlFor="">Tipo da Festa</label>
+                                    <input type="text" />
+                                </div>
+                                <div>
+                                    <label htmlFor="">Tema da Festa</label>
+                                    <input type="text" />
+                                </div>
+                                <div>
+                                    <label htmlFor="">Quantidade de pessoas</label>
+                                    <input type="text" />
+                                </div>
+                                <div>
+                                    <label htmlFor="">Valor Total</label>
+                                    <input type="text" />
+                                </div>
+
+                                <button>CADASTRAR</button>
+
+                            </section>
+
+                            <hr color='#' width="900px" />
+
+                            <section className='get'>
+
+
+
+                            </section>
+
+                        </div>
+
+                    }
+
 
                     {active == 'Intenções' &&
 
