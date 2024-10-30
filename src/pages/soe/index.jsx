@@ -16,11 +16,17 @@ export default function Soe() {
 
             <div className='blocos'>
 
-                <h2>QUEM SOMOS??</h2>
+                <h2>S.O.E</h2>
 
                 <div className='bloco1'>
 
-                    <p>A SOE é uma empresa que oferece as melhores decorações de festas para você e sua família. Somos versáteis nos detalhes e trabalhamos com paixão e dedicação para alegrar a todos e tornar o evento ainda mais especial.</p>
+                    <div className='textos'>
+
+                        <h3>QUEM SOMOS??</h3>
+
+                        <p>A SOE é uma empresa que oferece as melhores decorações de festas para você e sua família. Somos versáteis nos detalhes e trabalhamos com paixão e dedicação para alegrar a todos e tornar o evento ainda mais especial.</p>
+
+                    </div>
 
                     <img src="assets/images/equipe1.jpg" alt="Equipe" />
                 </div>
@@ -45,7 +51,7 @@ export default function Soe() {
 
                     <h2>Veja nossos trabalhos</h2>
 
-                    <button><a href="/festas">Ver Festas</a></button>
+                    <button><a href="">Ver Festas</a></button>
 
                 </div>
 

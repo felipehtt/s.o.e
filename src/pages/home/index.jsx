@@ -20,7 +20,7 @@ export default function Home() {
 
         <Slider />
 
-        <h1>O melhor da festa é viver ela!</h1>
+        <h2>O melhor da festa é viver ela!</h2>
 
         <div className='first'>
 
@@ -30,7 +30,7 @@ export default function Home() {
 
               <div className='bloc1'>
 
-                <h2>Há 15 anos no mercado de festas e eventos!</h2>
+                <h3>Há 15 anos no mercado de festas e eventos!</h3>
 
                 <p>Com 15 anos de experiência no mercado de festas e eventos, somos apaixonados por transformar sonhos em realidade. Nossa equipe se dedica a cada detalhe, garantindo experiências memoráveis e únicas. Cada evento é uma nova oportunidade de criar momentos especiais que ficarão na memória dos nossos clientes.</p>
 
@@ -38,7 +38,7 @@ export default function Home() {
 
               <div className='bloc2'>
 
-                <h2>A Melhor Experiência</h2>
+                <h3>A Melhor Experiência</h3>
 
                 <p>Estamos comprometidos em proporcionar a melhor experiência aos nossos clientes. Criando momentos únicos que capturam sua essência, sempre com atenção aos detalhes. Nossa equipe dedicada assegura que tudo ocorra perfeitamente, desde a concepção até a execução. O resultado são momentos inesquecíveis, que trazem alegria e satisfação a todos os envolvidos.</p>
 
@@ -99,7 +99,7 @@ export default function Home() {
 
         <div className='bottom'>
 
-          <h1>O melhor da festa é viver ela!</h1>
+          <h2>O melhor da festa é viver ela!</h2>
 
         </div>
 

@@ -20,6 +20,7 @@ export default function Dashboard() {
             background: "#000",
             text: 'Nenhuma intenção salva',
             icon: 'warning',
+
             confirmButtonText: 'Ok',
             confirmButtonColor: "#db4545",
             customClass: {
@@ -34,7 +35,7 @@ export default function Dashboard() {
 
     const [active, setActive] = useState('Festas');
 
-    const navItems = ["Festas", "Usuários", "Intenções", "Financeiro"];
+    const navItems = ["Perfil", "Festas", "Intenções", "Financeiro"];
 
     const navigate = useNavigate();
 
@@ -135,7 +136,7 @@ export default function Dashboard() {
 
                 <div className='dashboard-content'>
 
-                    {active == 'Usuários' &&
+                    {active == 'Perfil' &&
 
                         <div className='nav-user'>
 
