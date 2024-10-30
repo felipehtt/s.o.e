@@ -1,10 +1,11 @@
 .dashboard-overview {
 
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 20px;
 
-  padding: 10px 5px;
+  padding: 15px;
   background-color: #161515;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.219), 0 6px 20px rgba(0, 0, 0, 0.219);
   border-radius: 10px;
@@ -14,6 +15,7 @@
     font: 500 18px 'Poppins';
     color: #fff;
     text-align: center;
+    padding: 10px;
 
   }
 
@@ -21,15 +23,26 @@
 
     display: flex;
     align-items: center;
-    gap: 15%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6%;
+
+    .kpi-container {
+
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8%;
+
+    }
 
     .input-section {
 
       display: flex;
-      flex-direction: column;
-      width: 60%;
+      align-items: center;
+      width: auto;
       background-color: #161515;
-      padding: 8px;
+      padding: 18px 10px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.219), 0 6px 20px rgba(0, 0, 0, 0.219);
 
@@ -47,7 +60,8 @@
       .input-row {
 
         display: flex;
-        gap: 14px;
+        flex-wrap: wrap;
+        gap: 18px;
 
       }
 
@@ -57,18 +71,17 @@
         flex-direction: column;
         align-items: start;
 
-        @media (max-width: 770px) {}
-
         label {
 
           font: 500 13px 'Poppins';
           color: #fff;
-          margin: 5px 2px;
+          margin: 0px 3px;
 
         }
 
         input {
 
+          margin: 5px 0;
           padding: 5px;
           border: 1px solid #ccc;
           border-radius: 8px;
@@ -95,16 +108,19 @@
 
     .chart-container {
 
-      background-color: #fff;
+      background-color: #f7f7f7;
       padding: 15px;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
 
       h3 {
 
         font: 600 16px 'Poppins';
-        color: #444;
+        color: #161515;
         margin-bottom: 10px;
+        text-align: center;
 
       }
 
@@ -119,4 +135,133 @@
 
   }
 
+}
+
+@media (max-width: 1024px) {
+  .dashboard-overview {
+    gap: 15px;
+
+    h3 {
+      font-size: 16px;
+    }
+
+    .section {
+      gap: 5%;
+    }
+
+    .kpi-container {
+      gap: 5%;
+    }
+
+    .chart-section {
+      .chart-container {
+        padding: 10px;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .dashboard-overview {
+    padding: 10px;
+
+    h3 {
+      font-size: 14px;
+    }
+
+    .section {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .kpi-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .input-section {
+      padding: 15px 8px;
+
+      h3 {
+        font-size: 12px;
+      }
+
+      .input-row {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .input-group {
+        label {
+          font-size: 12px;
+        }
+
+        input {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .chart-section {
+      gap: 10px;
+
+      .chart-container {
+        padding: 10px;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-overview {
+    gap: 10px;
+
+    h3 {
+      font-size: 12px;
+    }
+
+    .section {
+      gap: 10px;
+    }
+
+    .kpi-container {
+      gap: 8px;
+    }
+
+    .input-section {
+      padding: 10px;
+
+      h3 {
+        font-size: 11px;
+        padding: 5px;
+      }
+
+      .input-group {
+        label {
+          font-size: 11px;
+        }
+
+        input {
+          font-size: 11px;
+        }
+      }
+    }
+
+    .chart-section {
+      .chart-container {
+        padding: 8px;
+
+        h3 {
+          font-size: 12px;
+        }
+
+        canvas {
+          height: 200px !important;
+        }
+      }
+    }
+  }
 }

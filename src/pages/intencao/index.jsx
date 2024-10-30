@@ -205,7 +205,7 @@ export default function Intencao() {
 
                     <h1>Intenção?</h1>
 
-                    <p>Este formulário funciona como um interessse em contratar o serviço, sem compromisso nenhum você pode enviá-lo. Após enviar, em breve entraremos em contato com você por Whatsapp para formalizar seu interesse; verificar a disponibilidade do serviço interessado, verificar a localidade e seu espaço, acertar preços, entre outras burocracias.</p>
+                    <p>Este formulário funciona como um interesse em contratar o serviço, sem compromisso nenhum você pode enviá-lo. Após enviar, em breve entraremos em contato com você por Whatsapp para formalizar seu interesse; verificar a disponibilidade do serviço interessado, verificar a localidade e seu espaço, acertar preços, entre outras burocracias.</p>
                     <p>
                         Se estiver em dúvida sobre as opções de festas que oferecemos, Clique Abaixo
                     </p>
