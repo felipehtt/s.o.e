@@ -1,8 +1,10 @@
 .slider {
     position: relative;
-    width: 100%;
+    width: 50%;
     margin: auto;
     overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 5%;
 
     .slides {
         display: flex;
@@ -15,7 +17,7 @@
 
             img {
                 width: 100%;
-                height: 400px;
+                height: 300px;
             }
         }
     }
@@ -59,8 +61,8 @@
         display: flex;
 
         .indicator {
-            width: 13px;
-            height: 13px;
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
             border-color: aliceblue;
             background-color: transparent;

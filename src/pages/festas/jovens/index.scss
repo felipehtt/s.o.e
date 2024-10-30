@@ -80,7 +80,6 @@
             align-items: center;
             gap: 15%;
             text-align: left;
-            max-width: 76%;
             margin-top: 3%;
 
             h3 {
@@ -91,6 +90,7 @@
                 font: 400 15px 'Poppins';
                 line-height: 170%;
                 margin-bottom: 7%;
+                max-width: 600px;
             }
 
             .but {

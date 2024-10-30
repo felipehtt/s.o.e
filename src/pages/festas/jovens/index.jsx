@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Cabecalho from '../../../components/cabecalho';
 import Footer from '../../../components/footer';
 import Fly from '../../../components/flying'
+import { SmallSlider } from '../../../components/smallSlider';
 
 
 export default function Jovens() {
@@ -62,7 +63,8 @@ export default function Jovens() {
 
                     </div>
 
-                    <img src="https://cdn.shopify.com/s/files/1/0533/3906/2441/files/3_77066389-f07c-4175-85b4-28b26024fdc9.jpg?v=1664437871" alt="" />
+                    <SmallSlider />
+                    
                 </div>
 
 
