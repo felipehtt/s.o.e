@@ -24,8 +24,8 @@ export default function Navegacao() {
             <AuthProvider>
 
                 <Routes>
-                    <Route path='/' element={<Home />} />
-                    <Route path='/soe' element={<Soe />} />
+                    <Route path='/dashboard' element={<Dashboard />} />
+                    {/* <Route path='/soe' element={<Soe />} />
                     <Route path='/festas' element={<Festas />} />
                     <Route path='/intencao' element={<Intencao />} />
                     <Route path='/intencao/:id' element={<Intencao />} />
@@ -40,7 +40,7 @@ export default function Navegacao() {
                     <Route path='/faq' element={<Faq />} />
                     <Route path='/comunidade' element={<Comunidade />} />
 
-                    <Route path='/*' element={<NaoEncontrado />} />
+                    <Route path='/*' element={<NaoEncontrado />} /> */}
                 </Routes>
 
             </AuthProvider>
