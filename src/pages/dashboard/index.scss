@@ -201,6 +201,32 @@
 
             }
 
+            .nav-user{
+
+                h2{
+                    padding-left: 2%;
+                }
+
+                .profile{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 2%;
+                    margin-top: 2%;
+                    gap: 10px;
+
+                    .info{
+                        display: flex;
+                        flex-direction: column;
+
+                        label{
+                            font: 400 15px "Poppins";
+                            color: #525050;
+                        }
+
+                    }
+                }
+            }
+
 
             h1 {
 

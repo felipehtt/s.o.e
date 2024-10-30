@@ -40,6 +40,8 @@ export default function Dashboard() {
 
     const userName = localStorage.getItem('USERNAME');
 
+    const passWord = localStorage.getItem('PASSWORD');
+
     async function buscarIntencoes() {
 
         try {
@@ -132,6 +134,31 @@ export default function Dashboard() {
                 </div>
 
                 <div className='dashboard-content'>
+
+                    {active == 'Usuários' &&
+
+                        <div className='nav-user'>
+
+                            <h2>Meu Perfil</h2>
+
+                            <div className='profile'>
+
+                                <div className='info'>
+                                    <label htmlFor="nome">Nome</label>
+                                    <p>{userName}</p>
+                                </div>
+
+                                <div className='info'>
+                                    <label htmlFor="senha">Senha</label>
+                                    <p>{passWord}</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    }
 
                     {active == 'Intenções' &&
 

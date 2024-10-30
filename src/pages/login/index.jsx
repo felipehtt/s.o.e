@@ -51,6 +51,7 @@ export default function Login() {
             else{
                 localStorage.setItem('ADM', resp.data.token);
                 localStorage.setItem('USERNAME', nome);
+                localStorage.setItem('PASSWORD', senha);
                 login(resp.data.token);
                 navigate('/dashboard');
     
