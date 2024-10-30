@@ -55,10 +55,10 @@ export default function Jovens() {
 
                     <div className='textos'>
 
-                        <h2>Halloween</h2>
+                        <h2>Filmes e Séries</h2>
 
                         <p>
-                            "Essa é uma festa que denota elementos de terror e diversão, perfeita para comemorar o Halloween de uma forma inesquecível. Transforme sua festa em uma noite cheia de magia e suspense com nossas decorações, pensadas para criar momentos encantadores e lembranças arrepiantes."</p>
+                            "Essa é uma festa que denota elementos de cultura POP e diversão, perfeita para comemorar o seu dia de uma forma inesquecível. Transforme sua festa em uma noite cheia de magia e diversão com nossas decorações, pensadas para criar momentos encantadores e lembranças arrepiantes."</p>
 
                         <a href="/intencao" className='but'>
 

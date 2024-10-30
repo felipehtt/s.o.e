@@ -88,9 +88,6 @@ export default function Intencao() {
 
     async function salvarIntencao() {
         
-        // let token = localStorage.getItem('ADM');
-        // setToken(token)
-        
         const paramIntention = {
             "nomeCliente": nomeCliente,
             "telefone": telefone,
@@ -113,10 +110,6 @@ export default function Intencao() {
                 }
                 else{
                     handleAlert();
-                    
-                    // if(token != null){
-                    //     navigate('/dashboard')
-                    // }
                 }
                 
             }
@@ -144,6 +137,8 @@ export default function Intencao() {
             catch(err){
                 handleAlertErr();
             }
+
+            navigate('/dashboard');
 
         }
 

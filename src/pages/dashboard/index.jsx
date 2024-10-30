@@ -136,6 +136,22 @@ export default function Dashboard() {
 
                 <div className='dashboard-content'>
 
+                    {active == 'Festas' && 
+                    
+                        <div className='nav-party'>
+
+                            <section className='post'>
+
+
+                            </section>
+
+                            <section></section>
+
+                        </div>
+                    
+                    }
+
+
                     {active == 'Perfil' &&
 
                         <div className='nav-user'>
@@ -170,7 +186,6 @@ export default function Dashboard() {
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>Id</th>
                                         <th>Nome</th>
                                         <th>Telefone</th>
                                         <th>CEP</th>
@@ -186,7 +201,6 @@ export default function Dashboard() {
                                     {listaIntencoes.map(item =>
 
                                         <tr>
-                                            <td>{item.idIntencao}</td>
                                             <td>{item.nomeCliente}</td>
                                             <td>{item.telefone}</td>
                                             <td>{item.cep}</td>
