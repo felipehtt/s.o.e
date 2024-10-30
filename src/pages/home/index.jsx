@@ -1,7 +1,7 @@
 import './index.scss';
 
 import Cabecalho from '../../components/cabecalho';
-import Slider from '../../components/Slider';
+import { Slider } from '../../components/Slider';
 import Footer from '../../components/footer';
 import Fly from '../../components/flying';
 import { FaPlus } from "react-icons/fa";
@@ -18,7 +18,7 @@ export default function Home() {
 
       <main>
 
-        <Slider img1="'https://wallpapercave.com/wp/wp2848100.jpg'" />
+        <Slider />
 
         <div className='top'>
 

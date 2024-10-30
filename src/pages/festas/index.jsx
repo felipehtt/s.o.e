@@ -2,7 +2,7 @@ import "./index.scss";
 import { Link } from 'react-router-dom';
 import Fly from '../../components/flying'
 import Cabecalho from "../../components/cabecalho";
-import Slider from '../../components/Slider';
+import { SliderOne } from "../../components/Slider";
 import Footer from "../../components/footer";
 
 export default function Festas() {
@@ -10,7 +10,7 @@ export default function Festas() {
     <div className="pagina-festas pagina">
       <Cabecalho />
 
-      <Slider />
+      <SliderOne />
 
       <Fly />
       
