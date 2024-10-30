@@ -60,7 +60,7 @@ export default function Dashboard() {
 
     }
 
-    async function excluir(id) {
+    async function excluirIntencao(id) {
 
         const url = `http://localhost:7000/intencao/${id}`;
         await axios.delete(url)
@@ -216,7 +216,24 @@ export default function Dashboard() {
 
                             <section className='get'>
 
+                                <button>Exibir festas</button>
 
+                                <table>
+
+                                    <thead>
+                                        <tr>
+                                            <th>Nome</th>
+                                            <th>Telefone</th>
+                                            <th>CEP</th>
+                                            <th>Data da Festa</th>
+                                            <th>Tipo da Festa</th>
+                                            <th>Tema da Festa</th>
+                                            <th>Data da Intenção</th>
+                                            <th>Ações</th>
+                                        </tr>
+                                    </thead>
+
+                                </table>
 
                             </section>
 
@@ -258,7 +275,7 @@ export default function Dashboard() {
                                             <td>{new Date(item.dataIntencao).toLocaleDateString()}</td>
                                             <td className='action'>
                                                 <Link to={`/intencao/${item.idIntencao}`}><FontAwesomeIcon icon={faUserPen} color='#db4545' /></Link>
-                                                <Link onClick={() => excluir(item.idIntencao)}><FontAwesomeIcon icon={faCalendarXmark} color='#db4545' /></Link>
+                                                <Link onClick={() => excluirIntencao(item.idIntencao)}><FontAwesomeIcon icon={faCalendarXmark} color='#db4545' /></Link>
                                             </td>
                                         </tr>
 

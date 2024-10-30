@@ -238,7 +238,6 @@
             .nav-party {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 padding-top: 2%;
                 gap: 15px;
                 background-color: #161515;
@@ -306,8 +305,36 @@
 
                 hr{
                     margin-top: 4%;
+                    margin-left: 4%;
                 }
                 
+                .get{
+
+                    button{
+                        margin-top: 3px;
+                        margin-left: 4%;
+                        width: 100%;
+                        max-width: 150px;
+                        border-style: none;
+                        padding: 8px;
+                        border-radius: 10px;
+                        background-color: #db4545;
+                        color: #fff;
+                        cursor: pointer;
+                        font-weight: 600;
+                        transition: all 0.5s;
+    
+                        &:hover {
+    
+                            transition: all 0.5s;
+                            transform: scale(1.07);
+    
+                        }
+                    }
+
+
+                }
+
             }
 
 
