@@ -1,16 +1,20 @@
 import './index.scss';
 import { useState, useEffect } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link, useParams } from 'react-router-dom';
 import Cabecalho from '../../components/cabecalho';
 import Footer from '../../components/footer';
 import axios from 'axios';
+import moment from 'moment';
 import Swal from 'sweetalert2';
 import Financeiro from '../../components/financeiro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarXmark, faUserPen } from '@fortawesome/free-solid-svg-icons';
 
 
+
 export default function Dashboard() {
+
+    const [listaFestas, setListaFestas] = useState([]);
 
     const handleAlertErr = () => {
         Swal.fire({
@@ -20,6 +24,74 @@ export default function Dashboard() {
             background: "#000",
             text: 'Nenhuma intenção salva',
             icon: 'warning',
+
+            confirmButtonText: 'Ok',
+            confirmButtonColor: "#db4545",
+            customClass: {
+                confirmButton: 'custom-confirm-button',
+            },
+        });
+    };
+
+    const alertGet = () => {
+        Swal.fire({
+            title: 'Não encontramos!',
+            color: "#db4545",
+            iconColor: "#db4545",
+            background: "#000",
+            text: 'Nenhuma festa salva',
+            icon: 'warning',
+
+            confirmButtonText: 'Ok',
+            confirmButtonColor: "#db4545",
+            customClass: {
+                confirmButton: 'custom-confirm-button',
+            },
+        });
+    };
+
+    const Success = () => {
+        Swal.fire({
+            title: 'Cadastro Feito!',
+            color: "#db4545",
+            iconColor: "#db4545",
+            background: "#000",
+            text: 'Festa salva com sucesso!',
+            icon: 'success',
+
+            confirmButtonText: 'Ok',
+            confirmButtonColor: "#db4545",
+            customClass: {
+                confirmButton: 'custom-confirm-button',
+            },
+        });
+    };
+
+    const SuccessPut = () => {
+        Swal.fire({
+            title: 'Ótimo!',
+            color: "#db4545",
+            iconColor: "#db4545",
+            background: "#000",
+            text: 'Festa alterada com sucesso!',
+            icon: 'success',
+
+            confirmButtonText: 'Ok',
+            confirmButtonColor: "#db4545",
+            customClass: {
+                confirmButton: 'custom-confirm-button',
+            },
+        });
+    };
+
+    const Error = () => {
+        Swal.fire({
+            title: 'Erro no cadastro!',
+            color: "#db4545",
+            iconColor: "#db4545",
+            background: "#000",
+            text: 'Verifique os campos!',
+            icon: 'error',
 
             confirmButtonText: 'Ok',
             confirmButtonColor: "#db4545",
@@ -54,7 +126,9 @@ export default function Dashboard() {
     const [quantidadePessoas, setQuantidadePessoas] = useState('');
     const [precoTotal, setPrecoTotal] = useState('');
 
-    async function salvarFesta(){
+    const { id } = useParams();
+
+    async function salvarFesta() {
 
         const paramFesta = {
 
@@ -70,7 +144,112 @@ export default function Dashboard() {
 
         }
 
+        if (id == undefined) {
+
+            try {
+
+                const url = `http://localhost:7000/festa/cadastro?x-access-token=${token}`;
+                let resp = await axios.post(url, paramFesta);
+
+                if (resp.data.erro != undefined) {
+                    Error()
+                }
+                else {
+                    Success();
+                    
+                }
+
+            }
+            catch (err) {
+                Error();
+            }
+
+        }
+        else {
+
+            try {
+
+                const url = `http://localhost:7000/festa/${id}?x-access-token=${token}`;
+                let resp = await axios.put(url, paramFesta);
+
+                if (resp.data.erro != undefined) {
+                    Error();
+                }
+                else {
+                    SuccessPut();
+                }
+
+            }
+            catch (err) {
+                Error();
+            }
+
+        }
+
     }
+
+    async function buscarFestas() {
+
+        try {
+
+            const url = `http://localhost:7000/festa?x-access-token=${token}`;
+            let resp = await axios.get(url);
+
+            setListaFestas(resp.data)
+        }
+        catch (err) {
+            alertGet();
+        }
+
+    }
+
+    async function excluirFesta(id){
+
+        const url = `http://localhost:7000/festa/${id}?x-access-token=${token}`;
+        await axios.delete(url);
+
+        await buscarFestas();
+
+    }
+
+
+    async function consultar(token) {
+
+        if (id != undefined) {
+
+            const url = `http://localhost:7000/festa/${id}?x-access-token=${token}`;
+            let resp = await axios.get(url);
+
+            let dados = resp.data;
+
+            let dateParty = moment(dados.dataFesta).format('YYYY-MM-DD');
+
+            setNomeCliente(dados.nomeCliente);
+            setTelefone(dados.telefone);
+            setDataFesta(dateParty);
+            setEndereco(dados.endereco);
+            setDistanciaLocal(dados.distanciaLocal);
+            setTipoFesta(dados.tipoFesta);
+            setTemaFesta(dados.temaFesta);
+            setQuantidadePessoas(dados.quantidadePessoas);
+            setPrecoTotal(dados.precoTotal);
+
+        }
+
+    }
+
+    useEffect(() => {
+
+        let token = localStorage.getItem('ADM')
+        setToken(token);
+
+        if (token == 'null') {
+            navigate('/login');
+        }
+
+        consultar(token);
+
+    }, []);
 
 
     async function buscarIntencoes() {
@@ -114,6 +293,8 @@ export default function Dashboard() {
         if (token == 'null') {
             navigate('/login')
         }
+
+        consultar(token);
 
     }, [])
 
@@ -207,42 +388,42 @@ export default function Dashboard() {
 
                                 <div>
                                     <label htmlFor="">Nome</label>
-                                    <input type="text" value={nomeCliente} onChange={e => setNomeCliente(e.target.value)}/>
+                                    <input type="text" value={nomeCliente} onChange={e => setNomeCliente(e.target.value)} />
                                 </div>
                                 <div>
                                     <label htmlFor="">Telefone</label>
-                                    <input type="text" value={telefone}/>
+                                    <input type="text" value={telefone} onChange={e => setTelefone(e.target.value)} />
                                 </div>
                                 <div>
                                     <label htmlFor="">Data da Festa</label>
-                                    <input type="date" value={dataFesta}/>
+                                    <input type="date" value={dataFesta} onChange={e => setDataFesta(e.target.value)} />
                                 </div>
                                 <div>
                                     <label htmlFor="">Endereço</label>
-                                    <input type="text" value={endereco}/>
+                                    <input type="text" value={endereco} onChange={e => setEndereco(e.target.value)} />
                                 </div>
                                 <div>
                                     <label htmlFor="">Distância média</label>
-                                    <input type="text" value={distanciaLocal}/>
+                                    <input type="text" value={distanciaLocal} onChange={e => setDistanciaLocal(e.target.value)} />
                                 </div>
                                 <div>
                                     <label htmlFor="">Tipo da Festa</label>
-                                    <input type="text" value={tipoFesta}/>
+                                    <input type="text" value={tipoFesta} onChange={e => setTipoFesta(e.target.value)} />
                                 </div>
                                 <div>
                                     <label htmlFor="">Tema da Festa</label>
-                                    <input type="text" value={temaFesta}/>
+                                    <input type="text" value={temaFesta} onChange={e => setTemaFesta(e.target.value)} />
                                 </div>
                                 <div>
                                     <label htmlFor="">Quantidade de pessoas</label>
-                                    <input type="text" value={quantidadePessoas}/>
+                                    <input type="text" value={quantidadePessoas} onChange={e => setQuantidadePessoas(e.target.value)} />
                                 </div>
                                 <div>
                                     <label htmlFor="">Valor Total</label>
-                                    <input type="text" value={precoTotal}/>
+                                    <input type="text" value={precoTotal} onChange={e => setPrecoTotal(e.target.value)} />
                                 </div>
 
-                                <button>CADASTRAR</button>
+                                <button onClick={salvarFesta}>CADASTRAR</button>
 
                             </section>
 
@@ -250,7 +431,7 @@ export default function Dashboard() {
 
                             <section className='get'>
 
-                                <button>Exibir festas</button>
+                                <button onClick={buscarFestas}>Exibir festas</button>
 
                                 <table>
 
@@ -271,6 +452,25 @@ export default function Dashboard() {
 
                                     <tbody>
 
+                                        {listaFestas.map(item =>
+
+                                            <tr>
+                                                <td>{item.nomeCliente}</td>
+                                                <td>{item.telefone}</td>
+                                                <td>{new Date(item.dataFesta).toLocaleDateString()}</td>
+                                                <td>{item.endereco}</td>
+                                                <td>{item.distanciaLocal}</td>
+                                                <td>{item.tipoFesta}</td>
+                                                <td>{item.temaFesta}</td>
+                                                <td>{item.quantidadePessoas}</td>
+                                                <td>{item.precoTotal}</td>
+                                                <td className='action'>
+                                                    <Link to={`/dashboard/${item.idFesta}`}><FontAwesomeIcon icon={faUserPen} color='#db4545' /></Link>
+                                                    <Link onClick={() => excluirFesta(item.idFesta)}><FontAwesomeIcon icon={faCalendarXmark} color='#db4545' /></Link>
+                                                </td>
+                                            </tr>
+
+                                        )}
 
                                     </tbody>
 
