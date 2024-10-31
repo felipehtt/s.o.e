@@ -406,6 +406,206 @@ const SmallSliderTripleKid = () => {
 }
 
 
+//festa adultos
+const SmallSliderOld = () => {
+
+    const slides = [        
+
+        { id: 1, img: 'https://th.bing.com/th/id/R.827d08df99c009fe6dcbc7bbb4006259?rik=ryZdqeTMZYoKyA&pid=ImgRaw&r=0', alt: 'Festa 1' },
+        { id: 2, img: 'https://i.pinimg.com/736x/09/57/30/0957303e59789021bc984fe5b3b2cab3.jpg', alt: 'Festa 2' },
+        { id: 3, img: 'https://th.bing.com/th/id/R.a10958f626159510811fa020e6bfef6b?rik=I4koV%2fXPRinhIw&pid=ImgRaw&r=0', alt: ''}
+
+    ]                           
+
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const [displaySlides, setDisplaySlides] = useState(slides);
+
+    useEffect(() => {
+
+        setDisplaySlides([...slides, slides[0]]);
+
+    }, [slides])
+
+    const changeSlide = (direction) => {
+        if (direction === 'next') {
+            setCurrentSlide((prev) => (prev + 1) % slides.length);
+        } else {
+            setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+        }
+    };
+
+    const goToSlide = (index) => {
+        setCurrentSlide(index);
+    };
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            changeSlide('next');
+        }, 6000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <div className="slider6">
+            <div className="slides" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+                {slides.map((slide) => (
+                    <div className="slide" key={slide}>
+                        <img src={slide.img} alt={slide.alt} />
+                    </div>
+                ))}
+            </div>
+            <button className="prev" style={{backgroundColor: "#000"}} onClick={() => changeSlide('prev')}>&#10094;</button>
+            <button className="next" style={{backgroundColor: "#000"}} onClick={() => changeSlide('next')}>&#10095;</button>
+
+            <div className="indicators">
+                {slides.map((_, index) => (
+                    <div
+                        key={index}
+                        className={`indicator ${currentSlide === index ? 'active' : ''}`}
+                        onClick={() => goToSlide(index)}
+                    ></div>
+                ))}
+            </div>
+
+        </div>
+    );
+
+}
+
+
+const SmallSliderTwoOld = () => {
+
+    const slides = [        
+
+        { id: 1, img: 'https://th.bing.com/th/id/R.827d08df99c009fe6dcbc7bbb4006259?rik=ryZdqeTMZYoKyA&pid=ImgRaw&r=0', alt: 'Festa 1' },
+        { id: 2, img: 'https://i.pinimg.com/736x/09/57/30/0957303e59789021bc984fe5b3b2cab3.jpg', alt: 'Festa 2' },
+        { id: 3, img: 'https://th.bing.com/th/id/R.a10958f626159510811fa020e6bfef6b?rik=I4koV%2fXPRinhIw&pid=ImgRaw&r=0', alt: ''}
+
+    ]                           
+
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const [displaySlides, setDisplaySlides] = useState(slides);
+
+    useEffect(() => {
+
+        setDisplaySlides([...slides, slides[0]]);
+
+    }, [slides])
+
+    const changeSlide = (direction) => {
+        if (direction === 'next') {
+            setCurrentSlide((prev) => (prev + 1) % slides.length);
+        } else {
+            setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+        }
+    };
+
+    const goToSlide = (index) => {
+        setCurrentSlide(index);
+    };
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            changeSlide('next');
+        }, 6000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <div className="slider6">
+            <div className="slides" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+                {slides.map((slide) => (
+                    <div className="slide" key={slide}>
+                        <img src={slide.img} alt={slide.alt} />
+                    </div>
+                ))}
+            </div>
+            <button className="prev" style={{backgroundColor: "#000"}} onClick={() => changeSlide('prev')}>&#10094;</button>
+            <button className="next" style={{backgroundColor: "#000"}} onClick={() => changeSlide('next')}>&#10095;</button>
+
+            <div className="indicators">
+                {slides.map((_, index) => (
+                    <div
+                        key={index}
+                        className={`indicator ${currentSlide === index ? 'active' : ''}`}
+                        onClick={() => goToSlide(index)}
+                    ></div>
+                ))}
+            </div>
+
+        </div>
+    );
+
+}
+
+
+const SmallSliderTripleOld = () => {
+
+    const slides = [        
+
+        { id: 1, img: 'https://th.bing.com/th/id/R.827d08df99c009fe6dcbc7bbb4006259?rik=ryZdqeTMZYoKyA&pid=ImgRaw&r=0', alt: 'Festa 1' },
+        { id: 2, img: 'https://i.pinimg.com/736x/09/57/30/0957303e59789021bc984fe5b3b2cab3.jpg', alt: 'Festa 2' },
+        { id: 3, img: 'https://th.bing.com/th/id/R.a10958f626159510811fa020e6bfef6b?rik=I4koV%2fXPRinhIw&pid=ImgRaw&r=0', alt: ''}
+
+    ]                           
+
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const [displaySlides, setDisplaySlides] = useState(slides);
+
+    useEffect(() => {
+
+        setDisplaySlides([...slides, slides[0]]);
+
+    }, [slides])
+
+    const changeSlide = (direction) => {
+        if (direction === 'next') {
+            setCurrentSlide((prev) => (prev + 1) % slides.length);
+        } else {
+            setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+        }
+    };
+
+    const goToSlide = (index) => {
+        setCurrentSlide(index);
+    };
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            changeSlide('next');
+        }, 6000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <div className="slider6">
+            <div className="slides" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+                {slides.map((slide) => (
+                    <div className="slide" key={slide}>
+                        <img src={slide.img} alt={slide.alt} />
+                    </div>
+                ))}
+            </div>
+            <button className="prev" style={{backgroundColor: "#000"}} onClick={() => changeSlide('prev')}>&#10094;</button>
+            <button className="next" style={{backgroundColor: "#000"}} onClick={() => changeSlide('next')}>&#10095;</button>
+
+            <div className="indicators">
+                {slides.map((_, index) => (
+                    <div
+                        key={index}
+                        className={`indicator ${currentSlide === index ? 'active' : ''}`}
+                        onClick={() => goToSlide(index)}
+                    ></div>
+                ))}
+            </div>
+
+        </div>
+    );
+
+}
 
 
 export {
@@ -417,6 +617,11 @@ export {
     //festas infantis
     SmallSliderKid,
     SmallSliderTwoKid,
-    SmallSliderTripleKid
+    SmallSliderTripleKid,
+
+    //festas adultos
+    SmallSliderOld,
+    SmallSliderTwoOld,
+    SmallSliderTripleOld
 
 }

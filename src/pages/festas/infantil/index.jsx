@@ -17,7 +17,7 @@ export default function Infantil() {
 
             <img className="img" src="https://th.bing.com/th/id/R.02b81cf61a1fa07ff87fd00e0f8a4ba0?rik=WDIzs%2fdDrRXwFA&pid=ImgRaw&r=0" alt="" />
 
-            <h2>Algumas Festas Infantis</h2>
+            <h2>Algumas das Festas Infantis</h2>
 
             <div className='section'>
 
