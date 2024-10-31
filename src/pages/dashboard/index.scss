@@ -377,6 +377,17 @@
                             text-align: center;
     
                         }
+
+                        .action {
+
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 15px;
+                            padding-top: 10%;
+    
+                        }
     
                     }
 

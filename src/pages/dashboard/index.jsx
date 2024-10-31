@@ -8,8 +8,7 @@ import moment from 'moment';
 import Swal from 'sweetalert2';
 import Financeiro from '../../components/financeiro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarXmark, faUserPen } from '@fortawesome/free-solid-svg-icons';
-
+import { faCalendarXmark, faUserPen, faUser, faLock } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function Dashboard() {
@@ -156,7 +155,6 @@ export default function Dashboard() {
                 }
                 else {
                     Success();
-                    
                 }
 
             }
