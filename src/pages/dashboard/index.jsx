@@ -43,6 +43,36 @@ export default function Dashboard() {
 
     const passWord = localStorage.getItem('PASSWORD');
 
+
+    const [nomeCliente, setNomeCliente] = useState('');
+    const [telefone, setTelefone] = useState('');
+    const [dataFesta, setDataFesta] = useState('');
+    const [endereco, setEndereco] = useState('');
+    const [distanciaLocal, setDistanciaLocal] = useState('');
+    const [tipoFesta, setTipoFesta] = useState('');
+    const [temaFesta, setTemaFesta] = useState('');
+    const [quantidadePessoas, setQuantidadePessoas] = useState('');
+    const [precoTotal, setPrecoTotal] = useState('');
+
+    async function salvarFesta(){
+
+        const paramFesta = {
+
+            "nomeCliente": nomeCliente,
+            "telefone": telefone,
+            "dataFesta": dataFesta,
+            "endereco": endereco,
+            "distanciaLocal": distanciaLocal,
+            "tipoFesta": tipoFesta,
+            "temaFesta": temaFesta,
+            "quantidadePessoas": quantidadePessoas,
+            "precoTotal": precoTotal
+
+        }
+
+    }
+
+
     async function buscarIntencoes() {
 
         try {
@@ -173,39 +203,39 @@ export default function Dashboard() {
 
                                 <div>
                                     <label htmlFor="">Nome</label>
-                                    <input type="text" />
+                                    <input type="text" value={nomeCliente} onChange={e => setNomeCliente(e.target.value)}/>
                                 </div>
                                 <div>
                                     <label htmlFor="">Telefone</label>
-                                    <input type="text" />
+                                    <input type="text" value={telefone}/>
                                 </div>
                                 <div>
                                     <label htmlFor="">Data da Festa</label>
-                                    <input type="date" />
+                                    <input type="date" value={dataFesta}/>
                                 </div>
                                 <div>
                                     <label htmlFor="">Endereço</label>
-                                    <input type="text" />
+                                    <input type="text" value={endereco}/>
                                 </div>
                                 <div>
                                     <label htmlFor="">Distância média</label>
-                                    <input type="text" />
+                                    <input type="text" value={distanciaLocal}/>
                                 </div>
                                 <div>
                                     <label htmlFor="">Tipo da Festa</label>
-                                    <input type="text" />
+                                    <input type="text" value={tipoFesta}/>
                                 </div>
                                 <div>
                                     <label htmlFor="">Tema da Festa</label>
-                                    <input type="text" />
+                                    <input type="text" value={temaFesta}/>
                                 </div>
                                 <div>
                                     <label htmlFor="">Quantidade de pessoas</label>
-                                    <input type="text" />
+                                    <input type="text" value={quantidadePessoas}/>
                                 </div>
                                 <div>
                                     <label htmlFor="">Valor Total</label>
-                                    <input type="text" />
+                                    <input type="text" value={precoTotal}/>
                                 </div>
 
                                 <button>CADASTRAR</button>
@@ -224,14 +254,21 @@ export default function Dashboard() {
                                         <tr>
                                             <th>Nome</th>
                                             <th>Telefone</th>
-                                            <th>CEP</th>
-                                            <th>Data da Festa</th>
-                                            <th>Tipo da Festa</th>
-                                            <th>Tema da Festa</th>
-                                            <th>Data da Intenção</th>
+                                            <th>Data</th>
+                                            <th>Endereço</th>
+                                            <th>Distância</th>
+                                            <th>Tipo</th>
+                                            <th>Tema</th>
+                                            <th>Quantidade de pessoas</th>
+                                            <th>Valor Total</th>
                                             <th>Ações</th>
                                         </tr>
                                     </thead>
+
+                                    <tbody>
+
+
+                                    </tbody>
 
                                 </table>
 
