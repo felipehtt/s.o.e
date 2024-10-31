@@ -4,7 +4,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 4%;
+        margin-top: 9%;
     }
     
     .faq {
@@ -12,9 +12,7 @@
         align-items: center;
         justify-content: center;
         margin-left: 14%;
-        max-width: 75%;
-
-        height: 130vh;
+        height: 140vh;
 
         .textos {
             display: flex;
@@ -22,7 +20,13 @@
             justify-content: center;
             text-align: start;
             margin-bottom: 10%;
-
+            background-color: #161515;
+            border-radius: 10px;
+            padding: 70px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.219), 0 6px 20px rgba(0, 0, 0, 0.219);
+            width: 700px;
+            max-width: 400px;
+            margin-bottom: 150px;
             h1 {
                 font: 500 40px 'Poppins';
                 
@@ -32,6 +36,8 @@
                 font: 500 18px 'Poppins';
                 line-height: 170%;
                 margin-top: 10px;
+                width: 300px;
+
             }
         }
 
@@ -41,8 +47,8 @@
             width: 100vh;
             justify-content: center;
             align-items: center;
-            margin-left: 25%;
-
+            margin-left: 20%;
+            margin-right: 100px;
 
             .drop {
                 width: 500px;
