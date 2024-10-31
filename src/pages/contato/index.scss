@@ -12,7 +12,7 @@
 
         }
 
-    }   
+    }
 
     .contato {
 
@@ -51,7 +51,7 @@
             }
 
             .social-links {
-                
+
                 a {
                     text-decoration: none;
                 }
@@ -75,48 +75,20 @@
             }
 
         }
-
-        .but {
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            white-space: nowrap;
-            padding: 10px 50px;
-            margin-top: 5%;
-            gap: 10%;
-            
-            
-
-            a {
-                text-decoration: none;
-                color: #000000;
-            }
-
-            button {
-
-                background-color: #fff;
-                color: #000000;
-                border-style: none;
-                border-radius: 8px;
-                padding: 7px;
-                width: 110px;
-                font: 500 13px 'Poppins';
-                cursor: pointer;
-                transition: all 0.5s;
-
-            }
-
-            button:hover {
-
-                transform: scale(1.07);
-                background-color: #db4545;
-                transition: all 0.5s;
-
-            }
-
-        }
-
     }
+
+    @media (max-width: 768px) {
+        .contato {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .cont {
+                flex-wrap: wrap;
+                width: 100%;
+            }
+        }
+    }
+
 
 }
