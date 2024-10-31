@@ -243,7 +243,7 @@ export default function Dashboard() {
     
     async function buscarCep() {
 
-        const url = `viacep.com.br/ws/${cep}/json/`;
+        const url = `http://viacep.com.br/ws/${cep}/json/`;
         let resp = await axios.get(url);
 
         setListaCep(resp.data);
