@@ -33,8 +33,12 @@ export default function Navegacao() {
                     <Route path='/intencao/:id' element={<Intencao />} />
                     <Route path='/dashboard' element={
                         <PrivateRoute>
-                            <Dashboard/>
-                        </PrivateRoute> }/>
+                            <Dashboard />
+                        </PrivateRoute>} />
+                    <Route path='/dashboard/:id' element={
+                        <PrivateRoute>
+                            <Dashboard />
+                        </PrivateRoute>} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/festas/jovens' element={<Jovens />} />
                     <Route path='/festas/adulto' element={<Adulto />} />

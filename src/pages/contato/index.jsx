@@ -39,7 +39,7 @@ export default function Contato() {
                         <div className='social-links'>
 
                             <a href="https://api.whatsapp.com/send/?phone=5511962652061&text=Olá,+Tudo+Bem?+Vim+pelo+Site.&type=phone_number&app_absent=0" className='social-link' target='_blank'><SocialIcon fallback="whatsapp" bgColor='#db4545' href='https://api.whatsapp.com/send/?phone=5511962652061&text=Olá,+Tudo+Bem?+Vim+pelo+Site.&type=phone_number&app_absent=0' /> WhatsApp</a>
-
+                            <br />
                             <a href="" className='social-link' target='_blank'><SocialIcon fallback="email" bgColor='#db4545' href='' /> Email</a>
 
                         </div>
@@ -47,13 +47,6 @@ export default function Contato() {
 
                     </div>
 
-                    <div className='but'>
-
-                        <h2>Ou entre na nossa Comunidade aqui:</h2>
-
-                        <button><a href="/festas">Comunidade</a></button>
-
-                    </div>
 
                 </div>
 

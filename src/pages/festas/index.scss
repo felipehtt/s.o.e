@@ -1,12 +1,12 @@
 .pagina-festas {
-    
+
     main {
 
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
         .top {
 
             display: flex;
@@ -16,7 +16,7 @@
             margin: 5% 0;
 
         }
-        
+
         h2 {
 
             border-bottom: 2px solid #db4545;
@@ -34,7 +34,6 @@
         .images {
 
             display: flex;
-            flex-direction: row;
             margin-bottom: 8%;
             width: auto;
             gap: 50px;
@@ -54,7 +53,7 @@
 
                 border-radius: 8px;
                 width: 370px;
-                
+
                 height: 230px;
                 transition: 0.5s;
 
@@ -64,7 +63,7 @@
                     transform: scale(1.07);
                 }
             }
-        
+
 
         }
 
@@ -76,6 +75,49 @@
                 text-align: center;
                 padding-top: 4%;
             }
+        }
+
+    }
+
+    @media(max-width: 1024px) {
+
+        .pagina-festas {
+
+            main {
+                
+                h2 {
+                    text-align: center;
+                }
+
+                .images {
+
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+
+
+                    img {
+
+                        border-radius: 8px;
+                        width: 250px;
+                        height: 200px;
+                        transition: 0.5s;
+
+                        &:hover {
+                            transition: 0.3s;
+                            border-radius: 8px;
+                            transform: scale(1.07);
+                        }
+                    }
+
+
+
+
+                }
+
+            }
+
+
         }
 
     }
