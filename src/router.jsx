@@ -15,6 +15,8 @@ import Dashboard from './pages/dashboard';
 import Faq from './pages/faq'
 import Comunidade from './pages/comunidade';
 import PrivateRoute from './screens/privateRoute';
+import Contato from './pages/contato';
+
 
 export default function Navegacao() {
 
@@ -39,6 +41,7 @@ export default function Navegacao() {
                     <Route path='/festas/infantil' element={<Infantil />} />
                     <Route path='/faq' element={<Faq />} />
                     <Route path='/comunidade' element={<Comunidade />} />
+                    <Route path='/contato' element={<Contato />} />
 
                     <Route path='/*' element={<NaoEncontrado />} />
                 </Routes>

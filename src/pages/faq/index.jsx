@@ -79,7 +79,7 @@ export default function Faq() {
 
                     <h1>FAQ?</h1>
 
-                    <p>FAQ significa “Perguntas Respondidas Frequentemente“, ou seja, diz respeito a uma lista de questões que são dúvidas comuns de usuários, potenciais leads e clientes, respondendo a todas antecipadamente.</p>
+                    <p>FAQ significa “Perguntas Respondidas Frequentemente“, ou seja, diz respeito a uma lista de questões que são dúvidas comuns de usuários e clientes, respondendo a todas antecipadamente.</p>
 
                 </div>
 

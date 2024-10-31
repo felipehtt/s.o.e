@@ -13,14 +13,20 @@
             flex-direction: column;
             align-items: center;
             gap: 20px;
-            margin-bottom: 3%;
-            margin-top: 2%;
+            margin: 5% 0;
+
+        }
+        
+        h2 {
+
+            border-bottom: 2px solid #db4545;
+            margin-bottom: 5%;
 
         }
 
         p {
 
-            font: 500 22px "Poppins";
+            font: 500 18px "Poppins";
             padding: 30px;
 
         }
@@ -48,6 +54,8 @@
 
                 border-radius: 8px;
                 width: 370px;
+                
+                height: 230px;
                 transition: 0.5s;
 
                 &:hover {

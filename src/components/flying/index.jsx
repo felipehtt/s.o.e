@@ -23,21 +23,21 @@ export default function Fly() {
 
             <div className={`menu ${menuAbriu ? 'open' : ''}`}>
 
-                <a href="" target='_blank' rel="">
+                <a href="https://api.whatsapp.com/send/?phone=5511962652061&text=Olá,+Tudo+Bem?+Vim+pelo+Site.&type=phone_number&app_absent=0" target='_blank' rel="">
 
-                    <SocialIcon className='menu-icon' fallback="whatsapp" bgColor='#db4545' href='' />
-
-                </a>
-
-                <a href="" target='_blank' rel="">
-
-                    <SocialIcon className='menu-icon' fallback="facebook" bgColor='#db4545' href='' />
+                    <SocialIcon className='menu-icon' fallback="whatsapp" bgColor='#db4545' href='https://api.whatsapp.com/send/?phone=5511962652061&text=Olá,+Tudo+Bem?+Vim+pelo+Site.&type=phone_number&app_absent=0' />
 
                 </a>
 
-                <a href="" target='_blank' rel="">
+                <a href="https://www.facebook.com/FestasZuca" target='_blank' rel="">
 
-                    <SocialIcon className='menu-icon' fallback="instagram" bgColor='#db4545' href='' />
+                    <SocialIcon className='menu-icon' fallback="facebook" bgColor='#db4545' href='https://www.facebook.com/FestasZuca' />
+
+                </a>
+
+                <a href="https://www.instagram.com/festaszuca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target='_blank' rel="">
+
+                    <SocialIcon className='menu-icon' fallback="instagram" bgColor='#db4545' href='https://www.instagram.com/festaszuca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' />
 
                 </a>
 

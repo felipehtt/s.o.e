@@ -48,9 +48,9 @@ export default function Home() {
 
           </div>
 
-          <a href="/intencao" className='but'>
+          <a href="/festas" className='but'>
 
-            <Link to='/intencao' className='but2'>VEJA NOSSAS FESTAS</Link>
+            <Link to='/festas' className='but2'>VEJA NOSSAS FESTAS</Link>
 
           </a>
 
@@ -74,21 +74,22 @@ export default function Home() {
 
             <div className='conj'>
 
-              <img src="https://th.bing.com/th/id/OIP.e2L4oAqaiCuGoo-1AvkSdQHaE8?rs=1&pid=ImgDetMain" alt="" />
+              <Link to='/festas/infantil'><img src="https://storage.alboom.ninja/sites/10402/albuns/1156284/festa-infantil-homem-aranha-vingadores-marvel-kids-park-barra-recreio-rj-3.jpg?t=1680047826" alt="" /></Link>
+
               <p>Festas Infantis</p>
 
             </div>
 
             <div className='conj'>
 
-              <img src="https://casarpontocom-inspiracoes.s3.sa-east-1.amazonaws.com/wp-content/uploads/2023/02/festa-de-casamento-Foto-Freepik-6.jpg" alt="" />
+              <Link to='festas/jovens'><img src="https://www.tuacasa.com.br/wp-content/uploads/2018/08/festa-15-anos-decoracao-01.jpg" alt="" /></Link>
               <p>Festas Jovens</p>
 
             </div>
 
             <div className='conj'>
 
-              <img src="https://lh7-us.googleusercontent.com/7mf8WmPAFQsRVxxVOXwU4t86HaT-Xk3iucLBXn8K3vcB1-3cVd_M1F--WJZsTQMSHWMSipZNqAz4LRM8gGpavDDTLSpi1ukI0RbNijv0pq1lhuE9xB_NJmPG9WjHmvxxZpebrgFOQJlkl2lx_ZeZFVU" alt="" />
+              <Link to='festas/adulto'><img src="https://lh7-us.googleusercontent.com/7mf8WmPAFQsRVxxVOXwU4t86HaT-Xk3iucLBXn8K3vcB1-3cVd_M1F--WJZsTQMSHWMSipZNqAz4LRM8gGpavDDTLSpi1ukI0RbNijv0pq1lhuE9xB_NJmPG9WjHmvxxZpebrgFOQJlkl2lx_ZeZFVU" alt="" /></Link>
               <p>Festas Adultos</p>
 
             </div>
@@ -99,7 +100,7 @@ export default function Home() {
 
         <div className='bottom'>
 
-          <h2>O melhor da festa é viver ela!</h2>
+          <h2>Viva o melhor da sua festa!</h2>
 
         </div>
 

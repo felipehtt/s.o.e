@@ -129,7 +129,6 @@
 
         .dashboard-content {
 
-            flex-grow: 1;
             background-color: #161515;
             color: #fff;
             padding: 15px;
@@ -201,38 +200,54 @@
 
             }
 
-            .nav-user {
+            .user {
 
-                display: flex;
-                align-items: center;
-                flex-direction: column;
+                padding: 60px;
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
 
-                background-color: #161515;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.219), 0 6px 20px rgba(0, 0, 0, 0.219);
-                padding: 20px;
+                .nav-user {
 
-                h2 {
-                    padding-left: 2%;
-                }
-
-                .profile {
                     display: flex;
+                    align-items: center;
+                    justify-content: center;
                     flex-direction: column;
-                    margin-left: 2%;
-                    margin-top: 2%;
-                    gap: 10px;
+                    width: 100%;
+                    height: 100%;
+                    padding: 40px 10px;
+                    border-radius: 15px;
 
-                    .info {
+                    .profile {
+
                         display: flex;
                         flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        gap: 10px;
+                        width: 50%;
+                        height: 100%;
 
-                        label {
-                            font: 400 15px "Poppins";
-                            color: #525050;
+                        background-color: #2d2e30;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.219), 0 6px 20px rgba(0, 0, 0, 0.219);
+                        padding: 40px 10px;
+                        border-radius: 15px;
+
+                        .info {
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+
+                            label {
+                                font: 500 18px "Poppins";
+                                color: #7e7e7e;
+                            }
+
                         }
-
                     }
                 }
+
             }
 
             .nav-party {
@@ -280,7 +295,7 @@
                         }
                     }
 
-                    button{
+                    button {
 
                         margin-top: 2%;
                         background-color: #fff;
@@ -292,25 +307,25 @@
                         font: 500 15px 'Poppins';
                         cursor: pointer;
                         transition: all 0.3s;
-                        
+
                     }
 
-                    button:hover{
+                    button:hover {
 
                         background-color: #db4545;
                         transform: scale(1.07);
-                        
+
                     }
                 }
 
-                hr{
+                hr {
                     margin-top: 4%;
                     margin-left: 4%;
                 }
-                
-                .get{
 
-                    button{
+                .get {
+
+                    button {
                         margin-top: 3px;
                         margin-left: 4%;
                         width: 100%;
@@ -323,12 +338,12 @@
                         cursor: pointer;
                         font-weight: 600;
                         transition: all 0.5s;
-    
+
                         &:hover {
-    
+
                             transition: all 0.5s;
                             transform: scale(1.07);
-    
+
                         }
                     }
 

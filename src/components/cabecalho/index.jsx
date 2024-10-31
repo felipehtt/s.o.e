@@ -40,7 +40,7 @@ export default function Cabecalho() {
                     
                     <Link to='/comunidade' className={location.pathname === '/comunidade' ? 'active link' : 'link'}>Comunidade</Link>
                     
-                    <Link to='/fly' className={location.pathname === '/fly' ? 'active link' : 'link'}>Contato</Link>
+                    <Link to='/contato' className={location.pathname === '/contato' ? 'active link' : 'link'}>Contato</Link>
                     
                     <Link to='/faq' className={location.pathname === '/faq' ? 'active link' : 'link'}>FAQ</Link>
                     
