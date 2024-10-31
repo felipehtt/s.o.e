@@ -87,51 +87,101 @@
 
     }
 
-
-    @media (max-width: 770px) {
-
-        header {
+    
+}
 
 
-            .menu-toggle {
+@media(max-width: 1024px){
 
+    .comp-cabecalho{
+    
+        img {
+            width: 90px;
+            margin-top: 0.5%;
+            margin-left: 15px;
+        }
+
+        
+        .head{
+
+            .nav{
+                gap: 22px;
+                margin-left: -8px;
+                padding-left: 0;
+            }
+
+            .but{
+                margin-left: 0;
+                padding-left: 0;
+            }
+
+        }
+
+    }
+}
+
+
+@media (max-width: 770px) {
+
+    header {
+
+        .menu-toggle {
+
+            display: block;
+            margin-left: auto;
+
+        }
+
+        .nav {
+
+            display: none;
+            flex-direction: column;
+            width: 55%;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.822);
+            border-radius: 10px;
+            z-index: 1000;
+            padding: 20px 0;
+
+            &.open {
+
+                display: flex;
+
+            }
+
+            .link {
+
+                padding: 5% 0%;
+
+            }
+
+            .but {
+
+                margin: 3% 16%;
+
+            }
+
+        }
+    }
+}
+
+@media(max-width: 344px){
+
+    .comp-cabecalho{
+
+        .head{
+
+            .menu-toggle{
                 display: block;
-                margin-left: 600%;
-
             }
 
             .nav {
-
-                display: none;
-                flex-direction: column;
-                width: 55%;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                background-color: rgba(0, 0, 0, 0.822);
-                border-radius: 10px;
-                z-index: 1000;
-                padding: 20px 0;
-
-                &.open {
-
-                    display: flex;
-
-                }
-
-                .link {
-
-                    padding: 5% 0%;
-
-                }
-
-                .but {
-
-                    margin: 3% 16%;
-
-                }
-
+                
             }
+
         }
     }
+
 }

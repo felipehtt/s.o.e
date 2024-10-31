@@ -187,4 +187,41 @@
 }
 
 
-@media(max-width: 1024px) {}
+@media(max-width: 1024px){
+
+    .pagina-home{
+
+        main{
+
+            .second{
+    
+    
+                .images{
+                    gap: 30px;
+        
+
+                    img {
+
+                        border-radius: 8px;
+                        width: 250px;
+                        height: 200px;
+                        transition: 0.5s;
+    
+                        &:hover {
+                            transition: 0.3s;
+                            border-radius: 8px;
+                            transform: scale(1.07);
+                        }
+                    }
+
+                }
+                
+    
+            }
+
+        }
+
+
+    }
+
+}
