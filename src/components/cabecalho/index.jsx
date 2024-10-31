@@ -52,6 +52,28 @@ export default function Cabecalho() {
 
                 }
 
+                {!menuOpen &&
+
+                    <div className="nav" >
+
+                        <Link to='/' className={location.pathname === '/' ? 'active link' : 'link'}>Home</Link>
+
+                        <Link to='/soe' className={location.pathname === '/soe' ? 'active link' : 'link'}>S.O.E</Link>
+
+                        <Link to='/festas' className={location.pathname === '/festas' ? 'active link' : 'link'}>Festas</Link>
+
+                        <Link to='/comunidade' className={location.pathname === '/comunidade' ? 'active link' : 'link'}>Comunidade</Link>
+
+                        <Link to='/contato' className={location.pathname === '/contato' ? 'active link' : 'link'}>Contato</Link>
+
+                        <Link to='/faq' className={location.pathname === '/faq' ? 'active link' : 'link'}>FAQ</Link>
+
+                        <Link to='/intencao' className='but'>Faça sua Intenção</Link>
+
+                    </div>
+
+                }
+
             </header>
 
         </div>
