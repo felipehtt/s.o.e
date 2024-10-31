@@ -51,7 +51,7 @@ export default function Soe() {
 
                     <h2>Veja nossos trabalhos</h2>
 
-                    <button><a href="">Ver Festas</a></button>
+                    <button><a href="/festas">Ver Festas</a></button>
 
                 </div>
 

@@ -21,7 +21,7 @@ export default function Footer() {
 
                     <div className='social-links'>
 
-                        <a href="" className='social-link' target='_blank'><SocialIcon fallback="whatsapp" bgColor='#db4545' href='' /> WhatsApp</a>
+                        <a href="https://api.whatsapp.com/send/?phone=5511962652061&text=Olá,+Tudo+Bem?+Vim+pelo+Site.&type=phone_number&app_absent=0" className='social-link' target='_blank'><SocialIcon fallback="whatsapp" bgColor='#db4545' href='https://api.whatsapp.com/send/?phone=5511962652061&text=Olá,+Tudo+Bem?+Vim+pelo+Site.&type=phone_number&app_absent=0' /> WhatsApp</a>
 
                         <a href="" className='social-link' target='_blank'><SocialIcon fallback="email" bgColor='#db4545' href='' /> Email</a>
 
@@ -35,13 +35,11 @@ export default function Footer() {
 
                     <div className='social-links'>
 
-                        <a href="" className='social-link' target='_blank'><SocialIcon fallback="facebook" bgColor='#db4545' href='' /></a>
+                        <a href="https://www.facebook.com/FestasZuca" className='social-link' target='_blank'><SocialIcon fallback="facebook" bgColor='#db4545' href='https://www.facebook.com/FestasZuca' /></a>
 
-                        <a href="" className='social-link' target='_blank'><SocialIcon fallback="instagram" bgColor='#db4545' href='' /></a>
+                        <a href="https://www.instagram.com/festaszuca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className='social-link' target='_blank'><SocialIcon fallback="instagram" bgColor='#db4545' href='https://www.instagram.com/festaszuca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' /></a>
 
-                        <a href="" className='social-link' target='_blank'><SocialIcon fallback="linkedin" bgColor='#db4545' href='' /></a>
-
-                        <a href="" className='social-link' target='_blank'><SocialIcon fallback="x" bgColor='#db4545' href='' /></a>
+                        <a href="https://www.tiktok.com/@festaszuca_decora?is_from_webapp=1&sender_device=pc" className='social-link' target='_blank'><SocialIcon fallback="tiktok" bgColor='#db4545' href='https://www.tiktok.com/@festaszuca_decora?is_from_webapp=1&sender_device=pc' /></a>
 
                     </div>
 

@@ -2,6 +2,8 @@ import Cabecalho from '../../components/cabecalho'
 import Footer from '../../components/footer'
 import Fly from '../../components/flying'
 import './index.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 
 export default function Comunidade() {
@@ -28,7 +30,7 @@ export default function Comunidade() {
 
                         <div className='bloco'>
 
-                            <h2>O que é a Comunidade</h2>
+                            <h2>O que é a Comunidade?</h2>
 
                             <p>A comunidade é um local onde a SOE pode interagir com o
                                 usuário pela comunidade do WhatsApp, lá postaremos
@@ -37,9 +39,9 @@ export default function Comunidade() {
 
                         </div>
 
-                        <div className='image'>
+                        <div className='icon'>
 
-                            <img src="https://th.bing.com/th/id/OIP.e2L4oAqaiCuGoo-1AvkSdQHaE8?rs=1&pid=ImgDetMain" alt="" />
+                            <FontAwesomeIcon icon={faWhatsapp} size='6x' color='green' />
 
                         </div>
 
@@ -48,7 +50,7 @@ export default function Comunidade() {
 
                     <div className='but'>
 
-                        <h2>Entre Aqui</h2>
+                        <h2>Entre Aqui:</h2>
 
                         <button><a href="/festas">Comunidade</a></button>
 

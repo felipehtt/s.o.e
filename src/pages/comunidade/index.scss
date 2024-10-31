@@ -22,6 +22,11 @@
 
             display: flex;
             align-items: center;
+            gap: 10%;
+            max-width: 60%;
+            background-color: #161515;
+            padding: 60px;
+            border-radius: 10px;
 
             .bloco {
 
@@ -39,26 +44,17 @@
 
             }
 
-            img {
-
-                border-radius: 8px;
-                width: 370px;
-                height: 200px;
-
-            }
-
         }
 
             .but {
 
                 display: flex;
-                flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                background-color: #161515;
-                padding: 30px;
-                border-radius: 10px;
+                white-space: nowrap;
+                padding: 10px 50px;
                 margin-top: 5%;
+                gap: 10%;
 
                 a {
                     text-decoration: none;
@@ -67,7 +63,6 @@
 
                 button {
 
-                    margin-top: 6%;
                     background-color: #fff;
                     color: #000000;
                     border-style: none;

@@ -1,0 +1,116 @@
+.pagina-contato {
+
+    .titulo {
+
+        display: flex;
+        justify-content: center;
+        margin: 3% 0;
+
+    }
+
+    .contato {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10%;
+
+        gap: 20%;
+
+        .cont {
+
+            display: flex;
+            align-items: center;
+            gap: 10%;
+            max-width: 80%;
+            background-color: #161515;
+            padding: 60px;
+            border-radius: 10px;
+
+            .bloco {
+
+                display: flex;
+                flex-direction: column;
+
+                gap: 30px;
+
+                P {
+
+                    font: 400 15px 'Poppins';
+                    line-height: 170%;
+
+                }
+
+            }
+
+            .social-links {
+                
+                a {
+                    text-decoration: none;
+                }
+
+                .social-link {
+
+                    text-decoration: none;
+                    color: #fff;
+                    transition: transform 0.3s;
+                    padding-bottom: 6%;
+
+                }
+
+                .social-link:hover {
+
+                    transform: scale(1.1);
+                    color: #db4545;
+
+                }
+
+            }
+
+        }
+
+        .but {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            white-space: nowrap;
+            padding: 10px 50px;
+            margin-top: 5%;
+            gap: 10%;
+            
+            
+
+            a {
+                text-decoration: none;
+                color: #000000;
+            }
+
+            button {
+
+                background-color: #fff;
+                color: #000000;
+                border-style: none;
+                border-radius: 8px;
+                padding: 7px;
+                width: 110px;
+                font: 500 13px 'Poppins';
+                cursor: pointer;
+                transition: all 0.5s;
+
+            }
+
+            button:hover {
+
+                transform: scale(1.07);
+                background-color: #db4545;
+                transition: all 0.5s;
+
+            }
+
+        }
+
+    }
+
+}

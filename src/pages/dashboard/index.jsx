@@ -35,7 +35,7 @@ export default function Dashboard() {
 
     const [active, setActive] = useState('Festas');
 
-    const navItems = ["Perfil", "Festas", "Intenções", "Financeiro", "Endereços"];
+    const navItems = ['Perfil', 'Festas', 'Intenções', 'Financeiro', 'Endereços'];
 
     const navigate = useNavigate();
 
@@ -139,24 +139,28 @@ export default function Dashboard() {
 
                     {active == 'Perfil' &&
 
-                        <div className='nav-user'>
+                        <div className='user'>
 
-                            <h2>Meu Perfil</h2>
+                            <div className='nav-user'>
 
-                            <div className='profile'>
+                                <div className='profile'>
 
-                                <div className='info'>
-                                    <label htmlFor="nome">Nome</label>
-                                    <p>{userName}</p>
+                                    <h2>Meu Perfil</h2>
+
+                                    <div className='info'>
+                                        <label htmlFor="nome">Nome</label>
+                                        <p>{userName}</p>
+                                    </div>
+
+                                    <div className='info'>
+                                        <label htmlFor="senha">Senha</label>
+                                        <p>{passWord}</p>
+                                    </div>
+
                                 </div>
 
-                                <div className='info'>
-                                    <label htmlFor="senha">Senha</label>
-                                    <p>{passWord}</p>
-                                </div>
 
                             </div>
-
 
                         </div>
 
