@@ -14,67 +14,72 @@
 
     }
 
-    .contato {
+    main {
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: 10%;
-
-        gap: 20%;
-
-        .cont {
+        .contato {
 
             display: flex;
+            justify-content: center;
             align-items: center;
-            gap: 10%;
-            max-width: 80%;
-            background-color: #161515;
-            padding: 60px;
-            border-radius: 10px;
+            flex-direction: column;
+            margin: 10%;
 
-            .bloco {
+            gap: 20%;
+
+            .cont {
 
                 display: flex;
-                flex-direction: column;
+                align-items: center;
+                gap: 10%;
+                max-width: 80%;
+                background-color: #161515;
+                padding: 60px;
+                border-radius: 10px;
 
-                gap: 30px;
+                .bloco {
 
-                P {
+                    display: flex;
+                    flex-direction: column;
 
-                    font: 400 15px 'Poppins';
-                    line-height: 170%;
+                    gap: 30px;
+
+                    P {
+
+                        font: 400 15px 'Poppins';
+                        line-height: 170%;
+
+                    }
+
+                }
+
+                .social-links {
+
+                    a {
+                        text-decoration: none;
+                    }
+
+                    .social-link {
+
+                        text-decoration: none;
+                        color: #fff;
+                        transition: transform 0.3s;
+                        padding-bottom: 6%;
+
+                    }
+
+                    .social-link:hover {
+
+                        transform: scale(1.1);
+                        color: #db4545;
+
+                    }
 
                 }
 
             }
-
-            .social-links {
-
-                a {
-                    text-decoration: none;
-                }
-
-                .social-link {
-
-                    text-decoration: none;
-                    color: #fff;
-                    transition: transform 0.3s;
-                    padding-bottom: 6%;
-
-                }
-
-                .social-link:hover {
-
-                    transform: scale(1.1);
-                    color: #db4545;
-
-                }
-
-            }
-
         }
+
+
     }
 
     @media (max-width: 768px) {

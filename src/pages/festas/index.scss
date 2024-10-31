@@ -79,22 +79,31 @@
 
     }
 
-    @media(max-width: 1024px) {
+}
 
-        .pagina-festas {
+@media(max-width: 1024px) {
 
-            main {
-                
-                h2 {
-                    text-align: center;
-                }
+    .pagina-festas {
 
-                .images {
+        main {
 
+            display: flex;
+            flex-direction: column;
+            
+            h2 {
+                text-align: center;
+            }
+
+            .images {
+
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+
+                .conj {
                     display: flex;
                     flex-direction: column;
-                    gap: 30px;
-
 
                     img {
 
@@ -109,16 +118,15 @@
                             transform: scale(1.07);
                         }
                     }
-
-
-
-
                 }
+
+
+
 
             }
 
-
         }
+
 
     }
 

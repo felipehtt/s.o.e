@@ -26,9 +26,9 @@ export default function Cabecalho() {
 
             <header className='head'>
 
-                <button className='menu-toggle' onClick={Menu}>
+                {/* <button className='menu-toggle' onClick={Menu}>
                     Menu
-                </button>
+                </button> */}
 
                 {menuOpen &&
 
