@@ -9,11 +9,15 @@ import Swal from 'sweetalert2';
 import Financeiro from '../../components/financeiro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarXmark, faUserPen, faUser, faLock } from '@fortawesome/free-solid-svg-icons';
+import Enderecos from '../../components/enderecos';
 
 
 export default function Dashboard() {
 
     const [listaFestas, setListaFestas] = useState([]);
+    const [listaCep, setListaCep] = useState([]);
+    
+    const [cep, setCep] = useState('');
 
     const handleAlertErr = () => {
         Swal.fire({
@@ -100,7 +104,7 @@ export default function Dashboard() {
         });
     };
 
-    const [token, setToken] = useState(null);
+    const [token, setToken] = useState(true);
 
     const [listaIntencoes, setListaIntencoes] = useState([])
 
@@ -193,7 +197,8 @@ export default function Dashboard() {
             const url = `http://localhost:7000/festa?x-access-token=${token}`;
             let resp = await axios.get(url);
 
-            setListaFestas(resp.data)
+            setListaFestas(resp.data);
+
         }
         catch (err) {
             alertGet();
@@ -201,7 +206,7 @@ export default function Dashboard() {
 
     }
 
-    async function excluirFesta(id){
+    async function excluirFesta(id) {
 
         const url = `http://localhost:7000/festa/${id}?x-access-token=${token}`;
         await axios.delete(url);
@@ -221,7 +226,7 @@ export default function Dashboard() {
             let dados = resp.data;
 
             let dateParty = moment(dados.dataFesta).format('YYYY-MM-DD');
-
+            
             setNomeCliente(dados.nomeCliente);
             setTelefone(dados.telefone);
             setDataFesta(dateParty);
@@ -231,8 +236,17 @@ export default function Dashboard() {
             setTemaFesta(dados.temaFesta);
             setQuantidadePessoas(dados.quantidadePessoas);
             setPrecoTotal(dados.precoTotal);
-
+            
         }
+        
+    }
+    
+    async function buscarCep() {
+
+        const url = `viacep.com.br/ws/${cep}/json/`;
+        let resp = await axios.get(url);
+
+        setListaCep(resp.data);
 
     }
 
@@ -240,15 +254,15 @@ export default function Dashboard() {
 
         let token = localStorage.getItem('ADM')
         setToken(token);
-
-        if (token == 'null') {
+        
+        if (token == null) {
             navigate('/login');
         }
 
         consultar(token);
 
     }, []);
-
+    
 
     async function buscarIntencoes() {
 
@@ -532,6 +546,31 @@ export default function Dashboard() {
                     {active == 'Financeiro' &&
 
                         <Financeiro />
+
+                    }
+
+                    {active == 'Endereços' &&
+
+                        <div className='nav-address'>
+
+                            <div className='pin'>
+
+                                <h2>Consulte os endereços através do cep</h2>
+                                <input type="text" placeholder='Digite o cep' value={cep} onChange={e => setCep(e.target.value)}/>
+                                <button onClick={buscarCep}>Buscar</button>
+
+                                {listaCep.map(item =>
+
+                                    <p>{item.logradouro}</p>
+
+                                )}
+
+
+
+                            </div>
+
+
+                        </div>
 
                     }
 

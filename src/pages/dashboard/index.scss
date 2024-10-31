@@ -360,22 +360,22 @@
                         margin-top: 1.5%;
                         overflow-x: auto;
                         margin-left: 4%;
-                        
+
                         th {
-    
+
                             text-align: center;
                             padding: 3.5px;
                             border-right: 1px solid #000;
-    
+
                         }
-    
+
                         td {
-    
+
                             padding: 2px;
                             border-top: 1px solid #000;
                             border-right: 1px solid #000;
                             text-align: center;
-    
+
                         }
 
                         .action {
@@ -386,9 +386,38 @@
                             justify-content: center;
                             gap: 15px;
                             padding-top: 10%;
-    
+
                         }
-    
+
+                    }
+
+                }
+
+            }
+
+
+            .nav-address {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin-top: 15%;
+
+                .pin {
+
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    align-items: center;
+                    justify-content: center;
+
+                    input {
+                        outline: none;
+                        border-radius: 15px;
+                        border-style: none;
+                        padding: 8px;
+                        width: 100%;
                     }
 
                 }
