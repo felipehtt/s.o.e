@@ -347,6 +347,33 @@
                         }
                     }
 
+                    table {
+
+                        background-color: #3e3e3e;
+                        padding: 10px;
+                        border-radius: 10px;
+                        width: 80%;
+                        max-width: 1200px;
+                        margin-top: 1.5%;
+                        overflow-x: auto;
+                        margin-left: 4%;
+                        
+                        th {
+    
+                            text-align: center;
+                            padding: 3.5px;
+    
+                        }
+    
+                        td {
+    
+                            padding: 2px;
+                            border-top: 1px solid #000;
+                            text-align: center;
+    
+                        }
+    
+                    }
 
                 }
 
