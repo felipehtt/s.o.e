@@ -4,10 +4,10 @@ import { useEffect } from 'react';
 
 const Slider = () => {
     const slides = [
-        { id: 1, img: 'https://wallpapercave.com/wp/wp2848100.jpg', alt: 'Festa 1' },
-        { id: 2, img: 'https://andreaguimaraes.com.br/qds1/wp-content/uploads/2022/07/casamento-jo-e-edu-400x267.jpg', alt: 'Festa 2' },
-        { id: 3, img: 'https://andreaguimaraes.com.br/qds1/wp-content/uploads/2024/08/parada_da_disney_1-3-400x266.jpg', alt: 'Festa 3' },
-        { id: 4, img: 'https://andreaguimaraes.com.br/qds1/wp-content/uploads/2024/08/15_anos_3-3-400x267.jpg', alt: 'Festa 1' },    
+        { id: 1, img: 'https://img.freepik.com/fotos-gratis/resumo-luxo-suave-fundo-vermelho-natal-dia-dos-namorados-layout-designstudioroom-modelo-web-busine_1258-54290.jpg?ga=GA1.1.473080738.1730401021&semt=ais_siglip', alt: 'Festa 1' },
+        { id: 2, img: 'https://img.freepik.com/fotos-premium/fotografia-completa-da-parede-vermelha_1048944-30661786.jpg?ga=GA1.1.473080738.1730401021&semt=ais_siglip', alt: 'Festa 2' },
+        { id: 3, img: 'https://img.freepik.com/fotos-premium/desenho-de-fundo-minimalista-com-gradiente-suave_558873-12010.jpg?ga=GA1.1.473080738.1730401021&semt=ais_siglip', alt: 'Festa 3' },
+        { id: 4, img: 'https://img.freepik.com/fotos-premium/desenho-de-fundo-minimalista-com-gradiente-suave_558873-12050.jpg?ga=GA1.1.473080738.1730401021&semt=ais_siglip', alt: 'Festa 1' },    
         
     ];
     
@@ -69,10 +69,10 @@ const Slider = () => {
 const SliderOne = () => {
 
     const slides = [
-        { id: 1, img: 'https://th.bing.com/th/id/OIP.TGF1BVuBq7XqGXqCzNaEOQHaEo?rs=1&pid=ImgDetMain', alt: 'Festa 1' },
-        { id: 2, img: 'https://assets.venuecrew.com/wp-content/uploads/2023/09/13053826/Ballroom1.jpg', alt: 'Festa 2' },
-        { id: 3, img: 'https://asset-cdn.campaignbrief.com/wp-content/uploads/2022/10/20100552/Screen-Shot-2022-10-20-at-7.00.44-am.jpg', alt: 'Festa 3' },
-        { id: 4, img: 'https://i.pinimg.com/originals/2f/29/81/2f298137e5228621bcbd916e89d93f56.jpg', alt: 'Festa 1' },    
+        { id: 1, img: 'https://img.freepik.com/fotos-premium/fundo-lila-com-textura-lugar-horizontal-para-texto_1089554-1917.jpg?ga=GA1.1.473080738.1730401021&semt=ais_siglip', alt: 'Festa 1' },
+        { id: 2, img: 'https://img.freepik.com/fotos-gratis/resumo-luxo-macio-fundo-vermelho-projeto-de-layout-dos-namorados-de-natal-estudio-sala-modelo-da-web-relatorio-de-negocios-com-cor-gradiente-de-circulo-suave_1258-54519.jpg?ga=GA1.1.473080738.1730401021&semt=ais_siglip', alt: 'Festa 2' },
+        { id: 3, img: 'https://img.freepik.com/fotos-premium/warm-luxury-orange-abstract-design-de-fundo-criativo_851755-224568.jpg?ga=GA1.1.473080738.1730401021&semt=ais_siglip', alt: 'Festa 3' },
+        { id: 4, img: 'https://img.freepik.com/fotos-gratis/fundo-de-papel-de-parede-colorido-borrado-vivido_58702-5904.jpg?ga=GA1.1.473080738.1730401021&semt=ais_siglip', alt: 'Festa 1' },    
         
     ];
     

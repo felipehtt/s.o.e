@@ -52,7 +52,7 @@ export default function Comunidade() {
 
                         <h2>Entre Aqui:</h2>
 
-                        <button><a href="/festas">Comunidade</a></button>
+                        <button><a href="https://chat.whatsapp.com/EjIVurfG1ltAwh34MAPPIx">Comunidade</a></button>
 
                     </div>
 
