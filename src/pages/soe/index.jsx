@@ -28,7 +28,7 @@ export default function Soe() {
 
                     </div>
 
-                    <img src="assets/images/equipe1.jpg" alt="Equipe" />
+                    <img src="assets/images/logo-soe-com-algo-escrito-removebg-preview.png" alt="Equipe" />
                 </div>
 
                 <div className='bloco2'>

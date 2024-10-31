@@ -39,7 +39,7 @@ export default function Comunidade() {
 
                         <div className='image'>
 
-                            <img src="https://th.bing.com/th/id/OIP.e2L4oAqaiCuGoo-1AvkSdQHaE8?rs=1&pid=ImgDetMain" alt="" />
+                            <img src="./assets/images/multidao-de-usuarios.png" alt="" />
 
                         </div>
 

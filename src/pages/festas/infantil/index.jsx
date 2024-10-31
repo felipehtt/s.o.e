@@ -86,7 +86,7 @@ export default function Infantil() {
 
             {/* <div className='static'>
 
-                <img src='assets/images/pietro 1.png' alt='' />
+                <img src='assets/images/pietro.png' alt='' />
 
             </div>
 
