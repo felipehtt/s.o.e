@@ -192,7 +192,7 @@ export default function Intencao() {
 
             <Fly />
 
-            <h1 className='title'>{id ? "Edite a sua intenção" : "Preencha esse formulário para sua intenção."}</h1>
+            <h2 className='title'>{id ? "Edite a sua intenção" : "Preencha esse formulário para sua intenção."}</h2>
 
             <div className='conteudo'>
 
@@ -257,8 +257,8 @@ export default function Intencao() {
 
             <div className='cardW'>
 
-                <p> Em breve entraremos em contato com você por Whatsapp. Se tiver dúvidas pergunte:</p>
-                <a href="https://api.whatsapp.com/send/?phone=5511962652061&type=phone_number&app_absent=0" target="_blank"><FontAwesomeIcon icon={faWhatsapp} size='3x' color='green' /></a>
+                <p>Caso queira fazer o agendamento da sua Festa diretamente e em pouco tempo, Clique no ícone do WhatsApp:</p>
+                <a href="https://api.whatsapp.com/send/?phone=5511962652061&text=Olá,+Tudo+Bem?+Vim+pelo+Site.&type=phone_number&app_absent=0" target="_blank"><FontAwesomeIcon icon={faWhatsapp} size='3x' color='green' /></a>
 
             </div>
 
