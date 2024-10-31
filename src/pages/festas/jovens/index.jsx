@@ -18,7 +18,7 @@ export default function Jovens() {
             <Fly />
 
             <div className='static'>
-                <img src='' alt=''
+                <img src='https://www.organizandoeventos.com.br/artigos/ed/190115211412-8597.jpg' alt=''
                 />
             </div>
 

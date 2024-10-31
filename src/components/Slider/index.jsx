@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './index.scss';
 import { useEffect } from 'react';
 
-const Slider = (props) => {
+const Slider = () => {
     const slides = [
         { id: 1, img: 'https://wallpapercave.com/wp/wp2848100.jpg', alt: 'Festa 1' },
         { id: 2, img: 'https://andreaguimaraes.com.br/qds1/wp-content/uploads/2022/07/casamento-jo-e-edu-400x267.jpg', alt: 'Festa 2' },
