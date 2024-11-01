@@ -22,7 +22,6 @@ export default function Dashboard() {
     const [regiao, setRegiao] = useState('');
     const [estado, setEstado] = useState('');
     const [uf, setUf] = useState('');
-    const [ver, setVer] = useState(false)
 
     const handleAlertErr = () => {
         Swal.fire({
@@ -201,6 +200,7 @@ export default function Dashboard() {
                 }
                 else {
                     SuccessPut();
+                    navigate('/dashboard');
                 }
 
             }
@@ -284,7 +284,7 @@ export default function Dashboard() {
                 setUf(dados.uf);
 
                 setCep('');
-                setVer(!ver);
+
 
             }
         }
@@ -292,14 +292,6 @@ export default function Dashboard() {
             alertCep();
         }
 
-
-    }
-
-    function buscar(e) {
-
-        if (e.key == 'Enter') {
-            buscarCep();
-        }
 
     }
 
@@ -456,11 +448,11 @@ export default function Dashboard() {
 
                                 <div>
                                     <label htmlFor="">Nome</label>
-                                    <input type="text" value={nomeCliente} onChange={e => setNomeCliente(e.target.value)} />
+                                    <input type="text" placeholder='Nome' value={nomeCliente} onChange={e => setNomeCliente(e.target.value)} />
                                 </div>
                                 <div>
                                     <label htmlFor="">Telefone</label>
-                                    <input type="text" value={telefone} onChange={e => setTelefone(e.target.value)} />
+                                    <input type="text" placeholder='Telefone' value={telefone} onChange={e => setTelefone(e.target.value)} />
                                 </div>
                                 <div>
                                     <label htmlFor="">Data da Festa</label>
@@ -468,27 +460,27 @@ export default function Dashboard() {
                                 </div>
                                 <div>
                                     <label htmlFor="">Endereço</label>
-                                    <input type="text" value={endereco} onChange={e => setEndereco(e.target.value)} />
+                                    <input type="text" placeholder='Rua Alecrim Dourado' value={endereco} onChange={e => setEndereco(e.target.value)} />
                                 </div>
                                 <div>
                                     <label htmlFor="">Distância média</label>
-                                    <input type="text" value={distanciaLocal} onChange={e => setDistanciaLocal(e.target.value)} />
+                                    <input type="text" placeholder='10Km' value={distanciaLocal} onChange={e => setDistanciaLocal(e.target.value)} />
                                 </div>
                                 <div>
                                     <label htmlFor="">Tipo da Festa</label>
-                                    <input type="text" value={tipoFesta} onChange={e => setTipoFesta(e.target.value)} />
+                                    <input type="text" placeholder='Adulto' value={tipoFesta} onChange={e => setTipoFesta(e.target.value)} />
                                 </div>
                                 <div>
                                     <label htmlFor="">Tema da Festa</label>
-                                    <input type="text" value={temaFesta} onChange={e => setTemaFesta(e.target.value)} />
+                                    <input type="text" placeholder='Casamento' value={temaFesta} onChange={e => setTemaFesta(e.target.value)} />
                                 </div>
                                 <div>
                                     <label htmlFor="">Quantidade de pessoas</label>
-                                    <input type="text" value={quantidadePessoas} onChange={e => setQuantidadePessoas(e.target.value)} />
+                                    <input type="text" placeholder='30' value={quantidadePessoas} onChange={e => setQuantidadePessoas(e.target.value)} />
                                 </div>
                                 <div>
                                     <label htmlFor="">Valor Total</label>
-                                    <input type="text" value={precoTotal} onChange={e => setPrecoTotal(e.target.value)} />
+                                    <input type="text" placeholder='500.00' value={precoTotal} onChange={e => setPrecoTotal(e.target.value)} />
                                 </div>
 
                                 <button onClick={salvarFesta}>{!id ? 'CADASTRAR' : 'ALTERAR'}</button>
@@ -612,19 +604,19 @@ export default function Dashboard() {
                             <div className='pin'>
 
                                 <h2>Consulte os endereços através do cep</h2>
-                                <input type="text" placeholder='Digite o cep' value={cep} onChange={e => setCep(e.target.value)} onKeyUp={buscar} />
+                                <input type="text" placeholder='Digite o cep' value={cep} onChange={e => setCep(e.target.value)} />
                                 <button onClick={buscarCep}><FontAwesomeIcon icon={faMagnifyingGlass} /> Pesquisar</button>
 
-                                {ver &&
 
-                                    <Enderecos
+
+                                <Enderecos
                                     logradouro={logradouro}
                                     bairro={bairro}
                                     regiao={regiao}
                                     estado={estado}
                                     uf={uf} />
 
-                                }
+
 
                             </div>
 

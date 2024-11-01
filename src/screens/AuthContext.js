@@ -4,7 +4,12 @@ const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
     
-    const [isAuthenticated, setIsAuthenticated] = useState(false);
+    const [isAuthenticated, setIsAuthenticated] = useState(() => {
+
+        const token = localStorage.getItem("ADM");
+        return !!token;
+        
+    });
 
     const login = (token) => {
         localStorage.setItem('ADM', token);
