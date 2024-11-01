@@ -8,7 +8,7 @@ import moment from 'moment';
 import Swal from 'sweetalert2';
 import Financeiro from '../../components/financeiro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarXmark, faUserPen, faUser, faLock, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarXmark, faUserPen, faUser, faLock, faMagnifyingGlass,faPen, faP } from '@fortawesome/free-solid-svg-icons';  
 import Enderecos from '../../components/enderecos';
 
 
@@ -417,18 +417,21 @@ export default function Dashboard() {
 
                             <div className='nav-user'>
 
-                                <div className='profile'>
 
+                                <div className='profile'>
+                                    
+                                    <FontAwesomeIcon icon={faUser} color='#db4545' size='5x'/>
+                                    
                                     <h2>Meu Perfil</h2>
 
                                     <div className='info'>
                                         <label htmlFor="nome">Nome</label>
-                                        <p>{userName}</p>
+                                        <p>{userName}  <FontAwesomeIcon icon={faUser} color='#db4545'/></p>
                                     </div>
 
                                     <div className='info'>
                                         <label htmlFor="senha">Senha</label>
-                                        <p>{passWord}</p>
+                                        <p>{passWord} <FontAwesomeIcon icon={faLock} color='#db4545'/></p>
                                     </div>
 
                                 </div>
@@ -486,7 +489,7 @@ export default function Dashboard() {
                                     <input type="text" value={precoTotal} onChange={e => setPrecoTotal(e.target.value)} />
                                 </div>
 
-                                <button onClick={salvarFesta}>CADASTRAR</button>
+                                <button onClick={salvarFesta}>{!id ? 'CADASTRAR' : 'ALTERAR'}</button>
 
                             </section>
 
@@ -608,7 +611,7 @@ export default function Dashboard() {
 
                                 <h2>Consulte os endereços através do cep</h2>
                                 <input type="text" placeholder='Digite o cep' value={cep} onChange={e => setCep(e.target.value)} onKeyUp={buscar}/>
-                                <button onClick={buscarCep}><FontAwesomeIcon icon={faMagnifyingGlass}/>Pesquisar</button>
+                                <button onClick={buscarCep}><FontAwesomeIcon icon={faMagnifyingGlass}/> Pesquisar</button>
 
                                 <Enderecos 
                                 logradouro={logradouro}
