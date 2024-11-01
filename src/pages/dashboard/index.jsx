@@ -172,7 +172,7 @@ export default function Dashboard() {
 
             try {
 
-                const url = `http://localhost:7000/festa/cadastro?x-access-token=${token}`;
+                const url = `http://4.172.207.208:5026/festa/cadastro?x-access-token=${token}`;
                 let resp = await axios.post(url, paramFesta);
 
                 if (resp.data.erro != undefined) {
@@ -192,7 +192,7 @@ export default function Dashboard() {
 
             try {
 
-                const url = `http://localhost:7000/festa/${id}?x-access-token=${token}`;
+                const url = `http://4.172.207.208:5026/festa/${id}?x-access-token=${token}`;
                 let resp = await axios.put(url, paramFesta);
 
                 if (resp.data.erro != undefined) {
@@ -216,7 +216,7 @@ export default function Dashboard() {
 
         try {
 
-            const url = `http://localhost:7000/festa?x-access-token=${token}`;
+            const url = `http://4.172.207.208:5026/festa?x-access-token=${token}`;
             let resp = await axios.get(url);
 
             setListaFestas(resp.data);
@@ -230,7 +230,7 @@ export default function Dashboard() {
 
     async function excluirFesta(id) {
 
-        const url = `http://localhost:7000/festa/${id}?x-access-token=${token}`;
+        const url = `http://4.172.207.208:5026/festa/${id}?x-access-token=${token}`;
         await axios.delete(url);
 
         await buscarFestas();
@@ -242,7 +242,7 @@ export default function Dashboard() {
 
         if (id != undefined) {
 
-            const url = `http://localhost:7000/festa/${id}?x-access-token=${token}`;
+            const url = `http://4.172.207.208:5026/festa/${id}?x-access-token=${token}`;
             let resp = await axios.get(url);
 
             let dados = resp.data;
@@ -313,7 +313,7 @@ export default function Dashboard() {
 
         try {
 
-            const url = `http://localhost:7000/intencao`;
+            const url = `http://4.172.207.208:5026/intencao`;
             let resp = await axios.get(url);
 
             setListaIntencoes(resp.data);
@@ -328,7 +328,7 @@ export default function Dashboard() {
 
     async function excluirIntencao(id) {
 
-        const url = `http://localhost:7000/intencao/${id}`;
+        const url = `http://4.172.207.208:5026/intencao/${id}`;
         await axios.delete(url)
 
         await buscarIntencoes();

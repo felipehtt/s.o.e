@@ -102,7 +102,7 @@ export default function Intencao() {
             
             try {
                 
-                const url = 'http://localhost:7000/intencao';
+                const url = 'http://4.172.207.208:5026/intencao';
                 let resp = await axios.post(url, paramIntention);
                 
                 if(resp.data.erro != undefined){
@@ -122,7 +122,7 @@ export default function Intencao() {
 
             try {
             
-                const url = `http://localhost:7000/intencao/${id}`;
+                const url = `http://4.172.207.208:5026/intencao/${id}`;
                 let resp = await axios.put(url, paramIntention);
     
                 if(resp.data.erro != undefined){
@@ -148,7 +148,7 @@ export default function Intencao() {
 
         if(id != undefined){
 
-            const url = `http://localhost:7000/intencao/${id}`;
+            const url = `http://4.172.207.208:5026/intencao/${id}`;
             let resp = await axios.get(url);
 
             let dados = resp.data;
