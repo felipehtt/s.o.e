@@ -306,7 +306,7 @@ export default function Dashboard() {
         let token = localStorage.getItem('ADM')
         setToken(token);
         
-        if (token == null) {
+        if (token == 'null') {
             navigate('/login');
         }
 
