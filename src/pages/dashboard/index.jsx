@@ -8,17 +8,21 @@ import moment from 'moment';
 import Swal from 'sweetalert2';
 import Financeiro from '../../components/financeiro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarXmark, faUserPen, faUser, faLock } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarXmark, faUserPen, faUser, faLock, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import Enderecos from '../../components/enderecos';
 
 
 export default function Dashboard() {
 
     const [listaFestas, setListaFestas] = useState([]);
-    const [listaCep, setListaCep] = useState([]);
-    
-    const [cep, setCep] = useState('');
 
+    const [cep, setCep] = useState('');
+    const [logradouro, setLogradouro] = useState('');
+    const [bairro, setBairro] = useState('');
+    const [regiao, setRegiao] = useState('');
+    const [estado, setEstado] = useState('');
+    const[uf, setUf] = useState('');
+    
     const handleAlertErr = () => {
         Swal.fire({
             title: 'Não encontramos!',
@@ -26,6 +30,23 @@ export default function Dashboard() {
             iconColor: "#db4545",
             background: "#000",
             text: 'Nenhuma intenção salva',
+            icon: 'warning',
+
+            confirmButtonText: 'Ok',
+            confirmButtonColor: "#db4545",
+            customClass: {
+                confirmButton: 'custom-confirm-button',
+            },
+        });
+    };
+
+    const alertCep = () => {
+        Swal.fire({
+            title: 'Não encontramos!',
+            color: "#db4545",
+            iconColor: "#db4545",
+            background: "#000",
+            text: 'Nenhum endereço encontrado!',
             icon: 'warning',
 
             confirmButtonText: 'Ok',
@@ -243,10 +264,40 @@ export default function Dashboard() {
     
     async function buscarCep() {
 
-        const url = `http://viacep.com.br/ws/${cep}/json/`;
-        let resp = await axios.get(url);
+        try {
 
-        setListaCep(resp.data);
+            const url = `http://viacep.com.br/ws/${cep}/json/`;
+            let resp = await axios.get(url);
+    
+            let dados = resp.data;
+    
+            if(dados.erro != undefined){
+                alertCep();
+            }
+            else{
+                
+                setLogradouro(dados.logradouro);
+                setBairro(dados.bairro);
+                setRegiao(dados.regiao);
+                setEstado(dados.estado);
+                setUf(dados.uf);
+        
+                setCep('')
+
+            }
+        }
+        catch(error){
+            alertCep();
+        }
+
+
+    }
+
+    function buscar(e){
+
+        if(e.key == 'Enter'){
+            buscarCep();
+        }
 
     }
 
@@ -556,16 +607,15 @@ export default function Dashboard() {
                             <div className='pin'>
 
                                 <h2>Consulte os endereços através do cep</h2>
-                                <input type="text" placeholder='Digite o cep' value={cep} onChange={e => setCep(e.target.value)}/>
-                                <button onClick={buscarCep}>Buscar</button>
+                                <input type="text" placeholder='Digite o cep' value={cep} onChange={e => setCep(e.target.value)} onKeyUp={buscar}/>
+                                <button onClick={buscarCep}><FontAwesomeIcon icon={faMagnifyingGlass}/>Pesquisar</button>
 
-                                {listaCep.map(item =>
-
-                                    <p>{item.logradouro}</p>
-
-                                )}
-
-
+                                <Enderecos 
+                                logradouro={logradouro}
+                                bairro={bairro}
+                                regiao={regiao}
+                                estado={estado}
+                                uf={uf}/>
 
                             </div>
 

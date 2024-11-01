@@ -412,12 +412,42 @@
                     align-items: center;
                     justify-content: center;
 
+                    button {
+
+                        background-color: #db4545;
+                        color: #fff;
+                        border-style: none;
+                        border-radius: 8px;
+                        padding: 7px;
+                        width: 110px;
+                        font: 500 13px 'Poppins';
+                        cursor: pointer;
+                        transition: all 0.5s;
+    
+                    }
+    
+                    button:hover {
+    
+                        background-color: #af423e;
+                        transition: all 0.5s;
+                        transform: scale(1.12);
+    
+                    }
+
                     input {
                         outline: none;
                         border-radius: 15px;
                         border-style: none;
                         padding: 8px;
                         width: 100%;
+
+                        &:focus {
+
+                            border-color: #db4545;
+                            outline: none;
+                            box-shadow: 0 6px 14px rgba(231, 77, 60, 0.205);
+
+                        }
                     }
 
                 }
