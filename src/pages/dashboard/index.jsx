@@ -8,7 +8,7 @@ import moment from 'moment';
 import Swal from 'sweetalert2';
 import Financeiro from '../../components/financeiro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarXmark, faUserPen, faUser, faLock, faMagnifyingGlass,faPen, faP } from '@fortawesome/free-solid-svg-icons';  
+import { faCalendarXmark, faUserPen, faUser, faLock, faMagnifyingGlass, faPen, faP } from '@fortawesome/free-solid-svg-icons';
 import Enderecos from '../../components/enderecos';
 
 
@@ -21,8 +21,9 @@ export default function Dashboard() {
     const [bairro, setBairro] = useState('');
     const [regiao, setRegiao] = useState('');
     const [estado, setEstado] = useState('');
-    const[uf, setUf] = useState('');
-    
+    const [uf, setUf] = useState('');
+    const [ver, setVer] = useState(false)
+
     const handleAlertErr = () => {
         Swal.fire({
             title: 'Não encontramos!',
@@ -247,7 +248,7 @@ export default function Dashboard() {
             let dados = resp.data;
 
             let dateParty = moment(dados.dataFesta).format('YYYY-MM-DD');
-            
+
             setNomeCliente(dados.nomeCliente);
             setTelefone(dados.telefone);
             setDataFesta(dateParty);
@@ -257,45 +258,46 @@ export default function Dashboard() {
             setTemaFesta(dados.temaFesta);
             setQuantidadePessoas(dados.quantidadePessoas);
             setPrecoTotal(dados.precoTotal);
-            
+
         }
-        
+
     }
-    
+
     async function buscarCep() {
 
         try {
 
             const url = `http://viacep.com.br/ws/${cep}/json/`;
             let resp = await axios.get(url);
-    
+
             let dados = resp.data;
-    
-            if(dados.erro != undefined){
+
+            if (dados.erro != undefined) {
                 alertCep();
             }
-            else{
-                
+            else {
+
                 setLogradouro(dados.logradouro);
                 setBairro(dados.bairro);
                 setRegiao(dados.regiao);
                 setEstado(dados.estado);
                 setUf(dados.uf);
-        
-                setCep('')
+
+                setCep('');
+                setVer(!ver);
 
             }
         }
-        catch(error){
+        catch (error) {
             alertCep();
         }
 
 
     }
 
-    function buscar(e){
+    function buscar(e) {
 
-        if(e.key == 'Enter'){
+        if (e.key == 'Enter') {
             buscarCep();
         }
 
@@ -305,7 +307,7 @@ export default function Dashboard() {
 
         let token = localStorage.getItem('ADM')
         setToken(token);
-        
+
         if (token == 'null') {
             navigate('/login');
         }
@@ -313,7 +315,7 @@ export default function Dashboard() {
         consultar(token);
 
     }, []);
-    
+
 
     async function buscarIntencoes() {
 
@@ -419,19 +421,19 @@ export default function Dashboard() {
 
 
                                 <div className='profile'>
-                                    
-                                    <FontAwesomeIcon icon={faUser} color='#db4545' size='5x'/>
-                                    
+
+                                    <FontAwesomeIcon icon={faUser} color='#db4545' size='5x' />
+
                                     <h2>Meu Perfil</h2>
 
                                     <div className='info'>
                                         <label htmlFor="nome">Nome</label>
-                                        <p>{userName}  <FontAwesomeIcon icon={faUser} color='#db4545'/></p>
+                                        <p>{userName}  <FontAwesomeIcon icon={faUser} color='#db4545' /></p>
                                     </div>
 
                                     <div className='info'>
                                         <label htmlFor="senha">Senha</label>
-                                        <p>{passWord} <FontAwesomeIcon icon={faLock} color='#db4545'/></p>
+                                        <p>{passWord} <FontAwesomeIcon icon={faLock} color='#db4545' /></p>
                                     </div>
 
                                 </div>
@@ -610,15 +612,19 @@ export default function Dashboard() {
                             <div className='pin'>
 
                                 <h2>Consulte os endereços através do cep</h2>
-                                <input type="text" placeholder='Digite o cep' value={cep} onChange={e => setCep(e.target.value)} onKeyUp={buscar}/>
-                                <button onClick={buscarCep}><FontAwesomeIcon icon={faMagnifyingGlass}/> Pesquisar</button>
+                                <input type="text" placeholder='Digite o cep' value={cep} onChange={e => setCep(e.target.value)} onKeyUp={buscar} />
+                                <button onClick={buscarCep}><FontAwesomeIcon icon={faMagnifyingGlass} /> Pesquisar</button>
 
-                                <Enderecos 
-                                logradouro={logradouro}
-                                bairro={bairro}
-                                regiao={regiao}
-                                estado={estado}
-                                uf={uf}/>
+                                {ver &&
+
+                                    <Enderecos
+                                    logradouro={logradouro}
+                                    bairro={bairro}
+                                    regiao={regiao}
+                                    estado={estado}
+                                    uf={uf} />
+
+                                }
 
                             </div>
 
