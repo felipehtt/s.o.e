@@ -9,7 +9,7 @@ export default function Contato() {
 
     return (
 
-        <div className='pagina-comunidade pagina'>
+        <div className='pagina-contato pagina'>
 
             <Cabecalho />
 
@@ -23,7 +23,7 @@ export default function Contato() {
 
             <main>
 
-                <div className='comunidade'>
+                <div className='contato'>
 
                     <div className='cont'>
 
