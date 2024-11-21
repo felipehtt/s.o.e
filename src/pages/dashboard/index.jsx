@@ -9,7 +9,6 @@ import Swal from 'sweetalert2';
 import Financeiro from '../../components/financeiro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarXmark, faUserPen, faUser, faLock, faMagnifyingGlass, faPen, faP } from '@fortawesome/free-solid-svg-icons';
-import { conversao } from '../../utils/conversao.js';
 import Enderecos from '../../components/enderecos';
 
 
@@ -165,7 +164,7 @@ export default function Dashboard() {
             "tipoFesta": tipoFesta,
             "temaFesta": temaFesta,
             "quantidadePessoas": quantidadePessoas,
-            "precoTotal": conversao(precoTotal)
+            "precoTotal": precoTotal
 
         }
 
