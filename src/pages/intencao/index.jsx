@@ -175,7 +175,7 @@ export default function Intencao() {
         setToken(token);
 
         if(token == 'null'){
-            navigate('/login');
+            navigate('/intencao');
         }
 
         buscarInfo();
